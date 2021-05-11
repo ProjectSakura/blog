@@ -1,15 +1,17 @@
 import { Container } from "semantic-ui-react";
-import Card from "../cards/Card";
+import Card from "../../cards/Card";
+// styles
+import {Body} from "./styles";
 function Home() {
   return (
-    <div>
+    <Body>
       <h1>Home Page</h1>
       <Container>
         <Card />
         <Card />
         <Card />
       </Container>
-    </div>
+    </Body>
   );
 }
 export default Home;
