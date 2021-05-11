@@ -1,13 +1,14 @@
+import {Body, Heading, SubHeading} from "./styles"
 function Card(){
     return (
-        <div>
-            <h1>Blog Title</h1>
+        <Body>
+            <Heading>Blog Title</Heading>
             <hr/>
-            <h3>Name</h3>
+            <SubHeading>Name</SubHeading>
             <p>
                 Blog content
             </p>
-        </div>
+        </Body>
     )
 }
 export default Card;
