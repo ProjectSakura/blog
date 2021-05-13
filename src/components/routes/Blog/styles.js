@@ -6,4 +6,3 @@ export const Body = styled.div`
     color:white;
     background-color:#121217;
 `;
-
