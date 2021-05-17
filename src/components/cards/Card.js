@@ -1,22 +1,21 @@
-// Stlying
-// Icons
+import moment from "moment";
 import { CgProfile as Profile } from "react-icons/cg";
 import { AiOutlineClockCircle as Time } from "react-icons/ai";
 import {
   Body, Heading, SubHeading, Btn, Description, LeftSection, RightSection,
 } from "./styles";
 
-function Card() {
+function Card({ data }) {
   return (
     <Body>
-      <Heading>ProjectSakura April 2021 Security update is here.</Heading>
+      <Heading>{data.title}</Heading>
       <hr />
       <SubHeading>
-        <LeftSection><Profile />  LordShenron</LeftSection>
-        <RightSection><Time /> April 12, 2021</RightSection>
+        <LeftSection><Profile />  {data.author}</LeftSection>
+        <RightSection><Time /> {moment(data.date).format("LL")}</RightSection>
       </SubHeading>
       <Description>
-        Whats new in the latest release of Project Sakura? Check out..
+        {data.desc}
       </Description>
       <Btn inverted color="blue">
         Read More
