@@ -6,8 +6,9 @@ import { Body } from "./styles";
 function Home() {
   return (
     <Body>
-      <h1>Home Page</h1>
       <Container>
+        <Card />
+        <Card />
         <Card />
         <Card />
         <Card />
