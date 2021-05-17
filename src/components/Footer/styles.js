@@ -10,9 +10,14 @@ export const Body = styled.div`
 `;
 
 export const Bold = styled.b`
+    @media(min-width: 768px) {
+      font-size: 1.2em;
+    } 
+    @media(max-width: 768px) {
+      font-size: 1em;
+    }
     color:white;
     margin: auto;
-    font-size: 1.5em;
 `;
 
 export const Anchor = styled.a`
