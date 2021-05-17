@@ -88,12 +88,11 @@
         "sort-keys": [
             "off"
         ],
-        "space-before-function-paren": [
-            "error"
-        ],
         "indent": [
             "error"
         ],
-        "import/prefer-default-export": "off"
+        "import/prefer-default-export": "off",
+        "linebreak-style": 0,
+        "react/jsx-one-expression-per-line": "off"
     }
 }
