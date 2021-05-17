@@ -14,20 +14,20 @@ import {
   Date,
 } from "./styles";
 
-function AndroidBetaTwo() {
+function AndroidBetaThree() {
   return (
     <Body>
       <Container>
         <BodyInner>
           <Date>
-            28 November 2020
+            11 December 2020
           </Date>
           <Heading>
-            Android 11 Beta 2 of Project Sakura is here!
+            Android 11 Beta 3 of Project Sakura is here!
           </Heading>
           <Description>
-            Exactly 20 days it took us to be here. Yes!!! FINALLY 1 STEP CLOSER TO THE STABLE TAG. Last time we released Beta 1 that had BUGS. They are still here LoL. Well, if I say we are one step closer to the STABLE tag then we indeed are moving towards it. With
-            Beta 2 we will be bringing more features, more fixes and even more weird ass bugs. Also, we have a lot of devices that will be available to download with Beta 2.
+            We are back with beta 3 of Project Sakura. With this release we will be fixing most of the bugs. After Beta 3 we will be rebasing to the upcoming Lineage 18.1, because of this in this release we are not updating the security patch. For most of the devices
+            this update will be as good as a stable update, but some devices will still have some issues here and there. With the rebase to Lineage 18.1 we will be moving to the stable 4.R release sometimes in January.
             <br />
             <br />
             Now see an ad.
@@ -38,31 +38,28 @@ function AndroidBetaTwo() {
             <br />
           </Description>
           <UnorderedList>
-            <ListItem>Everyone's favorite gimmick, Gaming mode.</ListItem>
+            <ListItem>For your ugly faces, Face unlock.</ListItem>
             <br />
-            <ListItem>Moar Clock faces, some ugly ones too.</ListItem>
+            <ListItem>Custom Icon Pack support in Trebuchet Launcher.</ListItem>
             <br />
-            <ListItem>Fixed the issue where wifi tile was not expanding in QS.</ListItem>
+            <ListItem>Project Sakura's own custom header pack.</ListItem>
             <br />
-            <ListItem>Volume dialog's visibility time can be changed now.</ListItem>
+            <ListItem>QS tint for quick settings tiles. </ListItem>
             <br />
-            <ListItem>For weak ass displays that never goes over 60, we have fps meter :)</ListItem>
+            <ListItem>OneUI styled setting actionbar.</ListItem>
             <br />
-            <ListItem>A ton of misc changes.</ListItem>
+            <ListItem>A ton of upstreams from Lineage 18.0.</ListItem>
             <br />
           </UnorderedList>
           <Description>
-            With Beta 2 release you can now have builds with GAPPS included. Most of the devices will be switching to builds with GAPPS included. Builds with GAPPS will also have Pixel Launcher as default launcher while VANILLA builds will have Trebucet Launcher based on Launcher3.
+            Now, we will immediately start working on 4.R with no sleep and no food. We are the ultimate lonely ass developers.. Like hell that's gonna happen. After this update I am going to sleep a ton and enjoy my free time until new year. So don't ask for those annoying ETAs. Just set some hentai wallpaper and enjoy Beta 3.
             <br />
             <br />
             Last week we released Beta 1 for some more devices. Beta 2 will take a little bit time for them to arrive. We have also started accepting applications for Official. So, If you are interested in maintaining
             a device then apply on <Anchor href="https://projectsakura.xyz/posts/maintainership.html"> Project Sakura Maintainers form.</Anchor>
             <br />
             <br />
-            Well, That was almost everything that we needed to tell. With beta 2 you can call this thing almost daily usable. We still don't advice you to use Beta builds on devices that you need in 100% best state.
-            <br />
-            <br />
-            Oh and if you like our work, please consider buying me a coffee because we need to keep working hard to bring you awesome free software
+            Also, If you like how hard we work you can go ahead and gift us some coffee for Xmas or New year. We will surely be delighted
             <Anchor href="https://www.buymeacoffee.com/lBUDKgM"> Buying me a coffee.</Anchor>
             <br />
             <br />
@@ -84,4 +81,4 @@ function AndroidBetaTwo() {
     </Body>
   );
 }
-export default AndroidBetaTwo;
+export default AndroidBetaThree;
