@@ -1,0 +1,117 @@
+const data = [
+  {
+    title: "Blur, Transparency, Stability and much more in the May 2021 release of Project Sakura.",
+    author: "LordShenron",
+    date: new Date(Date.parse("2021-05-10")),
+    desc: "Whats new in the latest release of Project Sakura? Check out..",
+  },
+  {
+    title: "ProjectSakura April 2021 Security update is here.",
+    author: "LordShenron",
+    date: new Date(Date.parse("2021-04-12")),
+    desc: "Whats new in the latest release of Project Sakura? Check out..",
+  },
+  {
+    title: "Project Sakura is now associated with GSSOC'21 ....",
+    author: "Arun Teltia",
+    date: new Date(Date.parse("2021-03-21")),
+    desc: "Whats new in the latest release of Project Sakura? Check out..",
+  },
+  {
+    title: "Newer Faceunlock, FOD icons, animations and effects...",
+    author: "LordShenron",
+    date: new Date(Date.parse("2021-03-08")),
+    desc: "Whats new in the latest release of Project Sakura? Check out..",
+  },
+  {
+    title: "Version 5.R of Project Sakura is here...",
+    author: "LordShenron",
+    date: new Date(Date.parse("2021-03-08")),
+    desc: "Whats new in the latest release of Project Sakura? Check out..",
+  },
+  {
+    title: "February 2021's update of Project Sakura is rolling out...",
+    author: "LordShenron",
+    date: new Date(Date.parse("2021-02-08")),
+    desc: "Whats new in the latest release of Project Sakura? Check out..",
+  },
+  {
+    title: "First Update of January 2021 is now rolling out...",
+    author: "LordShenron",
+    date: new Date(Date.parse("2021-02-09")),
+    desc: "Whats new in the latest release of Project Sakura? Check out..",
+  },
+  {
+    title: "Version 4.R of Project Sakura is here...",
+    author: "LordShenron",
+    date: new Date(Date.parse("2020-12-29")),
+    desc: "Whats new in the latest release of Project Sakura? Check out..",
+  },
+  {
+    title: "Third Beta of Project Sakura 3.R based on Android 11 is here...",
+    author: "LordShenron",
+    date: new Date(Date.parse("2020-12-11")),
+    desc: "Whats new in the beta 3 of Project Sakura 3.R? Check out..",
+  },
+  {
+    title: "Second Beta of Project Sakura 3.R based on Android 11 is here...",
+    author: "LordShenron",
+    date: new Date(Date.parse("2020-11-28")),
+    desc: "Whats new in the beta 2 of Project Sakura 3.R? Check out..",
+  },
+  {
+    title: "First Beta of Project Sakura based on Android 11 is here...",
+    author: "LordShenron",
+    date: new Date(Date.parse("2020-11-09")),
+    desc: "Whats new in this release? checkout..",
+  },
+  {
+    title: "When android 11, what is new in this update and what you can expect in future...",
+    author: "LordShenron",
+    date: new Date(Date.parse("2020-10-14")),
+    desc: "Whats new in this release? checkout..",
+  },
+  {
+    title: "What's better than a hot cup of coffee? Yes!, a Project Sakura update.",
+    author: "LordShenron",
+    date: new Date(Date.parse("2020-08-28")),
+    desc: "Whats new in this release? checkout..",
+  },
+  {
+    title: "NOW IS THE TIME TO UPDATE! We have updated to the August Security Patch.",
+    author: "LordShenron",
+    date: new Date(Date.parse("2020-08-07")),
+    desc: "August security patch, oplauncher and much more..",
+  },
+  {
+    title: "July patch, ultra thicc gesture handle and more",
+    author: "Amartya",
+    date: new Date(Date.parse("2020-07-13")),
+    desc: "Everyone likes thicc *ahem*, Yes the thicc gesture handle and a new shining tiny security patch..",
+  },
+  {
+    title: "We are updating for the second time this june.",
+    author: "Shen",
+    date: new Date(Date.parse("2020-06-29")),
+    desc: "Our updates are getting hotter just like the weather, so we should cool down now..",
+  },
+  {
+    title: "Apply for Project Sakura Maintainership!",
+    author: "Shen",
+    date: new Date(Date.parse("2020-05-14")),
+    desc: "Want to make a official sakura build for your device? check this post..",
+  },
+  {
+    title: "Its summer and spring is almost gone, but we came with the May update.",
+    author: "Shen",
+    date: new Date(Date.parse("2020-05-15")),
+    desc: "See whats new and good this may..",
+  },
+  {
+    title: "XSLTEL decided to sponsor Project Sakura",
+    author: "Manish",
+    date: new Date(Date.parse("2020-05-01")),
+    desc: "XSLTEL OU is a european company that have decided to sponsor Project Sakura with servers..",
+  },
+];
+export default data;

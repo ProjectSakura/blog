@@ -1,3 +1,4 @@
+import moment from "moment";
 // Stlying
 // Icons
 import { CgProfile as Profile } from "react-icons/cg";
@@ -6,9 +7,17 @@ import {
   Body, Heading, SubHeading, Btn, Description, LeftSection, RightSection,
 } from "./styles";
 
-function Card() {
+function Card({ data }) {
   return (
     <Body>
+      <Heading>{data.title}</Heading>
+      <hr />
+      <SubHeading>
+        <LeftSection><Profile />  {data.author}</LeftSection>
+        <RightSection><Time /> {moment(data.date).format("LL")}</RightSection>
+      </SubHeading>
+      <Description>
+        {data.desc}
       <Heading>ProjectSakura April 2021 Security update is here.</Heading>
       <hr />
       <SubHeading>
