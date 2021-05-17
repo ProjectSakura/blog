@@ -15,6 +15,11 @@ function Home() {
     <Body>
       <Container>
         {renderCards()}
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+        <Card />
       </Container>
     </Body>
   );

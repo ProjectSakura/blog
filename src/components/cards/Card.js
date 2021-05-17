@@ -1,4 +1,6 @@
 import moment from "moment";
+// Stlying
+// Icons
 import { CgProfile as Profile } from "react-icons/cg";
 import { AiOutlineClockCircle as Time } from "react-icons/ai";
 import {
@@ -16,6 +18,14 @@ function Card({ data }) {
       </SubHeading>
       <Description>
         {data.desc}
+      <Heading>ProjectSakura April 2021 Security update is here.</Heading>
+      <hr />
+      <SubHeading>
+        <LeftSection><Profile />  LordShenron</LeftSection>
+        <RightSection><Time /> April 12, 2021</RightSection>
+      </SubHeading>
+      <Description>
+        Whats new in the latest release of Project Sakura? Check out..
       </Description>
       <Btn inverted color="blue">
         Read More
