@@ -12,6 +12,7 @@ import {
   UnorderedList,
   Anchor,
   Date,
+  Hr,
 } from "./styles";
 
 function AndroidBetaThree() {
@@ -25,6 +26,7 @@ function AndroidBetaThree() {
           <Heading>
             Android 11 Beta 3 of Project Sakura is here!
           </Heading>
+          <Hr />
           <Description>
             We are back with beta 3 of Project Sakura. With this release we will be fixing most of the bugs. After Beta 3 we will be rebasing to the upcoming Lineage 18.1, because of this in this release we are not updating the security patch. For most of the devices
             this update will be as good as a stable update, but some devices will still have some issues here and there. With the rebase to Lineage 18.1 we will be moving to the stable 4.R release sometimes in January.
@@ -72,6 +74,7 @@ function AndroidBetaThree() {
         </BodyInner>
         <AuthorSec>
           <AuthorHead>About Author</AuthorHead>
+          <Hr />
           <AuthorSubHead>LordShenron</AuthorSubHead>
           <Description>
             LordShenron is the lead developer of the project. He is also an IT Engg Student and he loves anime and Japanese pop music. When he is not online he is mostly sleeping or busy with some college work.

@@ -24,7 +24,7 @@ export const BodyInner = styled.div`
       padding: 2vh;
     }
     border-radius: 10px;
-    background-color: #1c1c24;
+    background-color: #212433;
 `;
 
 export const AuthorSec = styled.div`
@@ -37,7 +37,7 @@ export const AuthorSec = styled.div`
       padding: 2vh;
     }
   border-radius: 10px;
-  background-color: #1c1c24;
+  background-color: #212433;
 `;
 
 export const Heading = styled.h1`
@@ -55,10 +55,18 @@ export const SubHeading = styled.h4`
 export const Date = styled.h3`
   @media(max-width: 768px) {
     margin-bottom: 0vh;
-    font-size: 1em;
+    
   }
+  font-size: 1em;
   color: #666e72;
   font-weight:bold;
+`;
+
+export const Hr = styled.hr`
+  border-radius: 5px;
+  height: 1px;
+  background-color: white; 
+  margin-bottom: 2vh;
 `;
 
 export const ImgDiv = styled.p` 
@@ -94,7 +102,7 @@ export const ListItem = styled.li`
 
 export const AuthorHead = styled.h3`
   color: #666e72;
-  font-weight: 900;
+  font-size: 1em;
   margin: 0 auto;
 `;
 
@@ -107,4 +115,11 @@ export const Anchor = styled.a`
   &:hover{
     color:cyan;
   }
+`;
+export const Code = styled.div`
+  padding: 2vh;
+  background-color:white;
+  width:100%;
+  color:black;
+  margin-bottom:2vh;
 `;
