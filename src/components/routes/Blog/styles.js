@@ -1,27 +1,50 @@
 import styled from "styled-components";
 
 export const Body = styled.div`
+    @media(min-width: 768px) {
+      padding: 2vh;
+    } 
+    @media(max-width: 768px) {
+      padding: 1vh;
+      display:flex;
+      flex-direction:column;
+    }
     height:100%;
-    padding:2vh;
     color:white;
     background-color:#121217;
 `;
 
 export const BodyInner = styled.div`
-  margin: 20vh;
-  padding: 3.5vh;
-  border-radius: 10px;
-  background-color: #1c1c24;
+    @media(min-width: 768px) {
+      margin: 10vh 20vh;
+      padding: 3vh;
+    } 
+    @media(max-width: 768px) {
+      margin: 10vh auto;
+      padding: 2vh;
+    }
+    border-radius: 10px;
+    background-color: #1c1c24;
 `;
 
 export const AuthorSec = styled.div`
-  margin: 20vh;
-  padding: 5vh;
+    @media(min-width: 768px) {
+      margin: 10vh 20vh;
+      padding: 5vh;
+    } 
+    @media(max-width: 768px) {
+      margin: 10vh auto;
+      padding: 2vh;
+    }
   border-radius: 10px;
   background-color: #1c1c24;
 `;
 
 export const Heading = styled.h1`
+  @media(max-width: 768px) {
+    margin-top: 1vh;
+    font-size: 1.5em;
+  }
   color: #039be5;
 `;
 
@@ -30,23 +53,30 @@ export const SubHeading = styled.h4`
 `;
 
 export const Date = styled.h3`
+  @media(max-width: 768px) {
+    margin-bottom: 0vh;
+    font-size: 1em;
+  }
   color: #666e72;
   font-weight:bold;
-
 `;
 
 export const ImgDiv = styled.p` 
   text-align:center;
-  display:flex;
 `;
 
 export const Image = styled.img` 
-  width: 60vw;
-  height: 60vh;
+  width: 100%;
+  height: auto;
 `;
 
 export const Description = styled.p` 
-  font-size: 1.3em;
+  @media(min-width: 768px) {
+    font-size: 1.2em;
+  } 
+  @media(max-width: 768px) {
+    font-size: 1em;
+  }
 `;
 
 export const UnorderedList = styled.ul` 
@@ -54,7 +84,12 @@ export const UnorderedList = styled.ul`
 `;
 
 export const ListItem = styled.li` 
-  font-size: 1.2em;
+  @media(min-width: 768px) {
+    font-size: 1.2em;
+  } 
+  @media(max-width: 768px) {
+    font-size: 1em;
+  }
 `;
 
 export const AuthorHead = styled.h3`
