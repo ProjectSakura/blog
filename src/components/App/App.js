@@ -5,6 +5,8 @@ import { Body } from "./styles";
 import Home from "../routes/Home/Home";
 //blogs route
 import MayUpdate from "../routes/Blog/MayUpdate";
+import AprilUpdate from "../routes/Blog/AprilUpdate";
+import MarchUpdate from "../routes/Blog/MarchUpdate";
 import AndroidBetaTwo from "../routes/Blog/AndroidBetaTwo";
 import AndroidBetaThree from "../routes/Blog/AndroidBetaThree";
 import FourAndroidUpdate from "../routes/Blog/FourAndroidUpdate";
@@ -20,6 +22,8 @@ function App() {
       <Router>
         <Route path="/" exact component={Home} />
         <Route path="/5.R-May-2021-update" exact component={MayUpdate} />
+        <Route path="/5.R-April-2021-update" exact component={AprilUpdate} />
+        <Route path="/gssoc-association-website-update-march" exact component={MarchUpdate} />
         <Route path="/3-R-android-11-beta-2" exact component={AndroidBetaTwo} />
         <Route path="/3.R-android-11-beta-3" exact component={AndroidBetaThree} />
         <Route path="/4.R-android-11-update" exact component={FourAndroidUpdate} />
