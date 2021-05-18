@@ -13,6 +13,7 @@ import {
   UnorderedList,
   Anchor,
   Date,
+  Hr,
 } from "./styles";
 
 function FourAndroidUpdate() {
@@ -26,7 +27,7 @@ function FourAndroidUpdate() {
           <Heading>
             4.R of Project Sakura is here!
           </Heading>
-          <Hr/>
+          <Hr />
           <ImgDiv>
             <Image src="https://i.imgur.com/gHcCRzi.jpg" />
           </ImgDiv>
@@ -73,7 +74,7 @@ function FourAndroidUpdate() {
         </BodyInner>
         <AuthorSec>
           <AuthorHead>About Author</AuthorHead>
-          <Hr/>
+          <Hr />
           <AuthorSubHead>LordShenron</AuthorSubHead>
           <Description>
             LordShenron is the lead developer of the project. He is also an IT Engg Student and he loves anime and Japanese pop music. When he is not online he is mostly sleeping or busy with some college work.

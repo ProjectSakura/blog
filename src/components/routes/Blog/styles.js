@@ -62,7 +62,7 @@ export const Date = styled.h3`
   font-weight:bold;
 `;
 
-export const Hr=styled.hr`
+export const Hr = styled.hr`
   border-radius: 5px;
   height: 1px;
   background-color: white; 

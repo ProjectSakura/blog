@@ -1,6 +1,6 @@
 import { Container } from "semantic-ui-react";
 import {
-  AuthorHead, AuthorSec, AuthorSubHead, Body, BodyInner, Description, Heading, Image, ImgDiv, ListItem, SubHeading, UnorderedList, Anchor, Date,
+  AuthorHead, AuthorSec, AuthorSubHead, Body, BodyInner, Description, Heading, Image, ImgDiv, ListItem, SubHeading, UnorderedList, Anchor, Date, Hr,
 } from "./styles";
 
 function MarchUpdate1() {
@@ -10,7 +10,7 @@ function MarchUpdate1() {
         <BodyInner>
           <Date>21 March 2021</Date>
           <Heading>Project Sakura is now associated with GSSOC'21</Heading>
-          <Hr/>
+          <Hr />
           <Description>
             It's me, the web developer of project sakura, You might have seen some website changes in this past month and about those changes I want you to inform that our project got
             selected as GSSOC'21 and many of the contributors all around the world are coming and working on our website.
@@ -44,7 +44,7 @@ function MarchUpdate1() {
 
         <AuthorSec>
           <AuthorHead>About Author</AuthorHead>
-          <Hr/>
+          <Hr />
           <AuthorSubHead>Arun Teltia</AuthorSubHead>
           <Description>Arun Teltia is the lead web developer of the project. He is a passionate web developer and loves to watch anime is his spare time.</Description>
         </AuthorSec>
