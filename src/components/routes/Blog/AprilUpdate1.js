@@ -1,6 +1,6 @@
 import { Container } from "semantic-ui-react";
 import {
-  AuthorHead, AuthorSec, AuthorSubHead, Body, BodyInner, Description, Heading, Image, ImgDiv, ListItem, SubHeading, UnorderedList, Anchor, Date, Hr,
+  AuthorHead, AuthorSec, AuthorSubHead, Body, BodyInner, Description, Heading, Image, ImgDiv, ListItem, SubHeading, UnorderedList, Anchor, Date,
 } from "./styles";
 
 function AprilUpdate1() {
@@ -10,7 +10,6 @@ function AprilUpdate1() {
         <BodyInner>
           <Date>12 April 2021</Date>
           <Heading>April security update of ProjectSakura is here!</Heading>
-          <Hr />
           <ImgDiv>
             <Image src="https://i.imgur.com/gQIVeSH.png" />
           </ImgDiv>
@@ -96,7 +95,6 @@ function AprilUpdate1() {
         </BodyInner>
         <AuthorSec>
           <AuthorHead>About Author</AuthorHead>
-          <Hr />
           <AuthorSubHead>LordShenron</AuthorSubHead>
           <Description>
             LordShenron is the lead developer of the project. He is also an IT Engg Student and he loves anime and Japanese pop music. When he is not online he is mostly sleeping or busy

@@ -1,6 +1,6 @@
 import { Container } from "semantic-ui-react";
 import {
-  AuthorHead, AuthorSec, AuthorSubHead, Body, BodyInner, Description, Heading, ListItem, UnorderedList, Anchor, Date, Hr,
+  AuthorHead, AuthorSec, AuthorSubHead, Body, BodyInner, Description, Heading, ListItem, UnorderedList, Anchor, Date,
 } from "./styles";
 
 function MarchUpdate3() {
@@ -10,7 +10,6 @@ function MarchUpdate3() {
         <BodyInner>
           <Date>08 March 2021</Date>
           <Heading>Initial Release of Project Sakura 5.R</Heading>
-          <Hr />
           <Description>
             This spring feels more like summer, thanks to overheating kernels for causing Global Warming (Poor Joke :P). Well, We were so damn silent that people starting asking If we are
             alive anymore. Happy to tell you that, we are alive and we are updating every month like we always do. This month we are moving from version 4.R to 5.R and going into feature
@@ -53,7 +52,6 @@ function MarchUpdate3() {
 
         <AuthorSec>
           <AuthorHead>About Author</AuthorHead>
-          <Hr />
           <AuthorSubHead>LordShenron</AuthorSubHead>
           <Description>
             LordShenron is the lead developer of the project. He is also an IT Engg Student and he loves anime and Japanese pop music. When he is not online he is mostly sleeping or busy

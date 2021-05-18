@@ -1,6 +1,6 @@
 import { Container } from "semantic-ui-react";
 import {
-  AuthorHead, AuthorSec, AuthorSubHead, Body, BodyInner, Description, Heading, ListItem, UnorderedList, Anchor, Date, Code, Hr,
+  AuthorHead, AuthorSec, AuthorSubHead, Body, BodyInner, Description, Heading, ListItem, UnorderedList, Anchor, Date, Code,
 } from "./styles";
 
 function MarchUpdate2() {
@@ -10,7 +10,6 @@ function MarchUpdate2() {
         <BodyInner>
           <Date>19 March 2021</Date>
           <Heading>Newer Faceunlock, FOD icons, animations and effects.</Heading>
-          <Hr />
           <Description>
             We are back with another update and moar bugs and that will cause moar wailings from you poor users. Well, just like always started with a really poor joke. This update is a
             very small follow up with few important features. I will not be wasting much time and get straight to the major changes that were made for this release.
@@ -50,7 +49,6 @@ function MarchUpdate2() {
 
         <AuthorSec>
           <AuthorHead>About Author</AuthorHead>
-          <Hr />
           <AuthorSubHead>LordShenron</AuthorSubHead>
           <Description>
             LordShenron is the lead developer of the project. He is also an IT Engg Student and he loves anime and Japanese pop music. When he is not online he is mostly sleeping or busy
