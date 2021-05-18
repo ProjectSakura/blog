@@ -25,6 +25,7 @@ function AndroidBetaTwo() {
           <Heading>
             Android 11 Beta 2 of Project Sakura is here!
           </Heading>
+          <Hr/>
           <Description>
             Exactly 20 days it took us to be here. Yes!!! FINALLY 1 STEP CLOSER TO THE STABLE TAG. Last time we released Beta 1 that had BUGS. They are still here LoL. Well, if I say we are one step closer to the STABLE tag then we indeed are moving towards it. With
             Beta 2 we will be bringing more features, more fixes and even more weird ass bugs. Also, we have a lot of devices that will be available to download with Beta 2.
@@ -75,6 +76,7 @@ function AndroidBetaTwo() {
         </BodyInner>
         <AuthorSec>
           <AuthorHead>About Author</AuthorHead>
+          <Hr/>
           <AuthorSubHead>LordShenron</AuthorSubHead>
           <Description>
             LordShenron is the lead developer of the project. He is also an IT Engg Student and he loves anime and Japanese pop music. When he is not online he is mostly sleeping or busy with some college work.
