@@ -6,6 +6,7 @@ import cardData from "../../data/cardData";
 import { Body } from "./styles";
 
 function Home() {
+  console.log(cardData);
   const renderCards = () => {
     const cards = cardData.map((data) => <Card data={data} key={data.author} />);
     return cards;
@@ -15,11 +16,6 @@ function Home() {
     <Body>
       <Container>
         {renderCards()}
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
       </Container>
     </Body>
   );
