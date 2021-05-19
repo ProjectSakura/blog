@@ -102,7 +102,8 @@ export const ListItem = styled.li`
 
 export const AuthorHead = styled.h3`
   color: #666e72;
-  font-size: 1em;
+  font-size: 1.3em;
+  font-weight: bold;
   margin: 0 auto;
 `;
 
