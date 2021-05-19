@@ -34,9 +34,7 @@ const Footer = () => (
         </li>
 
         <li className={style["nav-item"]}>
-          <h2 className={style["nav-title"]}>
-            Sponsored by
-          </h2>
+          <h2 className={style["nav-title"]}>Sponsored by</h2>
           <ul ul className={style["nav-ul"]}>
             <li>
               <p>
@@ -46,38 +44,26 @@ const Footer = () => (
               </p>
             </li>
           </ul>
-          {/* Project Maintained by
-          <a href="https://github.com/LordShenron">Shen</a> & <a href="https://github.com/ArunTeltia"> ArunTeltia</a> */}
           <h2 className={style["nav-title"]}>SOCIAL</h2>
           <ul className={style["nav-ul"]}>
-            <li><p>Be sure to give us a follow on: </p></li>
+            <li>
+              <p>Be sure to give us a follow on: </p>
+            </li>
           </ul>
           <div className={`col ${style.col}`}>
             <ul className={style.social}>
               <li>
-                <a
-                  href="https://telegram.me/ProjectSakura"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
+                <a href="https://telegram.me/ProjectSakura" target="_blank" rel="noopener noreferrer">
                   <i className="fa fa-telegram fa-2x" />
                 </a>
               </li>
               <li>
-                <a
-                  href="https://twitter.com/ProjectSakura_"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
+                <a href="https://twitter.com/ProjectSakura_" target="_blank" rel="noopener noreferrer">
                   <i className="fa fa-twitter fa-2x" />
                 </a>
               </li>
               <li>
-                <a
-                  href="https://github.com/ProjectSakura"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
+                <a href="https://github.com/ProjectSakura" target="_blank" rel="noopener noreferrer">
                   <i className="fa fa-github fa-2x" />
                 </a>
               </li>

@@ -17,7 +17,7 @@ import FourRJanUpdate from "../routes/Blog/FourRJanUpdate";
 // Navbar
 import Navbar from "../Navbar/Navbar";
 //Footer
-import Footer from "../Footer/footer";
+import Footer from "../Footer/Footer";
 
 function App() {
   return (
