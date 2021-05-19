@@ -14,7 +14,6 @@ import {
   UnorderedList,
   Anchor,
   Date,
-  Hr,
 } from "./styles";
 
 function MayUpdate() {
@@ -28,7 +27,6 @@ function MayUpdate() {
           <Heading>
             Blur, Transparency, Stability and much more with May update of ProjectSakura
           </Heading>
-          <Hr />
           <ImgDiv>
             <Image src="https://i.imgur.com/XYCf1os.jpg" />
           </ImgDiv>
@@ -96,7 +94,6 @@ function MayUpdate() {
         </BodyInner>
         <AuthorSec>
           <AuthorHead>About Author</AuthorHead>
-          <Hr />
           <AuthorSubHead>LordShenron</AuthorSubHead>
           <Description>
             LordShenron is the lead developer of the project. He is also an IT Engg Student and he loves anime and Japanese pop music. When he is not online he is mostly sleeping or busy with some college work.
