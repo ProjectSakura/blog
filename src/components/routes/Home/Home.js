@@ -6,7 +6,7 @@ import cardData from "../../data/cardData";
 import { Body } from "./styles";
 
 function Home() {
-  console.log(cardData);
+  // console.log(cardData);
   const renderCards = () => {
     const cards = cardData.map((data) => <Card data={data} key={data.author} />);
     return cards;
