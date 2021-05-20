@@ -17,7 +17,7 @@ function Card({ data }) {
       <Description>
         {data.desc}
       </Description>
-      <Btn inverted color="blue">
+      <Btn className="signin ui inverted blue button" to={data.url}>
         Read More
       </Btn>
     </Body>

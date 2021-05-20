@@ -11,7 +11,7 @@ function Pagination({ postsPerPage, totalPosts, paginate }) {
   return (
     <PageGroup>
       {pageNumbers.map((num) => (
-        <PageBtn inverted color="blue" href="#" key={num} onClick={() => paginate(num)}>
+        <PageBtn inverted circular color="blue" size="tiny" href="#" key={num} onClick={() => paginate(num)}>
           {num}
         </PageBtn>
       ))}

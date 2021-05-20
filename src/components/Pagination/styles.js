@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { Container, Button } from "semantic-ui-react";
 
 export const PageBtn = styled(Button)`
-    border: 1px solid white;
+    /* border: 1px solid white; */
     margin: auto 1vh;
     padding: 1vh;
 `;

@@ -1,7 +1,7 @@
 .footer {
     display: flex;
     flex-flow: row wrap;
-    padding: 30px 50px 20px 50px;
+    padding: 30px 50px 0px 50px;
     color: #c2d6d7;
     background-color: #1c1c24;
 }
@@ -12,7 +12,7 @@
 
 .info-span {
     margin-right: 1.25em;
-    margin-bottom: 2em;
+    margin-bottom: 1em;
 }
 
 .info-span p {
