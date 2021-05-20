@@ -23,7 +23,7 @@ function App() {
   return (
     <Body>
       <Navbar />
-      <Router>
+      <Router basename="/blogs">
         <Switch>
           <Route path="/" exact component={Home} />
           <Route path="/5.R-May-2021-update" exact component={MayUpdate1} />

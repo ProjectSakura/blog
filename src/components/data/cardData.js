@@ -2,13 +2,16 @@
 const data = [
   {
     id: 18,
+    url: "/5.R-May-2021-update",
     title: "Blur, Transparency, Stability and much more in the May 2021 release of Project Sakura.",
     author: "LordShenron",
     date: new Date(Date.parse("2021-05-10")),
     desc: "Whats new in the latest release of Project Sakura? Check out..",
+
   },
   {
     id: 17,
+    url: "/5.R-April-2021-update",
     title: "ProjectSakura April 2021 Security update is here.",
     author: "LordShenron",
     date: new Date(Date.parse("2021-04-12")),
@@ -16,6 +19,7 @@ const data = [
   },
   {
     id: 16,
+    url: "/gssoc-association-website-update-march",
     title: "Project Sakura is now associated with GSSOC'21 ....",
     author: "Arun Teltia",
     date: new Date(Date.parse("2021-03-21")),
@@ -23,6 +27,7 @@ const data = [
   },
   {
     id: 15,
+    url: "/5.R-android-11-second-update-march",
     title: "Newer Faceunlock, FOD icons, animations and effects...",
     author: "LordShenron",
     date: new Date(Date.parse("2021-03-08")),
@@ -30,6 +35,7 @@ const data = [
   },
   {
     id: 14,
+    url: "/5.R-android-11-initial-release",
     title: "Version 5.R of Project Sakura is here...",
     author: "LordShenron",
     date: new Date(Date.parse("2021-03-08")),
@@ -37,6 +43,7 @@ const data = [
   },
   {
     id: 13,
+    url: "/4.R-february-2021-update",
     title: "February 2021's update of Project Sakura is rolling out...",
     author: "LordShenron",
     date: new Date(Date.parse("2021-02-08")),
@@ -44,6 +51,7 @@ const data = [
   },
   {
     id: 12,
+    url: "/4.R-january-2021-update",
     title: "First Update of January 2021 is now rolling out...",
     author: "LordShenron",
     date: new Date(Date.parse("2021-02-09")),
@@ -51,6 +59,7 @@ const data = [
   },
   {
     id: 11,
+    url: "/4.R-android-11-update",
     title: "Version 4.R of Project Sakura is here...",
     author: "LordShenron",
     date: new Date(Date.parse("2020-12-29")),
@@ -58,6 +67,7 @@ const data = [
   },
   {
     id: 10,
+    url: "/3.R-android-11-beta-3",
     title: "Third Beta of Project Sakura 3.R based on Android 11 is here...",
     author: "LordShenron",
     date: new Date(Date.parse("2020-12-11")),
@@ -65,6 +75,7 @@ const data = [
   },
   {
     id: 9,
+    url: "/3.R-android-11-beta-2",
     title: "Second Beta of Project Sakura 3.R based on Android 11 is here...",
     author: "LordShenron",
     date: new Date(Date.parse("2020-11-28")),
@@ -72,6 +83,7 @@ const data = [
   },
   {
     id: 8,
+    url: "/posts/android-11-beta-1.html",
     title: "First Beta of Project Sakura based on Android 11 is here...",
     author: "LordShenron",
     date: new Date(Date.parse("2020-11-09")),
@@ -79,6 +91,7 @@ const data = [
   },
   {
     id: 7,
+    url: "/posts/september-2020-update.html",
     title: "When android 11, what is new in this update and what you can expect in future...",
     author: "LordShenron",
     date: new Date(Date.parse("2020-10-14")),
@@ -86,6 +99,7 @@ const data = [
   },
   {
     id: 6,
+    url: "/posts/second-update-of-august-2020.html",
     title: "What's better than a hot cup of coffee? Yes!, a Project Sakura update.",
     author: "LordShenron",
     date: new Date(Date.parse("2020-08-28")),
@@ -93,6 +107,7 @@ const data = [
   },
   {
     id: 5,
+    url: "/posts/august-2020-update.html",
     title: "NOW IS THE TIME TO UPDATE! We have updated to the August Security Patch.",
     author: "LordShenron",
     date: new Date(Date.parse("2020-08-07")),
@@ -100,6 +115,7 @@ const data = [
   },
   {
     id: 4,
+    url: "/posts/july-2020-update.html",
     title: "July patch, ultra thicc gesture handle and more",
     author: "Amartya",
     date: new Date(Date.parse("2020-07-13")),
@@ -107,6 +123,7 @@ const data = [
   },
   {
     id: 3,
+    url: "/posts/second-update-of-june-2020.html",
     title: "We are updating for the second time this june.",
     author: "Shen",
     date: new Date(Date.parse("2020-06-29")),
@@ -114,6 +131,7 @@ const data = [
   },
   {
     id: 2,
+    url: "/posts/maintainership.html",
     title: "Apply for Project Sakura Maintainership!",
     author: "Shen",
     date: new Date(Date.parse("2020-05-14")),
@@ -121,6 +139,7 @@ const data = [
   },
   {
     id: 1,
+    url: "/posts/may-2020-update.html",
     title: "Its summer and spring is almost gone, but we came with the May update.",
     author: "Shen",
     date: new Date(Date.parse("2020-05-15")),
@@ -128,6 +147,7 @@ const data = [
   },
   {
     id: 0,
+    url: "/posts/oursponsor.html",
     title: "XSLTEL decided to sponsor Project Sakura",
     author: "Manish",
     date: new Date(Date.parse("2020-05-01")),
