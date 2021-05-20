@@ -147,7 +147,7 @@ const data = [
   },
   {
     id: 0,
-    url: "/posts/oursponsor.html",
+    url: "#",
     title: "XSLTEL decided to sponsor Project Sakura",
     author: "Manish",
     date: new Date(Date.parse("2020-05-01")),
