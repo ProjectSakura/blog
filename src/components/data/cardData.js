@@ -20,7 +20,7 @@ const data = [
   {
     id: 16,
     url: "/gssoc-association-website-update-march",
-    title: "Project Sakura is now associated with GSSOC'21 ....",
+    title: "Project Sakura is now associated with GSSOC'21",
     author: "Arun Teltia",
     date: new Date(Date.parse("2021-03-21")),
     desc: "Whats new in the latest release of Project Sakura? Check out..",
@@ -28,7 +28,7 @@ const data = [
   {
     id: 15,
     url: "/5.R-android-11-second-update-march",
-    title: "Newer Faceunlock, FOD icons, animations and effects...",
+    title: "Newer Faceunlock, FOD icons, animations and effects",
     author: "LordShenron",
     date: new Date(Date.parse("2021-03-08")),
     desc: "Whats new in the latest release of Project Sakura? Check out..",
@@ -36,7 +36,7 @@ const data = [
   {
     id: 14,
     url: "/5.R-android-11-initial-release",
-    title: "Version 5.R of Project Sakura is here...",
+    title: "Version 5.R of Project Sakura is here",
     author: "LordShenron",
     date: new Date(Date.parse("2021-03-08")),
     desc: "Whats new in the latest release of Project Sakura? Check out..",
@@ -44,7 +44,7 @@ const data = [
   {
     id: 13,
     url: "/4.R-february-2021-update",
-    title: "February 2021's update of Project Sakura is rolling out...",
+    title: "February 2021's update of Project Sakura is rolling out",
     author: "LordShenron",
     date: new Date(Date.parse("2021-02-08")),
     desc: "Whats new in the latest release of Project Sakura? Check out..",
@@ -52,23 +52,23 @@ const data = [
   {
     id: 12,
     url: "/4.R-january-2021-update",
-    title: "First Update of January 2021 is now rolling out...",
+    title: "First Update of January 2021 is now rolling out",
     author: "LordShenron",
     date: new Date(Date.parse("2021-02-09")),
-    desc: "Whats new in the latest release of Project Sakura? Check out..",
+    desc: "Whats new in the latest release of Project Sakura? Check out.",
   },
   {
     id: 11,
     url: "/4.R-android-11-update",
-    title: "Version 4.R of Project Sakura is here...",
+    title: "Version 4.R of Project Sakura is here.",
     author: "LordShenron",
     date: new Date(Date.parse("2020-12-29")),
-    desc: "Whats new in the latest release of Project Sakura? Check out..",
+    desc: "Whats new in the latest release of Project Sakura? Check out",
   },
   {
     id: 10,
     url: "/3.R-android-11-beta-3",
-    title: "Third Beta of Project Sakura 3.R based on Android 11 is here...",
+    title: "Third Beta of Project Sakura 3.R based on Android 11 is here",
     author: "LordShenron",
     date: new Date(Date.parse("2020-12-11")),
     desc: "Whats new in the beta 3 of Project Sakura 3.R? Check out..",
@@ -76,7 +76,7 @@ const data = [
   {
     id: 9,
     url: "/3.R-android-11-beta-2",
-    title: "Second Beta of Project Sakura 3.R based on Android 11 is here...",
+    title: "Second Beta of Project Sakura 3.R based on Android 11 is here",
     author: "LordShenron",
     date: new Date(Date.parse("2020-11-28")),
     desc: "Whats new in the beta 2 of Project Sakura 3.R? Check out..",
@@ -84,7 +84,7 @@ const data = [
   {
     id: 8,
     url: "/posts/android-11-beta-1.html",
-    title: "First Beta of Project Sakura based on Android 11 is here...",
+    title: "First Beta of Project Sakura based on Android 11 is here",
     author: "LordShenron",
     date: new Date(Date.parse("2020-11-09")),
     desc: "Whats new in this release? checkout..",
@@ -92,7 +92,7 @@ const data = [
   {
     id: 7,
     url: "/posts/september-2020-update.html",
-    title: "When android 11, what is new in this update and what you can expect in future...",
+    title: "When android 11, what is new in this update and what you can expect in future",
     author: "LordShenron",
     date: new Date(Date.parse("2020-10-14")),
     desc: "Whats new in this release? checkout..",
