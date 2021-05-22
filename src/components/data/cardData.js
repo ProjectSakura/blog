@@ -83,7 +83,7 @@ const data = [
   },
   {
     id: 8,
-    url: "/posts/android-11-beta-1.html",
+    url: "/android-11-beta-1",
     title: "First Beta of Project Sakura based on Android 11 is here",
     author: "LordShenron",
     date: new Date(Date.parse("2020-11-09")),
