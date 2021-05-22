@@ -14,6 +14,7 @@ import AndroidBetaThree from "../routes/Blog/AndroidBetaThree";
 import FourAndroidUpdate from "../routes/Blog/FourAndroidUpdate";
 import FourRFebUpdate from "../routes/Blog/FourRFebUpdate";
 import FourRJanUpdate from "../routes/Blog/FourRJanUpdate";
+import AndroidElevenBeta from "../routes/Blog/AndroidElevenBeta";
 // Navbar
 import Navbar from "../Navbar/Navbar";
 //Footer
@@ -36,6 +37,7 @@ function App() {
           <Route path="/4.R-android-11-update" exact component={FourAndroidUpdate} />
           <Route path="/4.R-february-2021-update" exact component={FourRFebUpdate} />
           <Route path="/4.R-january-2021-update" exact component={FourRJanUpdate} />
+          <Route path="/android-11-beta-1" exact component={AndroidElevenBeta} />
         </Switch>
         <Footer />
       </Router>
