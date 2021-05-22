@@ -19,6 +19,7 @@ import AndroidElevenBeta from "../routes/Blog/AndroidElevenBeta";
 import Navbar from "../Navbar/Navbar";
 //Footer
 import Footer from "../Footer/Footer";
+import OurSponsor from "../routes/Blog/OurSponsor";
 
 function App() {
   return (
@@ -38,6 +39,7 @@ function App() {
           <Route path="/4.R-february-2021-update" exact component={FourRFebUpdate} />
           <Route path="/4.R-january-2021-update" exact component={FourRJanUpdate} />
           <Route path="/android-11-beta-1" exact component={AndroidElevenBeta} />
+          <Route path="/oursponsor" exact component={OurSponsor} />
         </Switch>
         <Footer />
       </Router>

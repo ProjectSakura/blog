@@ -91,7 +91,7 @@ const data = [
   },
   {
     id: 7,
-    url: "/posts/september-2020-update.html",
+    url: "/posts/september-2020-update",
     title: "When android 11, what is new in this update and what you can expect in future",
     author: "LordShenron",
     date: new Date(Date.parse("2020-10-14")),
@@ -99,7 +99,7 @@ const data = [
   },
   {
     id: 6,
-    url: "/posts/second-update-of-august-2020.html",
+    url: "/posts/second-update-of-august-2020",
     title: "What's better than a hot cup of coffee? Yes!, a Project Sakura update.",
     author: "LordShenron",
     date: new Date(Date.parse("2020-08-28")),
@@ -107,7 +107,7 @@ const data = [
   },
   {
     id: 5,
-    url: "/posts/august-2020-update.html",
+    url: "/posts/august-2020-update",
     title: "NOW IS THE TIME TO UPDATE! We have updated to the August Security Patch.",
     author: "LordShenron",
     date: new Date(Date.parse("2020-08-07")),
@@ -115,7 +115,7 @@ const data = [
   },
   {
     id: 4,
-    url: "/posts/july-2020-update.html",
+    url: "/posts/july-2020-update",
     title: "July patch, ultra thicc gesture handle and more",
     author: "Amartya",
     date: new Date(Date.parse("2020-07-13")),
@@ -123,7 +123,7 @@ const data = [
   },
   {
     id: 3,
-    url: "/posts/second-update-of-june-2020.html",
+    url: "/posts/second-update-of-june-2020",
     title: "We are updating for the second time this june.",
     author: "Shen",
     date: new Date(Date.parse("2020-06-29")),
@@ -131,7 +131,7 @@ const data = [
   },
   {
     id: 2,
-    url: "/posts/maintainership.html",
+    url: "/posts/maintainership",
     title: "Apply for Project Sakura Maintainership!",
     author: "Shen",
     date: new Date(Date.parse("2020-05-14")),
@@ -139,7 +139,7 @@ const data = [
   },
   {
     id: 1,
-    url: "/posts/may-2020-update.html",
+    url: "/posts/may-2020-update",
     title: "Its summer and spring is almost gone, but we came with the May update.",
     author: "Shen",
     date: new Date(Date.parse("2020-05-15")),
@@ -147,7 +147,7 @@ const data = [
   },
   {
     id: 0,
-    url: "#",
+    url: "/oursponsor",
     title: "XSLTEL decided to sponsor Project Sakura",
     author: "Manish",
     date: new Date(Date.parse("2020-05-01")),
