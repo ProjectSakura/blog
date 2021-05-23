@@ -1,6 +1,6 @@
 import { Container } from "semantic-ui-react";
 import {
-  AuthorHead, AuthorSec, AuthorSubHead, Body, BodyInner, Description, Heading, Image, ImgDiv, ListItem, SubHeading, UnorderedList, Anchor, Date,
+  AuthorHead, AuthorSec, AuthorSubHead, Body, BodyInner, Description, Heading, Image, ImgDiv, ListItem, UnorderedList, Anchor, Date,
 } from "./styles";
 
 function GssocAssociationWebsiteUpdateMarch() {
@@ -17,7 +17,6 @@ function GssocAssociationWebsiteUpdateMarch() {
           <ImgDiv>
             <Image src="https://gssoc.girlscript.tech/images/type-logo.png" />
           </ImgDiv>
-          <SubHeading />
           <Description>
             All have the same goal in mind to make user experience and user interface better, We are planning to create some new things which I am sure ,you gonna like it, For Now I want
             to thank the GSSOC community and all the contributors who are contributing to our project.
