@@ -15,6 +15,7 @@ import {
   Anchor,
   Date,
 } from "./styles";
+import DisqusComment from "../../DisqusComment/DisqusComments";
 
 function May2021Update() {
   return (
@@ -91,6 +92,7 @@ function May2021Update() {
             <br />
             One more ad lol.
           </Description>
+          <DisqusComment />
         </BodyInner>
         <AuthorSec>
           <AuthorHead>About Author</AuthorHead>
