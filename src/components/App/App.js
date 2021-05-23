@@ -15,12 +15,13 @@ import FourRFebUpdate from "../routes/Blog/FourRFebUpdate";
 import FourRJanUpdate from "../routes/Blog/FourRJanUpdate";
 import May2020Update from "../routes/Blog/May2020Update";
 import AndroidElevenBeta from "../routes/Blog/AndroidElevenBeta";
+import OurSponsor from "../routes/Blog/OurSponsor";
+import April2021Update from "../routes/Blog/April2021Update";
+import September2020Update from "../routes/Blog/September2020Update";
 // Navbar
 import Navbar from "../Navbar/Navbar";
 //Footer
 import Footer from "../Footer/Footer";
-import OurSponsor from "../routes/Blog/OurSponsor";
-import April2021Update from "../routes/Blog/April2021Update";
 
 function App() {
   return (
@@ -42,6 +43,7 @@ function App() {
           <Route path="/android-11-beta-1" exact component={AndroidElevenBeta} />
           <Route path="/may-2020-update" exact component={May2020Update} />
           <Route path="/oursponsor" exact component={OurSponsor} />
+          <Route path="/september-2020-update" exact component={September2020Update} />
         </Switch>
         <Footer />
       </Router>

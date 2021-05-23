@@ -91,7 +91,7 @@ const data = [
   },
   {
     id: 7,
-    url: "/posts/september-2020-update",
+    url: "/september-2020-update",
     title: "When android 11, what is new in this update and what you can expect in future",
     author: "LordShenron",
     date: new Date(Date.parse("2020-10-14")),
