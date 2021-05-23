@@ -1,7 +1,10 @@
+/* eslint-disable */
+
 import { useState, useEffect } from "react";
 import Pagination from "../../Pagination/Pagination";
 import Posts from "../../Posts/Posts";
-
+// Twitter
+import TwitterComponent from "../../TwitterComponent/TwitterComponent";
 //card data
 import cardData from "../../data/cardData";
 // styles
@@ -28,11 +31,8 @@ function Home() {
   return (
     <Body>
       <Posts cardData={currentPosts} loading={loading} />
-      <Pagination
-        postsPerPage={postsPerPage}
-        totalPosts={posts.length}
-        paginate={paginate}
-      />
+      <TwitterComponent/>
+      <Pagination postsPerPage={postsPerPage} totalPosts={posts.length} paginate={paginate} />
     </Body>
   );
 }
