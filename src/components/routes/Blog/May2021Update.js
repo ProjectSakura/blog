@@ -16,7 +16,7 @@ import {
   Date,
 } from "./styles";
 
-function MayUpdate() {
+function May2021Update() {
   return (
     <Body>
       <Container>
@@ -103,4 +103,4 @@ function MayUpdate() {
     </Body>
   );
 }
-export default MayUpdate;
+export default May2021Update;

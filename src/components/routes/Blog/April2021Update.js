@@ -3,7 +3,7 @@ import {
   AuthorHead, AuthorSec, AuthorSubHead, Body, BodyInner, Description, Heading, Image, ImgDiv, ListItem, SubHeading, UnorderedList, Anchor, Date,
 } from "./styles";
 
-function AprilUpdate1() {
+function April2021Update() {
   return (
     <Body>
       <Container>
@@ -105,4 +105,4 @@ function AprilUpdate1() {
     </Body>
   );
 }
-export default AprilUpdate1;
+export default April2021Update;
