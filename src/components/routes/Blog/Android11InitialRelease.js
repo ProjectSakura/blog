@@ -3,7 +3,7 @@ import {
   AuthorHead, AuthorSec, AuthorSubHead, Body, BodyInner, Description, Heading, ListItem, UnorderedList, Anchor, Date,
 } from "./styles";
 
-function MarchUpdate3() {
+function Android11InitialRelease() {
   return (
     <Body>
       <Container>
@@ -62,4 +62,4 @@ function MarchUpdate3() {
     </Body>
   );
 }
-export default MarchUpdate3;
+export default Android11InitialRelease;

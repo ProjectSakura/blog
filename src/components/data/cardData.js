@@ -139,7 +139,7 @@ const data = [
   },
   {
     id: 1,
-    url: "/posts/may-2020-update",
+    url: "/may-2020-update",
     title: "Its summer and spring is almost gone, but we came with the May update.",
     author: "Shen",
     date: new Date(Date.parse("2020-05-15")),

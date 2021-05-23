@@ -3,7 +3,7 @@ import {
   AuthorHead, AuthorSec, AuthorSubHead, Body, BodyInner, Description, Heading, Image, ImgDiv, ListItem, SubHeading, UnorderedList, Anchor, Date,
 } from "./styles";
 
-function MarchUpdate1() {
+function GssocAssociationWebsiteUpdateMarch() {
   return (
     <Body>
       <Container>
@@ -50,4 +50,4 @@ function MarchUpdate1() {
     </Body>
   );
 }
-export default MarchUpdate1;
+export default GssocAssociationWebsiteUpdateMarch;
