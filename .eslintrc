@@ -35,7 +35,12 @@
         "react-hooks"
     ],
     "rules": {
-        "import/no-extraneous-dependencies": ["error", {"devDependencies": true}],
+        "import/no-extraneous-dependencies": [
+            "error",
+            {
+                "devDependencies": true
+            }
+        ],
         "react/prop-types": 0,
         "react/react-in-jsx-scope": "off",
         "react/no-unescaped-entities": 0,
@@ -63,9 +68,6 @@
         "no-empty-pattern": [
             "off"
         ],
-        "no-var": [
-            "error"
-        ],
         "object-curly-spacing": [
             "error",
             "always"
@@ -92,6 +94,9 @@
         ],
         "indent": [
             "error"
+        ],
+        "no-useless-concat": [
+            "off"
         ],
         "import/prefer-default-export": "off",
         "linebreak-style": 0,
