@@ -131,7 +131,7 @@ const data = [
   },
   {
     id: 2,
-    url: "/posts/maintainership",
+    url: "/maintainership",
     title: "Apply for Project Sakura Maintainership!",
     author: "Shen",
     date: new Date(Date.parse("2020-05-14")),
