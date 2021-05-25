@@ -99,7 +99,7 @@ const data = [
   },
   {
     id: 6,
-    url: "/posts/second-update-of-august-2020",
+    url: "/second-update-of-august-2020",
     title: "What's better than a hot cup of coffee? Yes!, a Project Sakura update.",
     author: "LordShenron",
     date: new Date(Date.parse("2020-08-28")),
