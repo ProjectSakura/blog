@@ -124,3 +124,6 @@ export const Code = styled.div`
   color:black;
   margin-bottom:2vh;
 `;
+export const CenterDiv = styled.div`
+  text-align: center;
+`;

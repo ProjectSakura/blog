@@ -18,6 +18,7 @@ import AndroidElevenBeta from "../routes/Blog/AndroidElevenBeta";
 import OurSponsor from "../routes/Blog/OurSponsor";
 import April2021Update from "../routes/Blog/April2021Update";
 import September2020Update from "../routes/Blog/September2020Update";
+import Maintainership from "../routes/Blog/Maintainership";
 // Navbar
 import Navbar from "../Navbar/Navbar";
 //Footer
@@ -44,6 +45,7 @@ function App() {
           <Route path="/may-2020-update" exact component={May2020Update} />
           <Route path="/oursponsor" exact component={OurSponsor} />
           <Route path="/september-2020-update" exact component={September2020Update} />
+          <Route path="/maintainership" exact component={Maintainership} />
         </Switch>
         <Footer />
       </Router>
