@@ -107,7 +107,7 @@ const data = [
   },
   {
     id: 5,
-    url: "/posts/august-2020-update",
+    url: "/august-2020-update",
     title: "NOW IS THE TIME TO UPDATE! We have updated to the August Security Patch.",
     author: "LordShenron",
     date: new Date(Date.parse("2020-08-07")),
