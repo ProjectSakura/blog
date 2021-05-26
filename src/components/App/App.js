@@ -21,6 +21,7 @@ import September2020Update from "../routes/Blog/September2020Update";
 import SecondUpdateOfJune2020 from "../routes/Blog/SecondUpdateOfJune2020";
 import Maintainership from "../routes/Blog/Maintainership";
 import AugustSecondUpdate2020 from "../routes/Blog/AugustSecondUpdate2020";
+import AugustUpdate2020 from "../routes/Blog/AugustUpdate2020";
 // Navbar
 import Navbar from "../Navbar/Navbar";
 //Footer
@@ -50,6 +51,7 @@ function App() {
           <Route path="/second-update-of-june-2020" exact component={SecondUpdateOfJune2020} />
           <Route path="/maintainership" exact component={Maintainership} />
           <Route path="/second-update-of-august-2020" exact component={AugustSecondUpdate2020} />
+          <Route path="/august-2020-update" exact component={AugustUpdate2020} />
         </Switch>
         <Footer />
       </Router>
