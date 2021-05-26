@@ -123,7 +123,7 @@ const data = [
   },
   {
     id: 3,
-    url: "/posts/second-update-of-june-2020",
+    url: "/second-update-of-june-2020",
     title: "We are updating for the second time this june.",
     author: "Shen",
     date: new Date(Date.parse("2020-06-29")),

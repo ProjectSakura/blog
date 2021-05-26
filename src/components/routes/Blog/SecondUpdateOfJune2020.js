@@ -1,0 +1,43 @@
+import { Container } from "semantic-ui-react";
+import {
+  AuthorHead, AuthorSec, AuthorSubHead, Body, BodyInner, Description, Heading, ListItem, UnorderedList, Date, CenterDiv,
+} from "./styles";
+
+function SecondUpdateOfJune2020() {
+  return (
+    <Body>
+      <Container>
+        <BodyInner>
+          <Date>14 May 2020</Date>
+          <Heading>SecondUpdateOfJune2020 Application for Project Sakura</Heading>
+          <Description>
+            July is 1 day ahead and what we are doing here? We came up with an update yes! I really really hate making a list, So I feel its kind of a burden to be keeping track of things
+            and make a proper list. Because of this habit I often forget the stuff I was doing a night before :( Well lets just ignore what i do and see the changelogs of this release.
+          </Description>
+          <UnorderedList>
+            <ListItem>A bigger header image.</ListItem>
+            <ListItem>Mizu Themes, a transparent theme we adapted from rebellion theme.</ListItem>
+            <ListItem>The very much requested Gaming Mode.</ListItem>
+            <ListItem>Fixed the rounded corner settings.</ListItem>
+            <ListItem>Statusbar screen burn protection for OLED and amoled displays.</ListItem>
+            <ListItem>Synced all sources up to latest LineageOS</ListItem>
+          </UnorderedList>
+          <Description>
+            These are the major changes, beside these there are many minor changes. Also, I hope you see the newer redesigned Blog and hopefully it is visually more pleasing. So, this is
+            it and enjoy the update until we come back in july.
+          </Description>
+          <CenterDiv><b>What do you think?</b></CenterDiv>
+        </BodyInner>
+        <AuthorSec>
+          <AuthorHead>About Author</AuthorHead>
+          <AuthorSubHead>LordShenron</AuthorSubHead>
+          <Description>
+            LordShenron is the lead developer of the project. He is also an IT Engg Student and he loves anime and Japanese pop music. When he is not online he is mostly sleeping or busy
+            with some college work.
+          </Description>
+        </AuthorSec>
+      </Container>
+    </Body>
+  );
+}
+export default SecondUpdateOfJune2020;
