@@ -12,6 +12,7 @@ import {
   Anchor,
   Date,
 } from "./styles";
+import googleAd from "../../AdComponent/AdComponent";
 import DisqusComment from "../../DisqusComment/DisqusComments";
 
 function FourRJanUpdate() {
@@ -31,6 +32,7 @@ function FourRJanUpdate() {
             <br />
             Now see an ad.
             <br />
+            <googleAd />
             <br />
             Wondering what's new we have this month?
           </Description>
@@ -58,6 +60,8 @@ function FourRJanUpdate() {
             <br />
             <br />
             One more ad lol.
+            <br />
+            <googleAd />
           </Description>
           <DisqusComment />
         </BodyInner>

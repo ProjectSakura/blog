@@ -14,6 +14,7 @@ import {
   Anchor,
   Date,
 } from "./styles";
+import googleAd from "../../AdComponent/AdComponent";
 import DisqusComment from "../../DisqusComment/DisqusComments";
 
 function FourAndroidUpdate() {
@@ -35,6 +36,7 @@ function FourAndroidUpdate() {
             <br />
             Now see an ad. Man we really ain't earning shit from it so plox turn off that adblocker ;_;
             <br />
+            <googleAd />
             <br />
             So what new stuff we have this time?
           </Description>
@@ -69,6 +71,8 @@ function FourAndroidUpdate() {
             <br />
             <br />
             One more ad lol.
+            <br />
+            <googleAd />
           </Description>
           <DisqusComment />
         </BodyInner>

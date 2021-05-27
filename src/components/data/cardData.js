@@ -1,6 +1,15 @@
 //? INSERT THE LATEST POST ON TOP WITH UPDATED ID
 const data = [
   {
+    id: 19,
+    url: "/5.R-mid-may-2021-update",
+    title: "Mid-May happiness with Project Sakura.",
+    author: "LordShenron",
+    date: new Date(Date.parse("2021-05-23")),
+    desc: "Whats new in the latest release of Project Sakura? Check out..",
+
+  },
+  {
     id: 18,
     url: "/5.R-May-2021-update",
     title: "Blur, Transparency, Stability and much more in the May 2021 release of Project Sakura.",
@@ -115,7 +124,7 @@ const data = [
   },
   {
     id: 4,
-    url: "/posts/july-2020-update",
+    url: "/july-2020-update",
     title: "July patch, ultra thicc gesture handle and more",
     author: "Amartya",
     date: new Date(Date.parse("2020-07-13")),

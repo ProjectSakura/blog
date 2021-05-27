@@ -2,6 +2,7 @@ import { Container } from "semantic-ui-react";
 import {
   AuthorHead, AuthorSec, AuthorSubHead, Body, BodyInner, Description, Heading, Image, ImgDiv, ListItem, SubHeading, UnorderedList, Anchor, Date,
 } from "./styles";
+import googleAd from "../../AdComponent/AdComponent";
 import DisqusComment from "../../DisqusComment/DisqusComments";
 
 function April2021Update() {
@@ -27,6 +28,7 @@ function April2021Update() {
             <br />
             See a smol cute ad first.
             <br />
+            <googleAd />
             <br />
             Okay good, so what we have new in this release..
           </Description>
@@ -92,6 +94,7 @@ function April2021Update() {
             <br />
             <br />
             One more ad lol.
+            <googleAd />
           </Description>
           <DisqusComment />
         </BodyInner>

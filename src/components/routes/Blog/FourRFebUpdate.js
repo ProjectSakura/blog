@@ -12,6 +12,7 @@ import {
   Anchor,
   Date,
 } from "./styles";
+import googleAd from "../../AdComponent/AdComponent";
 import DisqusComment from "../../DisqusComment/DisqusComments";
 
 function FourRFebUpdate() {
@@ -31,6 +32,7 @@ function FourRFebUpdate() {
             <br />
             Now see an ad.
             <br />
+            <googleAd />
             <br />
             So did we fix any of the bugs we had last time? Haha Nope, but here goes the changelog.
           </Description>
@@ -66,6 +68,8 @@ function FourRFebUpdate() {
             <br />
             <br />
             One more ad lol.
+            <br />
+            <googleAd />
           </Description>
           <DisqusComment />
         </BodyInner>

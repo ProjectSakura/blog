@@ -12,6 +12,7 @@ import {
   Anchor,
   Date,
 } from "./styles";
+import googleAd from "../../AdComponent/AdComponent";
 import DisqusComment from "../../DisqusComment/DisqusComments";
 
 function AndroidElevenBeta() {
@@ -76,6 +77,8 @@ function AndroidElevenBeta() {
             <br />
             <br />
             One more ad lol.
+            <br />
+            <googleAd />
           </Description>
           <DisqusComment />
         </BodyInner>

@@ -2,6 +2,7 @@ import { Container } from "semantic-ui-react";
 import {
   AuthorHead, AuthorSec, AuthorSubHead, Body, BodyInner, Description, Heading, ListItem, UnorderedList, Anchor, Date, Code,
 } from "./styles";
+import googleAd from "../../AdComponent/AdComponent";
 import DisqusComment from "../../DisqusComment/DisqusComments";
 
 function Android11SecondUpdateMarch() {
@@ -16,7 +17,7 @@ function Android11SecondUpdateMarch() {
             very small follow up with few important features. I will not be wasting much time and get straight to the major changes that were made for this release.
           </Description>
           <Description>See an ad first :P</Description>
-
+          <googleAd />
           <Description>Okay good, so what we have new in this release..</Description>
           <UnorderedList>
             <ListItem>Bubbles are fixed, we were constantly spammed for this one. </ListItem>
