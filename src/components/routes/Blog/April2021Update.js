@@ -2,6 +2,7 @@ import { Container } from "semantic-ui-react";
 import {
   AuthorHead, AuthorSec, AuthorSubHead, Body, BodyInner, Description, Heading, Image, ImgDiv, ListItem, SubHeading, UnorderedList, Anchor, Date,
 } from "./styles";
+import DisqusComment from "../../DisqusComment/DisqusComments";
 
 function April2021Update() {
   return (
@@ -92,6 +93,7 @@ function April2021Update() {
             <br />
             One more ad lol.
           </Description>
+          <DisqusComment />
         </BodyInner>
         <AuthorSec>
           <AuthorHead>About Author</AuthorHead>

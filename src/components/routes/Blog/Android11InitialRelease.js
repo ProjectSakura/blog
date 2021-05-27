@@ -2,6 +2,7 @@ import { Container } from "semantic-ui-react";
 import {
   AuthorHead, AuthorSec, AuthorSubHead, Body, BodyInner, Description, Heading, ListItem, UnorderedList, Anchor, Date,
 } from "./styles";
+import DisqusComment from "../../DisqusComment/DisqusComments";
 
 function Android11InitialRelease() {
   return (
@@ -48,6 +49,7 @@ function Android11InitialRelease() {
             <Anchor href="https://twitter.com/ProjectSakura_">@ProjectSakura_</Anchor> coz we keep posting fun stuff on it ;)
           </Description>
           <Description>One more ad lol.</Description>
+          <DisqusComment />
         </BodyInner>
 
         <AuthorSec>

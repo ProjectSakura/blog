@@ -13,6 +13,7 @@ import {
   Anchor,
   Date,
 } from "./styles";
+import DisqusComment from "../../DisqusComment/DisqusComments";
 
 function AndroidBetaTwo() {
   return (
@@ -72,6 +73,7 @@ function AndroidBetaTwo() {
             <br />
             One more ad lol.
           </Description>
+          <DisqusComment />
         </BodyInner>
         <AuthorSec>
           <AuthorHead>About Author</AuthorHead>
