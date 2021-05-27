@@ -13,6 +13,7 @@ import {
   Anchor,
   Date,
 } from "./styles";
+import googleAd from "../../AdComponent/AdComponent";
 
 function AndroidBetaTwo() {
   return (
@@ -32,6 +33,7 @@ function AndroidBetaTwo() {
             <br />
             Now see an ad.
             <br />
+            <googleAd/>
             <br />
             Okay good, so what we have new in this release..
             <br />
@@ -71,6 +73,8 @@ function AndroidBetaTwo() {
             <br />
             <br />
             One more ad lol.
+            <br/>
+            <googleAd/>
           </Description>
         </BodyInner>
         <AuthorSec>

@@ -2,6 +2,7 @@ import { Container } from "semantic-ui-react";
 import {
   AuthorHead, AuthorSec, AuthorSubHead, Body, BodyInner, Description, Heading, ListItem, UnorderedList, Anchor, Date,
 } from "./styles";
+import googleAd from "../../AdComponent/AdComponent";
 
 function Android11InitialRelease() {
   return (
@@ -16,7 +17,7 @@ function Android11InitialRelease() {
             freeze, that means no more new feature requests will be taken and no more new features will be added anymore. So, please don't ask us to add anymore weird ass features.
           </Description>
           <Description>Now see an ad.</Description>
-
+          <googleAd />
           <Description>So, What took us so long for this update? Here goes the changelog.</Description>
           <UnorderedList>
             <ListItem>March Security Patch. </ListItem>
@@ -48,6 +49,7 @@ function Android11InitialRelease() {
             <Anchor href="https://twitter.com/ProjectSakura_">@ProjectSakura_</Anchor> coz we keep posting fun stuff on it ;)
           </Description>
           <Description>One more ad lol.</Description>
+          <googleAd />
         </BodyInner>
 
         <AuthorSec>

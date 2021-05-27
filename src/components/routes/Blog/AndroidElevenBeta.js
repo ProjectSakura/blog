@@ -12,6 +12,7 @@ import {
   Anchor,
   Date,
 } from "./styles";
+import googleAd from "../../AdComponent/AdComponent";
 
 function AndroidElevenBeta() {
   return (
@@ -75,6 +76,8 @@ function AndroidElevenBeta() {
             <br />
             <br />
             One more ad lol.
+            <br />
+            <googleAd />
           </Description>
         </BodyInner>
         <AuthorSec>

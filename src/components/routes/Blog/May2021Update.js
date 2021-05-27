@@ -16,6 +16,7 @@ import {
   Date,
 } from "./styles";
 import DisqusComment from "../../DisqusComment/DisqusComments";
+import googleAd from "../../AdComponent/AdComponent";
 
 function May2021Update() {
   return (
@@ -40,6 +41,7 @@ function May2021Update() {
             <br />
             Before we start see an ad.
             <br />
+            <googleAd />
             <br />
             So, what is new in this monthly update? Here goes the changelog
           </Description>
@@ -91,6 +93,8 @@ function May2021Update() {
             <br />
             <br />
             One more ad lol.
+            <br />
+            <googleAd />
           </Description>
           <DisqusComment />
         </BodyInner>

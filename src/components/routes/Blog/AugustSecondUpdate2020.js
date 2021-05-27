@@ -14,6 +14,7 @@ import {
   Anchor,
   Date,
 } from "./styles";
+import googleAd from "../../AdComponent/AdComponent";
 
 function AugustSecondUpdate2020() {
   return (
