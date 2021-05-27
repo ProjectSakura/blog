@@ -2,6 +2,7 @@ import { Container } from "semantic-ui-react";
 import {
   AuthorHead, AuthorSec, AuthorSubHead, Body, BodyInner, Description, Heading, ListItem, UnorderedList, Date, CenterDiv,
 } from "./styles";
+import DisqusComment from "../../DisqusComment/DisqusComments";
 
 function SecondUpdateOfJune2020() {
   return (
@@ -27,6 +28,7 @@ function SecondUpdateOfJune2020() {
             it and enjoy the update until we come back in july.
           </Description>
           <CenterDiv><b>What do you think?</b></CenterDiv>
+          <DisqusComment />
         </BodyInner>
         <AuthorSec>
           <AuthorHead>About Author</AuthorHead>

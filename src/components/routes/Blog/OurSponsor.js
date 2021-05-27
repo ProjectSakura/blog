@@ -2,6 +2,7 @@ import { Container } from "semantic-ui-react";
 import {
   AuthorHead, AuthorSec, AuthorSubHead, Body, BodyInner, Description, Heading, ListItem, UnorderedList, Anchor, Date,
 } from "./styles";
+import DisqusComment from "../../DisqusComment/DisqusComments";
 
 function OurSponsor() {
   return (
@@ -62,6 +63,7 @@ function OurSponsor() {
               <b>Bleeding Edge Hardware: </b>They are not dependent on old technology and stay updated with the current technology
             </ListItem>
           </UnorderedList>
+          <DisqusComment />
         </BodyInner>
         <AuthorSec>
           <AuthorHead>About Author</AuthorHead>

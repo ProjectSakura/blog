@@ -3,6 +3,7 @@ import {
   AuthorHead, AuthorSec, AuthorSubHead, Body, BodyInner, Description, Heading, ListItem, UnorderedList, Anchor, Date,
 } from "./styles";
 import googleAd from "../../AdComponent/AdComponent";
+import DisqusComment from "../../DisqusComment/DisqusComments";
 
 function Android11InitialRelease() {
   return (
@@ -50,6 +51,9 @@ function Android11InitialRelease() {
           </Description>
           <Description>One more ad lol.</Description>
           <googleAd />
+
+          <DisqusComment />
+
         </BodyInner>
 
         <AuthorSec>

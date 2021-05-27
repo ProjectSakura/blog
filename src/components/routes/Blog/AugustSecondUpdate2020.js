@@ -15,6 +15,7 @@ import {
   Date,
 } from "./styles";
 import googleAd from "../../AdComponent/AdComponent";
+import DisqusComment from "../../DisqusComment/DisqusComments";
 
 function AugustSecondUpdate2020() {
   return (
@@ -59,6 +60,7 @@ function AugustSecondUpdate2020() {
             <Anchor href="https://twitter.com/ProjectSakura_"> @ProjectSakura_</Anchor>,coz we keep posting fun stuff on it ;)
             <br />
           </Description>
+          <DisqusComment />
         </BodyInner>
         <AuthorSec>
           <AuthorHead>About Author</AuthorHead>

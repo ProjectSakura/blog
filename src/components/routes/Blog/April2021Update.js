@@ -3,6 +3,7 @@ import {
   AuthorHead, AuthorSec, AuthorSubHead, Body, BodyInner, Description, Heading, Image, ImgDiv, ListItem, SubHeading, UnorderedList, Anchor, Date,
 } from "./styles";
 import googleAd from "../../AdComponent/AdComponent";
+import DisqusComment from "../../DisqusComment/DisqusComments";
 
 function April2021Update() {
   return (
@@ -95,6 +96,7 @@ function April2021Update() {
             One more ad lol.
             <googleAd />
           </Description>
+          <DisqusComment />
         </BodyInner>
         <AuthorSec>
           <AuthorHead>About Author</AuthorHead>

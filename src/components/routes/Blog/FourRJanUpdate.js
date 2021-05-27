@@ -13,6 +13,7 @@ import {
   Date,
 } from "./styles";
 import googleAd from "../../AdComponent/AdComponent";
+import DisqusComment from "../../DisqusComment/DisqusComments";
 
 function FourRJanUpdate() {
   return (
@@ -62,6 +63,7 @@ function FourRJanUpdate() {
             <br />
             <googleAd />
           </Description>
+          <DisqusComment />
         </BodyInner>
         <AuthorSec>
           <AuthorHead>About Author</AuthorHead>

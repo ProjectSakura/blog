@@ -15,6 +15,7 @@ import {
   Date,
 } from "./styles";
 import googleAd from "../../AdComponent/AdComponent";
+import DisqusComment from "../../DisqusComment/DisqusComments";
 
 function FourAndroidUpdate() {
   return (
@@ -73,6 +74,7 @@ function FourAndroidUpdate() {
             <br />
             <googleAd />
           </Description>
+          <DisqusComment />
         </BodyInner>
         <AuthorSec>
           <AuthorHead>About Author</AuthorHead>

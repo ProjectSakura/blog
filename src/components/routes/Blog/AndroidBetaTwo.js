@@ -14,6 +14,7 @@ import {
   Date,
 } from "./styles";
 import googleAd from "../../AdComponent/AdComponent";
+import DisqusComment from "../../DisqusComment/DisqusComments";
 
 function AndroidBetaTwo() {
   return (
@@ -76,6 +77,7 @@ function AndroidBetaTwo() {
             <br/>
             <googleAd/>
           </Description>
+          <DisqusComment />
         </BodyInner>
         <AuthorSec>
           <AuthorHead>About Author</AuthorHead>
