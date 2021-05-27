@@ -12,6 +12,7 @@ import {
   Anchor,
   Date,
 } from "./styles";
+import DisqusComment from "../../DisqusComment/DisqusComments";
 
 function FourRJanUpdate() {
   return (
@@ -58,6 +59,7 @@ function FourRJanUpdate() {
             <br />
             One more ad lol.
           </Description>
+          <DisqusComment />
         </BodyInner>
         <AuthorSec>
           <AuthorHead>About Author</AuthorHead>

@@ -12,6 +12,7 @@ import {
   Anchor,
   Date,
 } from "./styles";
+import DisqusComment from "../../DisqusComment/DisqusComments";
 
 function AugustUpdate2020() {
   return (
@@ -81,6 +82,7 @@ function AugustUpdate2020() {
             <br />
             <ListItem>And Motorola G7 (River), Maintained by Vitor.</ListItem>
           </UnorderedList>
+          <DisqusComment />
         </BodyInner>
         <AuthorSec>
           <AuthorHead>About Author</AuthorHead>
