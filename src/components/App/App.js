@@ -4,7 +4,8 @@ import { Body } from "./styles";
 // routes
 import Home from "../routes/Home/Home";
 //blogs route
-import May2021Update from "../routes/Blog/May2021Update";
+import May2021Update from "../routes/Blog/MidMay2021Update";
+import MidMay2021Update from "../routes/Blog/May2021Update";
 import GssocAssociationWebsiteUpdateMarch from "../routes/Blog/GssocAssociationWebsiteUpdateMarch";
 import Android11SecondUpdateMarch from "../routes/Blog/Android11SecondUpdateMarch";
 import Android11InitialRelease from "../routes/Blog/Android11InitialRelease";
@@ -36,6 +37,7 @@ function App() {
         <Switch>
           <Route path="/" exact component={Home} />
           <Route path="/5.R-May-2021-update" exact component={May2021Update} />
+          <Route path="/5.R-mid-may-2021-update" exact component={MidMay2021Update} />
           <Route path="/5.R-April-2021-update" exact component={April2021Update} />
           <Route path="/gssoc-association-website-update-march" exact component={GssocAssociationWebsiteUpdateMarch} />
           <Route path="/5.R-android-11-second-update-march" exact component={Android11SecondUpdateMarch} />
