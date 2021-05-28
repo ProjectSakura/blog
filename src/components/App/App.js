@@ -22,6 +22,7 @@ import SecondUpdateOfJune2020 from "../routes/Blog/SecondUpdateOfJune2020";
 import Maintainership from "../routes/Blog/Maintainership";
 import AugustSecondUpdate2020 from "../routes/Blog/AugustSecondUpdate2020";
 import AugustUpdate2020 from "../routes/Blog/AugustUpdate2020";
+import July2020Update from "../routes/Blog/July2020Update";
 // Navbar
 import Navbar from "../Navbar/Navbar";
 //Footer
@@ -46,6 +47,7 @@ function App() {
           <Route path="/4.R-january-2021-update" exact component={FourRJanUpdate} />
           <Route path="/android-11-beta-1" exact component={AndroidElevenBeta} />
           <Route path="/may-2020-update" exact component={May2020Update} />
+          <Route path="/july-2020-update" exact component={July2020Update} />
           <Route path="/oursponsor" exact component={OurSponsor} />
           <Route path="/september-2020-update" exact component={September2020Update} />
           <Route path="/second-update-of-june-2020" exact component={SecondUpdateOfJune2020} />

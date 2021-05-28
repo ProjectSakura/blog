@@ -16,7 +16,6 @@ import {
 import googleAd from "../../AdComponent/AdComponent";
 import DisqusComment from "../../DisqusComment/DisqusComments";
 
-
 function AndroidBetaThree() {
   return (
     <Body>

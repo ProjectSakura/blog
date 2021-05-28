@@ -13,7 +13,7 @@ import {
   Date,
 } from "./styles";
 
-import googleAd from "../../AdComponent/AdComponent";
+// import googleAd from "../../AdComponent/AdComponent";
 import DisqusComment from "../../DisqusComment/DisqusComments";
 
 function AugustUpdate2020() {
@@ -46,23 +46,23 @@ function AugustUpdate2020() {
             <ListItem>Probably the biggest change you will see is the addition of Oneplus Launcher.</ListItem>
             <br />
             <ListItem>Second, will be for FOD supported devices you will see FOD animations
-            and custom icons. The update for this is already rolled out to the devices we
-            support.
+              and custom icons. The update for this is already rolled out to the devices we
+              support.
             </ListItem>
             <br />
             <ListItem>Third, We have the support for smart pixels and devices with OLED and
-            AMOLED panels can save battery by using it. Also, don't get your hopes up for
-            LCDs it's just a shiny gimmick for them.
+              AMOLED panels can save battery by using it. Also, don't get your hopes up for
+              LCDs it's just a shiny gimmick for them.
             </ListItem>
             <br />
             <ListItem>Fourth, Well we added OnePlus launcher so we thought why not add OP
-            switch styles too and we did it.
+              switch styles too and we did it.
             </ListItem>
             <br />
             <ListItem>Moar font styles and a new volte icon</ListItem>
             <br />
             <ListItem>Lastly is secure lockscreen and capabilities to hide power menu and
-            statusbar on lockscreen.
+              statusbar on lockscreen.
             </ListItem>
             <br />
           </UnorderedList>
