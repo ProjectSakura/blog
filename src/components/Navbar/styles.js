@@ -7,11 +7,14 @@ export const Image = styled.img`
     height: 6vh;
 `;
 export const NavMenu = styled(Menu)`
+    @media (min-width: 850px) {
+        display: none !important;
+    }
     background-color: #1c1c24 !important;
     padding: 1vh 2vh !important;
 `;
 export const NavMenuItem = styled(Menu.Item)`
-    @media (max-width: 768px) {
+    @media (max-width: 850px) {
         display: none !important;
     }
     margin-top: 0 !important;
@@ -24,7 +27,7 @@ export const NavMenuItem = styled(Menu.Item)`
     }
 `;
 export const DropDown = styled(Dropdown)`
-    @media (max-width: 768px) {
+    @media (max-width: 850px) {
         display: block !important;
     }
     display: none !important;
