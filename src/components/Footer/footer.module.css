@@ -158,3 +158,8 @@ li {
         width: fit-content;
     }
 }
+@media (min-width: 850px) {
+    .footer{
+        display: none;
+    }
+}
