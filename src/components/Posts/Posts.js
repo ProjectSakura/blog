@@ -1,6 +1,6 @@
-import { Container } from "semantic-ui-react";
-import Card from "../cards/Card";
+import Card from "../SecondaryCard/SecondaryCard";
 // semantic-ui
+import { Parent, Child } from "./styles";
 
 function Posts({ cardData, loading }) {
   if (loading) {
@@ -9,13 +9,17 @@ function Posts({ cardData, loading }) {
     );
   }
   const renderCards = () => {
-    const cards = cardData.map((data) => <Card data={data} key={data.id} />);
+    const cards = cardData.map((data) => (
+      <Child key={data.id}>
+        <Card data={data} />
+      </Child>
+    ));
     return cards;
   };
   return (
-    <Container>
+    <Parent>
       {renderCards()}
-    </Container>
+    </Parent>
   );
 }
 export default Posts;

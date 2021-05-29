@@ -13,13 +13,20 @@ import {
   UnorderedList,
   Anchor,
   Date,
+  SponsorPCImg,
+  SponsorMobImg,
 } from "./styles";
 import DisqusComment from "../../DisqusComment/DisqusComments";
-import googleAd from "../../AdComponent/AdComponent";
+import Footer from "../../Footer/Footer";
+import Navbar from "../../Navbar/Navbar";
+//sponsors images
+import MobileImg from "../../../images/ninjas/mobilead.png";
+import PCImg from "../../../images/ninjas/pcad.png";
 
 function MidMay2021Update() {
   return (
     <Body>
+      <Navbar />
       <Container>
         <BodyInner>
           <Date>
@@ -38,25 +45,20 @@ function MidMay2021Update() {
             <br />
             <br />
             <Anchor href="https://www.codingninjas.com/courses/online-android-Development-kotlin?utm_source=projectsakura&utm_medium=referral&utm_campaign=android-development" />
+            <SponsorPCImg src={PCImg} alt="pc-img" />
+            <SponsorMobImg src={MobileImg} alt="mob-img" />
             <br />
             <br />
             So, what do we have this time? Here goes the changelog..
           </Description>
           <UnorderedList>
             <ListItem>Fixed the weird ghost space in dock with vanilla builds (because of lack of Google app).</ListItem>
-            <br />
             <ListItem>Finally, the weird looking arrow above the dock is gone.</ListItem>
-            <br />
             <ListItem>Fixed the issue of wrong slot detection for VoLTE icons.</ListItem>
-            <br />
             <ListItem> We have switched to full gesture navigation as our default.</ListItem>
-            <br />
             <ListItem>You can now see your battery's temperature in Battery Settings.</ListItem>
-            <br />
             <ListItem>Blur will start working again for Samsung devices.</ListItem>
-            <br />
             <ListItem>And we are now translated to few more languages.</ListItem>
-            <br />
           </UnorderedList>
           <Description>
             Last week we added support for Xiaomi Redmi Note 7 and restored support for Poco X2 and with that we have so far supported 50 different devices. So, hats off to us and the maintainers. If you are wondering how you can get official then we have a nice article on our Wiki at
@@ -70,10 +72,8 @@ function MidMay2021Update() {
             As always do follow us on twitter at
             <Anchor href="https://twitter.com/ProjectSakura_"> @ProjectSakura_</Anchor>, we recently crossed 200 followers there.
             <br />
-            <br />
             One more ad lol.
             <br />
-            <googleAd />
           </Description>
           <DisqusComment />
         </BodyInner>
@@ -85,6 +85,7 @@ function MidMay2021Update() {
           </Description>
         </AuthorSec>
       </Container>
+      <Footer />
     </Body>
   );
 }

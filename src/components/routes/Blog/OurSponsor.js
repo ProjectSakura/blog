@@ -3,10 +3,13 @@ import {
   AuthorHead, AuthorSec, AuthorSubHead, Body, BodyInner, Description, Heading, ListItem, UnorderedList, Anchor, Date,
 } from "./styles";
 import DisqusComment from "../../DisqusComment/DisqusComments";
+import Footer from "../../Footer/Footer";
+import Navbar from "../../Navbar/Navbar";
 
 function OurSponsor() {
   return (
     <Body>
+      <Navbar />
       <Container>
         <BodyInner>
           <Date>1 May 2020</Date>
@@ -21,9 +24,7 @@ function OurSponsor() {
             <br />
             Drum Rolls please....
             <br />
-            <br />
             <b>Sakura Project is now sponsored again.</b>
-            <br />
             <br />
             We are sponsored by <Anchor href="https://www.xsl.tel/">xsltel</Anchor>
           </Description>
@@ -74,6 +75,7 @@ function OurSponsor() {
           </Description>
         </AuthorSec>
       </Container>
+      <Footer />
     </Body>
   );
 }

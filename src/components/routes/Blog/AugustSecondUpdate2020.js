@@ -16,10 +16,13 @@ import {
 } from "./styles";
 // import googleAd from "../../AdComponent/AdComponent";
 import DisqusComment from "../../DisqusComment/DisqusComments";
+import Footer from "../../Footer/Footer";
+import Navbar from "../../Navbar/Navbar";
 
 function AugustSecondUpdate2020() {
   return (
     <Body>
+      <Navbar />
       <Container>
         <BodyInner>
           <Date>
@@ -49,7 +52,6 @@ function AugustSecondUpdate2020() {
             <ListItem>A fully redesigned Sakura Config, much more minimal much more responsive.</ListItem>
             <br />
             <ListItem>December Security Patch.We also caught to up to the Lineage OS changes like skipping screen on animation when unlocking with biometrics and much more.</ListItem>
-            <br />
           </UnorderedList>
           <Description>
             Oh and from the cup of coffee i remember to tell you that the developer also need a cup to keep working so please consider
@@ -70,6 +72,7 @@ function AugustSecondUpdate2020() {
           </Description>
         </AuthorSec>
       </Container>
+      <Footer />
     </Body>
   );
 }

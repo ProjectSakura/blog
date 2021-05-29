@@ -4,10 +4,13 @@ import {
 } from "./styles";
 import googleAd from "../../AdComponent/AdComponent";
 import DisqusComment from "../../DisqusComment/DisqusComments";
+import Footer from "../../Footer/Footer";
+import Navbar from "../../Navbar/Navbar";
 
 function April2021Update() {
   return (
     <Body>
+      <Navbar />
       <Container>
         <BodyInner>
           <Date>12 April 2021</Date>
@@ -54,7 +57,6 @@ function April2021Update() {
             <ListItem>AntiFlicker support from LineageOS.</ListItem>
             <br />
             <ListItem>And we now support much more Languages like czech, chinese, spanish, Vietnamese because of ya'all who made contributions on our Crowdin, So Thank you.</ListItem>
-            <br />
           </UnorderedList>
           <Description>
             We are also dropping an array of devices from our supported list, they are:
@@ -107,6 +109,7 @@ function April2021Update() {
           </Description>
         </AuthorSec>
       </Container>
+      <Footer />
     </Body>
   );
 }

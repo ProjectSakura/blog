@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Body = styled.div`
     @media(min-width: 768px) {
-      padding: 2vh;
+      padding: 0vh;
     } 
     @media(max-width: 768px) {
       padding: 1vh;
@@ -74,6 +74,20 @@ export const ImgDiv = styled.p`
 `;
 
 export const Image = styled.img` 
+  width: 100%;
+  height: auto;
+`;
+export const SponsorPCImg = styled.img` 
+  @media(max-width: 768px) {
+    display: none;
+  } 
+  width: 100%;
+  height: auto;
+`;
+export const SponsorMobImg = styled.img` 
+  @media(min-width: 768px) {
+    display: none;
+  } 
   width: 100%;
   height: auto;
 `;

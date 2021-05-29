@@ -16,10 +16,13 @@ import {
 } from "./styles";
 import googleAd from "../../AdComponent/AdComponent";
 import DisqusComment from "../../DisqusComment/DisqusComments";
+import Footer from "../../Footer/Footer";
+import Navbar from "../../Navbar/Navbar";
 
 function FourAndroidUpdate() {
   return (
     <Body>
+      <Navbar />
       <Container>
         <BodyInner>
           <Date>
@@ -42,21 +45,13 @@ function FourAndroidUpdate() {
           </Description>
           <UnorderedList>
             <ListItem>Themes, like a lot of em.</ListItem>
-            <br />
             <ListItem>Gvisual Mod, yup that magisk module one.</ListItem>
-            <br />
             <ListItem>Screen locking animation, they look very sick.</ListItem>
-            <br />
             <ListItem>In-call Vibrations options.</ListItem>
-            <br />
             <ListItem>Live Volume steps controller.</ListItem>
-            <br />
             <ListItem>December Security Patch.</ListItem>
-            <br />
             <ListItem>All fonts from 2.Q are back.</ListItem>
-            <br />
             <ListItem>And everything else that we couldn't write here.</ListItem>
-            <br />
           </UnorderedList>
           <Description>
             Next month I have my terminal exams so I am not sure when or if there will be a January Update. I will surely try my best to push atleast january security patch. Before wrapping up, a small workaround for those who aren't able to access Obb folders in any file manager because of Android 11's scoped storage changes, all you need to do is give "Install unknown apps" permission to the file manager and you will be access it. As for accessing data folder you will need root access then migrate to {`data->media->0->`}Android and voila you can access data of apps.
@@ -84,6 +79,7 @@ function FourAndroidUpdate() {
           </Description>
         </AuthorSec>
       </Container>
+      <Footer />
     </Body>
   );
 }

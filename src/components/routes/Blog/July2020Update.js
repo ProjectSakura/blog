@@ -12,12 +12,14 @@ import {
   Date,
   Anchor,
 } from "./styles";
-// import googleAd from "../../AdComponent/AdComponent";
 import DisqusComment from "../../DisqusComment/DisqusComments";
+import Footer from "../../Footer/Footer";
+import Navbar from "../../Navbar/Navbar";
 
 function AugustSecondUpdate2020() {
   return (
     <Body>
+      <Navbar />
       <Container>
         <BodyInner>
           <Date>
@@ -55,7 +57,7 @@ function AugustSecondUpdate2020() {
             "but sar what do I do when its a bug in the device"
           </Description>
           <Description>
-            Well then contact your device maintainer(You can find their telegram via Sakura Settings > About Project)
+            Well then contact your device maintainer(You can find their telegram via Sakura Settings About Project)
           </Description>
           <UnorderedList>
             <ListItem>Now that you know its a bug in the rom and not the device, grab a logcat.</ListItem>
@@ -95,7 +97,6 @@ function AugustSecondUpdate2020() {
             <ListItem>Realme 1, Maintained by CyberJalagam.</ListItem>
           </UnorderedList>
           <DisqusComment />
-
         </BodyInner>
         <AuthorSec>
           <AuthorHead>About Author</AuthorHead>
@@ -105,6 +106,7 @@ function AugustSecondUpdate2020() {
           </Description>
         </AuthorSec>
       </Container>
+      <Footer />
     </Body>
   );
 }

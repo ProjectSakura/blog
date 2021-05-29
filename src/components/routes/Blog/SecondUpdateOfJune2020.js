@@ -3,10 +3,13 @@ import {
   AuthorHead, AuthorSec, AuthorSubHead, Body, BodyInner, Description, Heading, ListItem, UnorderedList, Date, CenterDiv,
 } from "./styles";
 import DisqusComment from "../../DisqusComment/DisqusComments";
+import Footer from "../../Footer/Footer";
+import Navbar from "../../Navbar/Navbar";
 
 function SecondUpdateOfJune2020() {
   return (
     <Body>
+      <Navbar />
       <Container>
         <BodyInner>
           <Date>14 May 2020</Date>
@@ -39,6 +42,7 @@ function SecondUpdateOfJune2020() {
           </Description>
         </AuthorSec>
       </Container>
+      <Footer />
     </Body>
   );
 }

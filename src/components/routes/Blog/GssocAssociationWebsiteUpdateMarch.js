@@ -3,10 +3,13 @@ import {
   AuthorHead, AuthorSec, AuthorSubHead, Body, BodyInner, Description, Heading, Image, ImgDiv, ListItem, UnorderedList, Anchor, Date,
 } from "./styles";
 import DisqusComment from "../../DisqusComment/DisqusComments";
+import Footer from "../../Footer/Footer";
+import Navbar from "../../Navbar/Navbar";
 
 function GssocAssociationWebsiteUpdateMarch() {
   return (
     <Body>
+      <Navbar />
       <Container>
         <BodyInner>
           <Date>21 March 2021</Date>
@@ -48,6 +51,7 @@ function GssocAssociationWebsiteUpdateMarch() {
           <Description>Arun Teltia is the lead web developer of the project. He is a passionate web developer and loves to watch anime is his spare time.</Description>
         </AuthorSec>
       </Container>
+      <Footer />
     </Body>
   );
 }

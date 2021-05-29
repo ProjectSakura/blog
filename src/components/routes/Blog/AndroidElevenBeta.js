@@ -14,10 +14,13 @@ import {
 } from "./styles";
 import googleAd from "../../AdComponent/AdComponent";
 import DisqusComment from "../../DisqusComment/DisqusComments";
+import Footer from "../../Footer/Footer";
+import Navbar from "../../Navbar/Navbar";
 
 function AndroidElevenBeta() {
   return (
     <Body>
+      <Navbar />
       <Container>
         <BodyInner>
           <Date>
@@ -54,7 +57,6 @@ function AndroidElevenBeta() {
             <ListItem>Xiaomi Note 7 Pro by Nitish and Wally</ListItem>
             <br />
             <ListItem>Xiaomi Note 9 Pro Global by A9ito, the list can be changed later</ListItem>
-            <br />
           </UnorderedList>
           <Description>
             We have also started accepting applications for Official. So, If you are interested in maintaining a device then apply on
@@ -90,6 +92,7 @@ function AndroidElevenBeta() {
           </Description>
         </AuthorSec>
       </Container>
+      <Footer />
     </Body>
   );
 }

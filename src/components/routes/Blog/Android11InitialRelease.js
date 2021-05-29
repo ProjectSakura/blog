@@ -3,11 +3,14 @@ import {
   AuthorHead, AuthorSec, AuthorSubHead, Body, BodyInner, Description, Heading, ListItem, UnorderedList, Anchor, Date,
 } from "./styles";
 import googleAd from "../../AdComponent/AdComponent";
+import Footer from "../../Footer/Footer";
+import Navbar from "../../Navbar/Navbar";
 import DisqusComment from "../../DisqusComment/DisqusComments";
 
 function Android11InitialRelease() {
   return (
     <Body>
+      <Navbar />
       <Container>
         <BodyInner>
           <Date>08 March 2021</Date>
@@ -22,19 +25,33 @@ function Android11InitialRelease() {
           <Description>So, What took us so long for this update? Here goes the changelog.</Description>
           <UnorderedList>
             <ListItem>March Security Patch. </ListItem>
+            <br />
             <ListItem>Better icon pack support in Trebuchet </ListItem>
+            <br />
             <ListItem>App Drawer Opacity support in Trebuchet </ListItem>
+            <br />
             <ListItem>Icon size support in Trebuchet </ListItem>
+            <br />
             <ListItem>Moved Lineage Settings from System to SakuraConfig</ListItem>
+            <br />
             <ListItem>Lockscreen weather </ListItem>
+            <br />
             <ListItem>New IDE lockscreen clock </ListItem>
+            <br />
             <ListItem>Data usage in QS Panel </ListItem>
+            <br />
             <ListItem>Redesigned Volume Panel </ListItem>
+            <br />
             <ListItem>Materialized Toasts </ListItem>
+            <br />
             <ListItem>QS media player can be toggled ON and OFF</ListItem>
+            <br />
             <ListItem>FaceUnlock animations </ListItem>
+            <br />
             <ListItem>Notification sounds can be suppressed while screen is ON </ListItem>
+            <br />
             <ListItem>Long ScreenShot support (Though it's kinda buggy) </ListItem>
+            <br />
             <ListItem>And everything else that we cannot write here.. </ListItem>
           </UnorderedList>
           <Description>
@@ -65,6 +82,7 @@ function Android11InitialRelease() {
           </Description>
         </AuthorSec>
       </Container>
+      <Footer />
     </Body>
   );
 }

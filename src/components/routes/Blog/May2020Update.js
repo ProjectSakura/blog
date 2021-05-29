@@ -3,10 +3,13 @@ import {
   AuthorHead, AuthorSec, AuthorSubHead, Body, BodyInner, Description, Heading, ListItem, UnorderedList, Date,
 } from "./styles";
 import DisqusComment from "../../DisqusComment/DisqusComments";
+import Footer from "../../Footer/Footer";
+import Navbar from "../../Navbar/Navbar";
 
 function May2020Update() {
   return (
     <Body>
+      <Navbar />
       <Container>
         <BodyInner>
           <Date>15 May 2020</Date>
@@ -16,26 +19,16 @@ function May2020Update() {
             are going to love.
           </Description>
           <Description>The changes that you will be seeing in this release are,</Description>
-
           <UnorderedList>
             <ListItem>May Security Patch r35.</ListItem>
-            <br />
             <ListItem>All the new Lineage OS changes.</ListItem>
-            <br />
             <ListItem>AOSPA style volume dialog.</ListItem>
-            <br />
             <ListItem>LTE to 4G icon switch.</ListItem>
-            <br />
             <ListItem>OOS style dismiss all to be used with R-Style nortification panel.</ListItem>
-            <br />
             <ListItem>Material Ocean Theme.</ListItem>
-            <br />
             <ListItem>Pitch black theme.</ListItem>
-            <br />
             <ListItem>Redesigned battery settings from upcoming DOT OS Q.</ListItem>
-            <br />
             <ListItem>Navigation handle length Improvements.</ListItem>
-            <br />
             <ListItem>And few more improvements..</ListItem>
           </UnorderedList>
 
@@ -52,6 +45,7 @@ function May2020Update() {
           </Description>
         </AuthorSec>
       </Container>
+      <Footer />
     </Body>
   );
 }

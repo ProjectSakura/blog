@@ -15,10 +15,13 @@ import {
 
 // import googleAd from "../../AdComponent/AdComponent";
 import DisqusComment from "../../DisqusComment/DisqusComments";
+import Footer from "../../Footer/Footer";
+import Navbar from "../../Navbar/Navbar";
 
 function AugustUpdate2020() {
   return (
     <Body>
+      <Navbar />
       <Container>
         <BodyInner>
           <Date>
@@ -64,7 +67,6 @@ function AugustUpdate2020() {
             <ListItem>Lastly is secure lockscreen and capabilities to hide power menu and
               statusbar on lockscreen.
             </ListItem>
-            <br />
           </UnorderedList>
           <Description>
             What's more?
@@ -97,6 +99,7 @@ function AugustUpdate2020() {
           </Description>
         </AuthorSec>
       </Container>
+      <Footer />
     </Body>
   );
 }

@@ -3,9 +3,9 @@ import { CgProfile as Profile } from "react-icons/cg";
 import { AiOutlineClockCircle as Time } from "react-icons/ai";
 import {
   Body, Heading, SubHeading, Btn, Description, LeftSection, RightSection, Hr,
-} from "./styles";
+} from "./Styles";
 
-function Card({ data }) {
+function SecondaryCard({ data }) {
   return (
     <Body>
       <Heading>{data.title}</Heading>
@@ -23,4 +23,4 @@ function Card({ data }) {
     </Body>
   );
 }
-export default Card;
+export default SecondaryCard;

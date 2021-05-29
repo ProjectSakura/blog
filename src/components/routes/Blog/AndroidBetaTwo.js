@@ -15,10 +15,13 @@ import {
 } from "./styles";
 import googleAd from "../../AdComponent/AdComponent";
 import DisqusComment from "../../DisqusComment/DisqusComments";
+import Footer from "../../Footer/Footer";
+import Navbar from "../../Navbar/Navbar";
 
 function AndroidBetaTwo() {
   return (
     <Body>
+      <Navbar />
       <Container>
         <BodyInner>
           <Date>
@@ -52,7 +55,6 @@ function AndroidBetaTwo() {
             <ListItem>For weak ass displays that never goes over 60, we have fps meter :)</ListItem>
             <br />
             <ListItem>A ton of misc changes.</ListItem>
-            <br />
           </UnorderedList>
           <Description>
             With Beta 2 release you can now have builds with GAPPS included. Most of the devices will be switching to builds with GAPPS included. Builds with GAPPS will also have Pixel Launcher as default launcher while VANILLA builds will have Trebucet Launcher based on Launcher3.
@@ -87,6 +89,7 @@ function AndroidBetaTwo() {
           </Description>
         </AuthorSec>
       </Container>
+      <Footer />
     </Body>
   );
 }

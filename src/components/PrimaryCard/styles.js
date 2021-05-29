@@ -2,32 +2,48 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 
 export const Body = styled.div`
-    @media(min-width: 768px) {
-      margin: 5vh;
-      padding: 5vh;
-    } 
-    @media(max-width: 765px) {
-      margin: 3vh;
-      padding: 2vh;
-      display:flex;
-      flex-direction:column;
-    }
-  background-color: #1c1c24;
+    display: flex;
+    height: 100%;
 `;
-export const Heading = styled.h1`
-  @media(max-width: 765px) {
+
+export const ImgDiv = styled.div` 
+  display: inline-flex;
+  flex: 1;
+`;
+
+export const Image = styled.img` 
+    @media(min-width: 850px) {
+        max-width: 100%;
+    }
+    @media(max-width: 850px) {
+        max-width: 100%;    
+    }
+    
+    border-radius: 5px;
+`;
+
+export const ContentDiv = styled.div` 
+    padding: 2vh 2vh 3vh 2vh;
+    flex: 1;
+`;
+
+export const Heading = styled.h2`
+    @media(max-width: 850px) {
+        font-size: 1.5em;
+        margin-bottom: 0vh;
+    }
+    @media(min-width: 850px) {
+        margin-bottom: 1vh;
+    }
     margin-top: 1vh;
-    margin-bottom: 0vh;
-    font-size: 1.3em;
-  }
-  color: #039be5;
+    color: #039be5;
 `;
 export const SubHeading = styled.div`
-  @media(max-width: 765px) {
+  @media(max-width: 850px) {
     margin-top: 1vh;
     margin-bottom: 1vh;
   }
-  @media(min-width: 768px) {
+  @media(min-width: 850px) {
     margin-bottom:5vh;
     margin-top: 1vh;
   }
@@ -44,10 +60,10 @@ export const RightSection = styled.div`
 `;
 
 export const Description = styled.p`
-  @media(min-width: 768px) {
+  @media(min-width: 850px) {
     margin: 2vh auto;
   }
-  @media(max-width: 765px) {
+  @media(max-width: 850px) {
     margin-top: 0vh;
   }
   font-size: 1.2em;

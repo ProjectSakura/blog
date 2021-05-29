@@ -16,11 +16,13 @@ import {
   Date,
 } from "./styles";
 import DisqusComment from "../../DisqusComment/DisqusComments";
-import googleAd from "../../AdComponent/AdComponent";
+import Footer from "../../Footer/Footer";
+import Navbar from "../../Navbar/Navbar";
 
 function May2021Update() {
   return (
     <Body>
+      <Navbar />
       <Container>
         <BodyInner>
           <Date>
@@ -30,7 +32,7 @@ function May2021Update() {
             Blur, Transparency, Stability and much more with May update of ProjectSakura
           </Heading>
           <ImgDiv>
-            <Image src="https://i.imgur.com/XYCf1os.jpg" />
+            <Image src="https://i.imgur.com/XYCf1os.jpg" alt="display" />
           </ImgDiv>
           <SubHeading>
             Artwork by: cryptofox17 for ProjectSakura
@@ -41,8 +43,6 @@ function May2021Update() {
             <br />
             Before we start see an ad.
             <br />
-            <googleAd />
-            <br />
             So, what is new in this monthly update? Here goes the changelog
           </Description>
           <UnorderedList>
@@ -52,27 +52,16 @@ function May2021Update() {
               Trebuchet now look and feel like Pixel Launcher with a search bar in dock. And YES, it can be toggled
               Applock can now lock apps Instantly after exiting
             </ListItem>
-            <br />
             <ListItem>Added support for ScreenShot quality Settings</ListItem>
-            <br />
             <ListItem>Developers can limit the max frame rate of built in screenrecorder</ListItem>
-            <br />
             <ListItem> A new charging animation when you plug in your device</ListItem>
-            <br />
             <ListItem>Two more clock faces to choose from, IDE(Java) clock and Type(Alt) clock</ListItem>
-            <br />
             <ListItem>We fixed an issue where Type(Alt) clock was always stuck on Good Morning salute</ListItem>
-            <br />
             <ListItem>The older volte icon is gone in favor of much better Dynamic Volte icon. But if you are a samsung user then you can cry a river coz you are obviously not getting Volte xD</ListItem>
-            <br />
             <ListItem>There is the new OOS styled clear all button</ListItem>
-            <br />
             <ListItem>A lot of improvements to the Blur from ProtonAOSP</ListItem>
-            <br />
             <ListItem> Support for applying blur to the lockscreen and applying transparency to the notification background from CrDroid </ListItem>
-            <br />
             <ListItem>Sakura is now translated to more new languages like Japanese, Hebrew and many more.</ListItem>
-            <br />
           </UnorderedList>
           <Description>
             With this release we are also adding support for Moto G7 Power, codenamed Ocean.
@@ -94,7 +83,6 @@ function May2021Update() {
             <br />
             One more ad lol.
             <br />
-            <googleAd />
           </Description>
           <DisqusComment />
         </BodyInner>
@@ -106,6 +94,7 @@ function May2021Update() {
           </Description>
         </AuthorSec>
       </Container>
+      <Footer />
     </Body>
   );
 }

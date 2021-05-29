@@ -3,10 +3,13 @@ import {
   AuthorHead, AuthorSec, AuthorSubHead, Body, BodyInner, Description, Heading, ListItem, UnorderedList, Anchor, Date,
 } from "./styles";
 import DisqusComment from "../../DisqusComment/DisqusComments";
+import Footer from "../../Footer/Footer";
+import Navbar from "../../Navbar/Navbar";
 
 function September2020Update() {
   return (
     <Body>
+      <Navbar />
       <Container>
         <BodyInner>
           <Date>14 SEPTEMBER 2020</Date>
@@ -45,6 +48,7 @@ function September2020Update() {
           <Description>Arun Teltia is the lead web developer of the project. He is a passionate web developer and loves to watch anime is his spare time.</Description>
         </AuthorSec>
       </Container>
+      <Footer />
     </Body>
   );
 }

@@ -15,10 +15,13 @@ import {
 } from "./styles";
 import googleAd from "../../AdComponent/AdComponent";
 import DisqusComment from "../../DisqusComment/DisqusComments";
+import Footer from "../../Footer/Footer";
+import Navbar from "../../Navbar/Navbar";
 
 function AndroidBetaThree() {
   return (
     <Body>
+      <Navbar />
       <Container>
         <BodyInner>
           <Date>
@@ -52,7 +55,6 @@ function AndroidBetaThree() {
             <ListItem>OneUI styled setting actionbar.</ListItem>
             <br />
             <ListItem>A ton of upstreams from Lineage 18.0.</ListItem>
-            <br />
           </UnorderedList>
           <Description>
             Now, we will immediately start working on 4.R with no sleep and no food. We are the ultimate lonely ass developers.. Like hell that's gonna happen. After this update I am going to sleep a ton and enjoy my free time until new year. So don't ask for those annoying ETAs. Just set some hentai wallpaper and enjoy Beta 3.
@@ -84,6 +86,7 @@ function AndroidBetaThree() {
           </Description>
         </AuthorSec>
       </Container>
+      <Footer />
     </Body>
   );
 }

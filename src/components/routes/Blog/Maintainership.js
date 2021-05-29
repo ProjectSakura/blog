@@ -3,10 +3,13 @@ import {
   AuthorHead, AuthorSec, AuthorSubHead, Body, BodyInner, Description, Heading, ListItem, UnorderedList, Anchor, Date, CenterDiv,
 } from "./styles";
 import DisqusComment from "../../DisqusComment/DisqusComments";
+import Footer from "../../Footer/Footer";
+import Navbar from "../../Navbar/Navbar";
 
 function Maintainership() {
   return (
     <Body>
+      <Navbar />
       <Container>
         <BodyInner>
           <Date>14 May 2020</Date>
@@ -18,8 +21,11 @@ function Maintainership() {
           <Description>You don't need too many skills to be a device maintainer. You only need to have:-</Description>
           <UnorderedList>
             <ListItem>Enough git skills to properly handle your device repos and maintaining it.</ListItem>
+            <br />
             <ListItem>Contributions made to your device community.</ListItem>
+            <br />
             <ListItem>Ability to read logs, so you can fix your device related stuff.</ListItem>
+            <br />
           </UnorderedList>
           <Description>So if you have the skills then feel free to click the below and submit your application. Someone from the admin team will get back to you :)</Description>
           <CenterDiv>
@@ -36,6 +42,7 @@ function Maintainership() {
           </Description>
         </AuthorSec>
       </Container>
+      <Footer />
     </Body>
   );
 }

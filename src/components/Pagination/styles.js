@@ -9,5 +9,5 @@ export const PageBtn = styled(Button)`
 `;
 export const PageGroup = styled(Container)`
     text-align: center;
-    margin: 2vh auto;
+    margin: 1vh auto;
 `;
