@@ -1,3 +1,4 @@
+/* eslint-disable */
 //?Secondary Cards
 import { TwitterTimelineEmbed } from "react-twitter-embed";
 import SecondaryCard from "../../SecondaryCard/SecondaryCard";
@@ -7,8 +8,7 @@ import Footer from "../../Footer/Footer";
 import Sidebar from "../../Sidebar/Sidebar";
 //?Styles
 import {
-  Container, Left, Mid, OtherBlogComponent, RecentBlogComponent, Right, TwitterComponent, SidebarComponent, Table, TableRow, TableData, TableBody,
-  Container, Left, Mid, OtherBlogComponent, RecentBlogComponent, Right, TwitterComponent, SidebarComponent, FooterDiv,
+  Container, Left, Mid, OtherBlogComponent, RecentBlogComponent, Right, TwitterComponent, SidebarComponent, Table, TableRow, TableData, TableBody, FooterDiv,
 } from "./Style";
 
 function Home() {
