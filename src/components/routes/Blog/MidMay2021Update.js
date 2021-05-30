@@ -13,9 +13,10 @@ import {
   UnorderedList,
   Anchor,
   Date,
+  SponsorPCImg,
+  SponsorMobImg,
 } from "./styles";
 import DisqusComment from "../../DisqusComment/DisqusComments";
-import googleAd from "../../AdComponent/AdComponent";
 import Footer from "../../Footer/Footer";
 import Navbar from "../../Navbar/Navbar";
 
@@ -41,6 +42,8 @@ function MidMay2021Update() {
             <br />
             <br />
             <Anchor href="https://www.codingninjas.com/courses/online-android-Development-kotlin?utm_source=projectsakura&utm_medium=referral&utm_campaign=android-development" />
+            <SponsorPCImg src="../../../images/ninjas/pcad.png" />
+            <SponsorMobImg src="../../../images/ninjas/mobilead.png" />
             <br />
             <br />
             So, what do we have this time? Here goes the changelog..
@@ -73,10 +76,8 @@ function MidMay2021Update() {
             As always do follow us on twitter at
             <Anchor href="https://twitter.com/ProjectSakura_"> @ProjectSakura_</Anchor>, we recently crossed 200 followers there.
             <br />
-            <br />
             One more ad lol.
             <br />
-            <googleAd />
           </Description>
           <DisqusComment />
         </BodyInner>
