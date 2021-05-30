@@ -12,7 +12,6 @@ import {
   Date,
   Anchor,
 } from "./styles";
-// import googleAd from "../../AdComponent/AdComponent";
 import DisqusComment from "../../DisqusComment/DisqusComments";
 import Footer from "../../Footer/Footer";
 import Navbar from "../../Navbar/Navbar";
@@ -80,10 +79,15 @@ function AugustSecondUpdate2020() {
           </Description>
           <UnorderedList>
             <ListItem>That annoying bug where the navbar buttons stop working in gesture navigation has been fixed(thx to Raj from posp).</ListItem>
+            <br />
             <ListItem>The gesture pill is now THICC. Why? BECAUSE THICC  <span role="img" aria-label="peach">🍑</span> = BEST.</ListItem>
+            <br />
             <ListItem>A BRAND NEW BOOTANIMATION (thx to glitch  <span role="img" aria-label="heart">💛</span>).</ListItem>
+            <br />
             <ListItem>Add new icon shapes from Android R.</ListItem>
+            <br />
             <ListItem>Blocking sensor for apps is now configurable.</ListItem>
+            <br />
             <ListItem>Moved the battery icon to header.</ListItem>
           </UnorderedList>
           <Description>
@@ -91,10 +95,15 @@ function AugustSecondUpdate2020() {
           </Description>
           <UnorderedList>
             <ListItem>Violet, Co-Maintained by Nitish & Prajwal.</ListItem>
+            <br />
             <ListItem>Beryllium, Maintained by Human Glitch.</ListItem>
+            <br />
             <ListItem>LeEco Le 2, Maintained by CakesTwix.</ListItem>
+            <br />
             <ListItem>Sanders, Maintained by ArmSM.</ListItem>
+            <br />
             <ListItem>Meizu 16TH and 16T, Maintained by thedauke.</ListItem>
+            <br />
             <ListItem>Realme 1, Maintained by CyberJalagam.</ListItem>
           </UnorderedList>
           <DisqusComment />
