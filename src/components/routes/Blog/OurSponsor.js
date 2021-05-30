@@ -24,9 +24,7 @@ function OurSponsor() {
             <br />
             Drum Rolls please....
             <br />
-            <br />
             <b>Sakura Project is now sponsored again.</b>
-            <br />
             <br />
             We are sponsored by <Anchor href="https://www.xsl.tel/">xsltel</Anchor>
           </Description>
