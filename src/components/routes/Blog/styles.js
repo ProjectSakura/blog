@@ -77,6 +77,20 @@ export const Image = styled.img`
   width: 100%;
   height: auto;
 `;
+export const SponsorPCImg = styled.img` 
+  @media(max-width: 768px) {
+    display: none;
+  } 
+  width: 100%;
+  height: auto;
+`;
+export const SponsorMobImg = styled.img` 
+  @media(min-width: 768px) {
+    display: none;
+  } 
+  width: 100%;
+  height: auto;
+`;
 
 export const Description = styled.p` 
   @media(min-width: 768px) {
