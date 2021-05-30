@@ -45,17 +45,11 @@ function AndroidBetaThree() {
           </Description>
           <UnorderedList>
             <ListItem>For your ugly faces, Face unlock.</ListItem>
-            <br />
             <ListItem>Custom Icon Pack support in Trebuchet Launcher.</ListItem>
-            <br />
             <ListItem>Project Sakura's own custom header pack.</ListItem>
-            <br />
             <ListItem>QS tint for quick settings tiles. </ListItem>
-            <br />
             <ListItem>OneUI styled setting actionbar.</ListItem>
-            <br />
             <ListItem>A ton of upstreams from Lineage 18.0.</ListItem>
-            <br />
           </UnorderedList>
           <Description>
             Now, we will immediately start working on 4.R with no sleep and no food. We are the ultimate lonely ass developers.. Like hell that's gonna happen. After this update I am going to sleep a ton and enjoy my free time until new year. So don't ask for those annoying ETAs. Just set some hentai wallpaper and enjoy Beta 3.
