@@ -21,8 +21,11 @@ function Maintainership() {
           <Description>You don't need too many skills to be a device maintainer. You only need to have:-</Description>
           <UnorderedList>
             <ListItem>Enough git skills to properly handle your device repos and maintaining it.</ListItem>
+            <br />
             <ListItem>Contributions made to your device community.</ListItem>
+            <br />
             <ListItem>Ability to read logs, so you can fix your device related stuff.</ListItem>
+            <br />
           </UnorderedList>
           <Description>So if you have the skills then feel free to click the below and submit your application. Someone from the admin team will get back to you :)</Description>
           <CenterDiv>
