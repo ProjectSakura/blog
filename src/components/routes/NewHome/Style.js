@@ -26,7 +26,7 @@ export const Mid = styled.div`
     }
     height: 100vh;
     padding: 2vh;
-    background-color: blue;
+    background-color: #090C10;
 `;
 export const Right = styled.div`
     @media (max-width: 850px) {
@@ -45,7 +45,7 @@ export const TwitterComponent = styled.div`
 `;
 export const RecentBlogComponent = styled.div`
     height: 30%;
-    background-color: black;
+    background-color: #1c1c24;
 `;
 export const SidebarComponent = styled.div`
     @media (max-width: 850px) {
@@ -56,6 +56,21 @@ export const SidebarComponent = styled.div`
 `;
 export const OtherBlogComponent = styled.div`
     margin-top: 2vh;
-    height: auto;
-    background-color: pink;
+    height: 60%;
+    //overflow-y: scroll;
+    /* background-color: #090C10; */
+`;
+export const Table = styled.table`
+    table-layout: block;
+    /* width: 100%; */
+    //overflow-y: scroll;
+`;
+export const TableBody = styled.div`
+    overflow-y: scroll;
+`;
+export const TableRow = styled.tr`
+    width: 100%;
+`;
+export const TableData = styled.td`
+    /* width: 50%; */
 `;
