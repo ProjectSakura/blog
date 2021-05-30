@@ -37,27 +37,17 @@ function April2021Update() {
           </Description>
           <UnorderedList>
             <ListItem>April Security Patch. </ListItem>
-            <br />
             <ListItem>All the changes from LineageOS.</ListItem>
-            <br />
             <ListItem>Another new clock faces from ShapeShift and Fluid.</ListItem>
-            <br />
             <ListItem>
               To protecc your batteries we added Smart Cutoff which basically stops charging if temperatures goes above the set limit and wait for it cool down to start charging again.
             </ListItem>
-            <br />
             <ListItem>Also no more OnePlus Launcher, simply coz Trebuchet is so so much better now.</ListItem>
-            <br />
             <ListItem>Redesigned Recent bottons for Trebuchet, yeah once again this time its much better and simpler.</ListItem>
-            <br />
             <ListItem>You can now set different ringtones for both of your simcards.</ListItem>
-            <br />
             <ListItem>We have added Applock support. Some devices might have already recieved it but we never made an Official Announcement.</ListItem>
-            <br />
             <ListItem>AntiFlicker support from LineageOS.</ListItem>
-            <br />
             <ListItem>And we now support much more Languages like czech, chinese, spanish, Vietnamese because of ya'all who made contributions on our Crowdin, So Thank you.</ListItem>
-            <br />
           </UnorderedList>
           <Description>
             We are also dropping an array of devices from our supported list, they are:
