@@ -16,7 +16,6 @@ import {
   Date,
 } from "./styles";
 import DisqusComment from "../../DisqusComment/DisqusComments";
-import googleAd from "../../AdComponent/AdComponent";
 import Footer from "../../Footer/Footer";
 import Navbar from "../../Navbar/Navbar";
 
@@ -43,8 +42,6 @@ function May2021Update() {
             It's quite pressurizing psychologically. But even then we are doing what we love and bringing another update of ProjectSakura. So, Let's take <i>"ProjectSakura to the mooooooooon"</i>.
             <br />
             Before we start see an ad.
-            <br />
-            <googleAd />
             <br />
             So, what is new in this monthly update? Here goes the changelog
           </Description>
@@ -97,7 +94,6 @@ function May2021Update() {
             <br />
             One more ad lol.
             <br />
-            <googleAd />
           </Description>
           <DisqusComment />
         </BodyInner>
