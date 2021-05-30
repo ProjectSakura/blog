@@ -1,3 +1,4 @@
+/* eslint-disable */
 //?Secondary Cards
 import { TwitterTimelineEmbed } from "react-twitter-embed";
 import SecondaryCard from "../../SecondaryCard/SecondaryCard";
