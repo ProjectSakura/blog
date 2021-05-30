@@ -5,10 +5,12 @@ import {
 import googleAd from "../../AdComponent/AdComponent";
 import DisqusComment from "../../DisqusComment/DisqusComments";
 import Footer from "../../Footer/Footer";
+import Navbar from "../../Navbar/Navbar";
 
 function April2021Update() {
   return (
     <Body>
+      <Navbar />
       <Container>
         <BodyInner>
           <Date>12 April 2021</Date>

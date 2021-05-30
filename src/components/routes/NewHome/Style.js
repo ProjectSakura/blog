@@ -79,3 +79,8 @@ export const FooterDiv = styled.div`
         display: none;
     }
 `;
+export const NavBarDiv = styled.div`
+    @media (min-width: 850px) {
+        display: none;
+    }
+`;

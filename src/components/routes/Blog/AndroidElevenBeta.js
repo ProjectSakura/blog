@@ -15,10 +15,12 @@ import {
 import googleAd from "../../AdComponent/AdComponent";
 import DisqusComment from "../../DisqusComment/DisqusComments";
 import Footer from "../../Footer/Footer";
+import Navbar from "../../Navbar/Navbar";
 
 function AndroidElevenBeta() {
   return (
     <Body>
+      <Navbar />
       <Container>
         <BodyInner>
           <Date>

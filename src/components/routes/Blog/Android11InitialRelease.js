@@ -4,11 +4,13 @@ import {
 } from "./styles";
 import googleAd from "../../AdComponent/AdComponent";
 import Footer from "../../Footer/Footer";
+import Navbar from "../../Navbar/Navbar";
 import DisqusComment from "../../DisqusComment/DisqusComments";
 
 function Android11InitialRelease() {
   return (
     <Body>
+      <Navbar />
       <Container>
         <BodyInner>
           <Date>08 March 2021</Date>

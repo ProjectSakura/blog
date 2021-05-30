@@ -4,10 +4,12 @@ import {
 } from "./styles";
 import DisqusComment from "../../DisqusComment/DisqusComments";
 import Footer from "../../Footer/Footer";
+import Navbar from "../../Navbar/Navbar";
 
 function GssocAssociationWebsiteUpdateMarch() {
   return (
     <Body>
+      <Navbar />
       <Container>
         <BodyInner>
           <Date>21 March 2021</Date>

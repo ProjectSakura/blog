@@ -7,9 +7,9 @@ import Footer from "../../Footer/Footer";
 import Sidebar from "../../Sidebar/Sidebar";
 //?Styles
 import {
-  Container, Left, Mid, OtherBlogComponent, RecentBlogComponent, Right, TwitterComponent, SidebarComponent, Table, TableRow, TableData, TableBody,
-  Container, Left, Mid, OtherBlogComponent, RecentBlogComponent, Right, TwitterComponent, SidebarComponent, FooterDiv,
+  Container, Left, Mid, OtherBlogComponent, RecentBlogComponent, Right, TwitterComponent, SidebarComponent, Table, TableRow, TableData, TableBody, FooterDiv, NavBarDiv,
 } from "./Style";
+import Navbar from "../../Navbar/Navbar";
 
 function Home() {
   const data = {
@@ -20,6 +20,9 @@ function Home() {
   };
   return (
     <Container>
+      <NavBarDiv>
+        <Navbar />
+      </NavBarDiv>
       <Left>
         <SidebarComponent>
           <Sidebar />
