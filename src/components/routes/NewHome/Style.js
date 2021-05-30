@@ -59,3 +59,8 @@ export const OtherBlogComponent = styled.div`
     height: auto;
     background-color: pink;
 `;
+export const FooterDiv = styled.div`
+    @media (min-width: 850px) {
+        display: none;
+    }
+`;

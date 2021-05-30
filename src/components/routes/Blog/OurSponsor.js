@@ -3,6 +3,7 @@ import {
   AuthorHead, AuthorSec, AuthorSubHead, Body, BodyInner, Description, Heading, ListItem, UnorderedList, Anchor, Date,
 } from "./styles";
 import DisqusComment from "../../DisqusComment/DisqusComments";
+import Footer from "../../Footer/Footer";
 
 function OurSponsor() {
   return (
@@ -74,6 +75,7 @@ function OurSponsor() {
           </Description>
         </AuthorSec>
       </Container>
+      <Footer />
     </Body>
   );
 }

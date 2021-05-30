@@ -13,6 +13,7 @@ import {
   Date,
 } from "./styles";
 import googleAd from "../../AdComponent/AdComponent";
+import Footer from "../../Footer/Footer";
 import DisqusComment from "../../DisqusComment/DisqusComments";
 
 function FourRFebUpdate() {
@@ -81,6 +82,7 @@ function FourRFebUpdate() {
           </Description>
         </AuthorSec>
       </Container>
+      <Footer />
     </Body>
   );
 }

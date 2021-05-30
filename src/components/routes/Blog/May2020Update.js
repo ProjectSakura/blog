@@ -3,6 +3,7 @@ import {
   AuthorHead, AuthorSec, AuthorSubHead, Body, BodyInner, Description, Heading, ListItem, UnorderedList, Date,
 } from "./styles";
 import DisqusComment from "../../DisqusComment/DisqusComments";
+import Footer from "../../Footer/Footer";
 
 function May2020Update() {
   return (
@@ -52,6 +53,7 @@ function May2020Update() {
           </Description>
         </AuthorSec>
       </Container>
+      <Footer />
     </Body>
   );
 }

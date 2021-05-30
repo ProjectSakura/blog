@@ -1,10 +1,11 @@
 //?Twitter
 import { TwitterTimelineEmbed } from "react-twitter-embed";
+import Footer from "../../Footer/Footer";
 //?Sidebar
 import Sidebar from "../../Sidebar/Sidebar";
 //?Styles
 import {
-  Container, Left, Mid, OtherBlogComponent, RecentBlogComponent, Right, TwitterComponent, SidebarComponent,
+  Container, Left, Mid, OtherBlogComponent, RecentBlogComponent, Right, TwitterComponent, SidebarComponent, FooterDiv,
 } from "./Style";
 
 function Home() {
@@ -30,6 +31,9 @@ function Home() {
           <TwitterTimelineEmbed sourceType="profile" screenName="ProjectSakura_" theme="dark" options={{ height: 600 }} />
         </TwitterComponent>
       </Right>
+      <FooterDiv>
+        <Footer />
+      </FooterDiv>
     </Container>
   );
 }

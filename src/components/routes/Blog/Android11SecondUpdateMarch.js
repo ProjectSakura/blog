@@ -3,11 +3,14 @@ import {
   AuthorHead, AuthorSec, AuthorSubHead, Body, BodyInner, Description, Heading, ListItem, UnorderedList, Anchor, Date, Code,
 } from "./styles";
 import googleAd from "../../AdComponent/AdComponent";
+import Footer from "../../Footer/Footer";
 import DisqusComment from "../../DisqusComment/DisqusComments";
+import Navbar from "../../Navbar/Navbar";
 
 function Android11SecondUpdateMarch() {
   return (
     <Body>
+      <Navbar />
       <Container>
         <BodyInner>
           <Date>19 March 2021</Date>
@@ -21,10 +24,15 @@ function Android11SecondUpdateMarch() {
           <Description>Okay good, so what we have new in this release..</Description>
           <UnorderedList>
             <ListItem>Bubbles are fixed, we were constantly spammed for this one. </ListItem>
+            <br />
             <ListItem>AOKP system animations are no more available in ROM. </ListItem>
+            <br />
             <ListItem>For your ugly face that even satan can't recognize, Newer Faceunlock. </ListItem>
+            <br />
             <ListItem>FOD icon picker and animations. </ListItem>
+            <br />
             <ListItem>FOD animation effects. </ListItem>
+            <br />
           </UnorderedList>
           <Description>
             Now getting to the main thing, If you are a developer with an FOD supported device and want to add support for FOD icon picker and animations you will need to do the
@@ -59,6 +67,7 @@ function Android11SecondUpdateMarch() {
           </Description>
         </AuthorSec>
       </Container>
+      <Footer />
     </Body>
   );
 }

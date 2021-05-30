@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Body = styled.div`
     @media(min-width: 768px) {
-      padding: 2vh;
+      padding: 0vh;
     } 
     @media(max-width: 768px) {
       padding: 1vh;
