@@ -7,9 +7,9 @@ export const Image = styled.img`
     height: 6vh;
 `;
 export const NavMenu = styled(Menu)`
-    @media (min-width: 850px) {
+    /* @media (min-width: 850px) {
         display: none !important;
-    }
+    } */
     background-color: #1c1c24 !important;
     padding: 1vh 2vh !important;
 `;

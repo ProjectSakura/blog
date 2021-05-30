@@ -3,6 +3,7 @@ import {
   AuthorHead, AuthorSec, AuthorSubHead, Body, BodyInner, Description, Heading, ListItem, UnorderedList, Anchor, Date,
 } from "./styles";
 import DisqusComment from "../../DisqusComment/DisqusComments";
+import Footer from "../../Footer/Footer";
 
 function September2020Update() {
   return (
@@ -45,6 +46,7 @@ function September2020Update() {
           <Description>Arun Teltia is the lead web developer of the project. He is a passionate web developer and loves to watch anime is his spare time.</Description>
         </AuthorSec>
       </Container>
+      <Footer />
     </Body>
   );
 }

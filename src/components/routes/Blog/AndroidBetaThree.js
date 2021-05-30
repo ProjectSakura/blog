@@ -15,6 +15,7 @@ import {
 } from "./styles";
 import googleAd from "../../AdComponent/AdComponent";
 import DisqusComment from "../../DisqusComment/DisqusComments";
+import Footer from "../../Footer/Footer";
 
 function AndroidBetaThree() {
   return (
@@ -84,6 +85,7 @@ function AndroidBetaThree() {
           </Description>
         </AuthorSec>
       </Container>
+      <Footer />
     </Body>
   );
 }

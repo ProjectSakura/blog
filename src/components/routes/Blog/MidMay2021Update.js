@@ -16,6 +16,7 @@ import {
 } from "./styles";
 import DisqusComment from "../../DisqusComment/DisqusComments";
 import googleAd from "../../AdComponent/AdComponent";
+import Footer from "../../Footer/Footer";
 
 function MidMay2021Update() {
   return (
@@ -85,6 +86,7 @@ function MidMay2021Update() {
           </Description>
         </AuthorSec>
       </Container>
+      <Footer />
     </Body>
   );
 }
