@@ -1,5 +1,5 @@
 import { Container } from "semantic-ui-react";
-import Card from "../cards/Card";
+import Card from "../SecondaryCard/SecondaryCard";
 // semantic-ui
 
 function Posts({ cardData, loading }) {
@@ -8,8 +8,26 @@ function Posts({ cardData, loading }) {
       <h1>Loading...</h1>
     );
   }
+  let count = 0;
   const renderCards = () => {
-    const cards = cardData.map((data) => <Card data={data} key={data.id} />);
+    const cards = cardData.map((data) => {
+      count += 1;
+      if (count % 2 === 0) {
+        return (
+          <>
+            <td key={data.id}>
+              <Card data={data} />
+            </td>
+            <br />
+          </>
+        );
+      }
+      return (
+        <td key={data.id}>
+          <Card data={data} />
+        </td>
+      );
+    });
     return cards;
   };
   return (

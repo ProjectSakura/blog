@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-    /* height: 100vh; */
+    height: 100%;
     background-color: white;
 `;
 export const Left = styled.div`
@@ -60,13 +60,11 @@ export const OtherBlogComponent = styled.div`
     //overflow-y: scroll;
     /* background-color: #090C10; */
 `;
-export const Table = styled.table`
-    table-layout: block;
-    /* width: 100%; */
-    //overflow-y: scroll;
-`;
 export const TableBody = styled.div`
     overflow-y: scroll;
+`;
+export const Table = styled.table`
+    table-layout: block;
 `;
 export const TableRow = styled.tr`
     width: 100%;
