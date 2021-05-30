@@ -1,14 +1,23 @@
-//?Twitter
+//?Secondary Cards
 import { TwitterTimelineEmbed } from "react-twitter-embed";
+import SecondaryCard from "../../SecondaryCard/SecondaryCard";
+//?Twitter
 import Footer from "../../Footer/Footer";
 //?Sidebar
 import Sidebar from "../../Sidebar/Sidebar";
 //?Styles
 import {
+  Container, Left, Mid, OtherBlogComponent, RecentBlogComponent, Right, TwitterComponent, SidebarComponent, Table, TableRow, TableData, TableBody,
   Container, Left, Mid, OtherBlogComponent, RecentBlogComponent, Right, TwitterComponent, SidebarComponent, FooterDiv,
 } from "./Style";
 
 function Home() {
+  const data = {
+    title: "Blur, Transparency, Stability and much more in the May 2021 release of Project Sakura.",
+    author: "LordShenron",
+    date: "2018-08-03",
+    desc: "Whats new in the latest release of Project Sakura? Check out.. ",
+  };
   return (
     <Container>
       <Left>
@@ -22,7 +31,19 @@ function Home() {
           <h2>Recent Blog</h2>
         </RecentBlogComponent>
         <OtherBlogComponent>
-          <h2>Other Blogs with pagination</h2>
+          <h2>Secondary Section</h2>
+          <TableBody>
+            <Table>
+              <TableRow>
+                <TableData>
+                  <SecondaryCard data={data} />
+                </TableData>
+                <TableData>
+                  <SecondaryCard data={data} />
+                </TableData>
+              </TableRow>
+            </Table>
+          </TableBody>
         </OtherBlogComponent>
       </Mid>
       <Right>
