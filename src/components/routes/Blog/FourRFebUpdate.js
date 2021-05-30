@@ -15,10 +15,12 @@ import {
 import googleAd from "../../AdComponent/AdComponent";
 import Footer from "../../Footer/Footer";
 import DisqusComment from "../../DisqusComment/DisqusComments";
+import Navbar from "../../Navbar/Navbar";
 
 function FourRFebUpdate() {
   return (
     <Body>
+      <Navbar />
       <Container>
         <BodyInner>
           <Date>

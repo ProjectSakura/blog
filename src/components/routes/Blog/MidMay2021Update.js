@@ -17,10 +17,12 @@ import {
 import DisqusComment from "../../DisqusComment/DisqusComments";
 import googleAd from "../../AdComponent/AdComponent";
 import Footer from "../../Footer/Footer";
+import Navbar from "../../Navbar/Navbar";
 
 function MidMay2021Update() {
   return (
     <Body>
+      <Navbar />
       <Container>
         <BodyInner>
           <Date>

@@ -4,10 +4,12 @@ import {
 } from "./styles";
 import DisqusComment from "../../DisqusComment/DisqusComments";
 import Footer from "../../Footer/Footer";
+import Navbar from "../../Navbar/Navbar";
 
 function SecondUpdateOfJune2020() {
   return (
     <Body>
+      <Navbar />
       <Container>
         <BodyInner>
           <Date>14 May 2020</Date>
