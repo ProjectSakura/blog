@@ -16,6 +16,7 @@ import {
 } from "./styles";
 // import googleAd from "../../AdComponent/AdComponent";
 import DisqusComment from "../../DisqusComment/DisqusComments";
+import Footer from "../../Footer/Footer";
 
 function AugustSecondUpdate2020() {
   return (
@@ -70,6 +71,7 @@ function AugustSecondUpdate2020() {
           </Description>
         </AuthorSec>
       </Container>
+      <Footer />
     </Body>
   );
 }

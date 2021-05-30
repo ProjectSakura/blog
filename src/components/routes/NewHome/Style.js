@@ -74,3 +74,8 @@ export const TableRow = styled.tr`
 export const TableData = styled.td`
     /* width: 50%; */
 `;
+export const FooterDiv = styled.div`
+    @media (min-width: 850px) {
+        display: none;
+    }
+`;

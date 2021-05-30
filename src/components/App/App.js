@@ -26,14 +26,14 @@ import AugustSecondUpdate2020 from "../routes/Blog/AugustSecondUpdate2020";
 import AugustUpdate2020 from "../routes/Blog/AugustUpdate2020";
 import July2020Update from "../routes/Blog/July2020Update";
 // Navbar
-import Navbar from "../Navbar/Navbar";
+// import Navbar from "../Navbar/Navbar";
 //Footer
-import Footer from "../Footer/Footer";
+// import Footer from "../Footer/Footer";
 
 function App() {
   return (
     <Body>
-      <Navbar />
+      {/* <Navbar /> */}
       <Router basename="/blogs">
         <Switch>
           <Route path="/" exact component={Home} />
@@ -59,7 +59,7 @@ function App() {
           <Route path="/second-update-of-august-2020" exact component={AugustSecondUpdate2020} />
           <Route path="/august-2020-update" exact component={AugustUpdate2020} />
         </Switch>
-        <Footer />
+        {/* <Footer /> */}
       </Router>
     </Body>
   );

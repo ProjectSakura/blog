@@ -4,6 +4,7 @@ import {
 } from "./styles";
 import googleAd from "../../AdComponent/AdComponent";
 import DisqusComment from "../../DisqusComment/DisqusComments";
+import Footer from "../../Footer/Footer";
 
 function April2021Update() {
   return (
@@ -107,6 +108,7 @@ function April2021Update() {
           </Description>
         </AuthorSec>
       </Container>
+      <Footer />
     </Body>
   );
 }

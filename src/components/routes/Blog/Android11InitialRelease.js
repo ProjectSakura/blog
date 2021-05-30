@@ -3,6 +3,7 @@ import {
   AuthorHead, AuthorSec, AuthorSubHead, Body, BodyInner, Description, Heading, ListItem, UnorderedList, Anchor, Date,
 } from "./styles";
 import googleAd from "../../AdComponent/AdComponent";
+import Footer from "../../Footer/Footer";
 import DisqusComment from "../../DisqusComment/DisqusComments";
 
 function Android11InitialRelease() {
@@ -65,6 +66,7 @@ function Android11InitialRelease() {
           </Description>
         </AuthorSec>
       </Container>
+      <Footer />
     </Body>
   );
 }
