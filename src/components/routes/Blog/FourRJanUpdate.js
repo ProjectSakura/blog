@@ -12,7 +12,6 @@ import {
   Anchor,
   Date,
 } from "./styles";
-import googleAd from "../../AdComponent/AdComponent";
 import DisqusComment from "../../DisqusComment/DisqusComments";
 import Footer from "../../Footer/Footer";
 import Navbar from "../../Navbar/Navbar";
@@ -29,13 +28,10 @@ function FourRJanUpdate() {
           <Heading>
             February 2021 update of Project Sakura
           </Heading>
-
           <Description>
             With every month passing we are moving closer towards the spring we want (atleast in my country). So, with a very deep line that I took a whole week to think up ; I am writing the blog post for february just like I do every month. This month is very very fucking busy for me.. but guess what? we are one day early with the update than we were last month. Though there are no big overhaul just some small tweaks and changes.
             <br />
             Now see an ad.
-            <br />
-            <googleAd />
             <br />
             Wondering what's new we have this month?
           </Description>
@@ -63,8 +59,6 @@ function FourRJanUpdate() {
             <br />
             <br />
             One more ad lol.
-            <br />
-            <googleAd />
           </Description>
           <DisqusComment />
         </BodyInner>
