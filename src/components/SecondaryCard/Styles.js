@@ -3,10 +3,10 @@ import { Link } from "react-router-dom";
 
 export const Body = styled.div`
     @media(min-width: 850px) {
-      margin: auto 2vh;
+      margin: 1vh 2vh;
       /* width: min-content;  */
-      max-width: fit-content;
-      max-height: fit-content;
+      /* max-width: fit-content;
+      max-height: fit-content; */
       /* width: 50vh; */
       display: block;
     } 

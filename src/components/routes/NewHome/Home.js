@@ -59,13 +59,13 @@ function Home() {
         </RecentBlogComponent>
         <OtherBlogComponent>
           {/* <h2>Secondary Section</h2> */}
-          <TableBody>
+          {/* <TableBody>
             <Table>
-              <TableRow>
+              <TableRow> */}
                 <Posts cardData={currentPosts} loading={loading} />
-              </TableRow>
+              {/* </TableRow>
             </Table>
-          </TableBody>
+          </TableBody> */}
         </OtherBlogComponent>
         <Pagination postsPerPage={postsPerPage} totalPosts={posts.length} paginate={paginate} />
       </Mid>
