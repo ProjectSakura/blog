@@ -37,21 +37,13 @@ function FourRFebUpdate() {
           </Description>
           <UnorderedList>
             <ListItem>January Security Patch.</ListItem>
-            <br />
             <ListItem>Added bunch of options like optional roaming and data disabled indicators.</ListItem>
-            <br />
             <ListItem>You can now switch to Old styled network indicators.</ListItem>
-            <br />
             <ListItem>Fixed QS and LS music player getting swiped away even while being active.</ListItem>
-            <br />
             <ListItem>Fixed double tab on statusbar to sleep.</ListItem>
-            <br />
             <ListItem>You can now customize the length of gesture bar.</ListItem>
-            <br />
             <ListItem>3 button navigation layouts.v</ListItem>
-            <br />
             <ListItem>And a lot more changes that we cannot mention here.</ListItem>
-            <br />
           </UnorderedList>
           <Description>
             Now, the update will start rolling out from tonight or tomorrow morning most probably. It completely depends on the maintainer when he build and release. Also we have a bunch of new devices that we support now like Miatoll and Phoenix.
