@@ -37,13 +37,9 @@ function FourRJanUpdate() {
           </Description>
           <UnorderedList>
             <ListItem>February Security Patch.</ListItem>
-            <br />
             <ListItem>Navigation gesture height.</ListItem>
-            <br />
             <ListItem>Ability to manually reset battery stats.</ListItem>
-            <br />
             <ListItem>A ton of accents, like a whole load of them.</ListItem>
-            <br />
           </UnorderedList>
           <Description>
             Yeah, really that's all the major changes we did for this release. Initially I planned for more changes but nothing ever goes as planned. Also, We have had to say goodbye to a lot of our favorite devices like Galaxy A30, A40, M30 and Begonia; Pfft good riddance. But we have a lot of newly supported devices with this release like OnePlus 6, Galaxy A10, Redmi K20 and Poco X3 and we are always expanding to support more and more devices.
