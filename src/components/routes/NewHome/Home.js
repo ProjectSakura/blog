@@ -67,8 +67,6 @@ function Home() {
               </TableRow>
             </Table>
           </TableBody>
-          
-          
         </OtherBlogComponent>
         <Pagination postsPerPage={postsPerPage} totalPosts={posts.length} paginate={paginate} />
       </Mid>

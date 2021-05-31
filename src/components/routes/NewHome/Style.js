@@ -24,6 +24,7 @@ export const Mid = styled.div`
         float: left;
         width: 60%;
     }
+    margin: auto;
     height: 100vh;
     padding: 2vh;
     background-color: #090C10;
@@ -38,13 +39,13 @@ export const Right = styled.div`
     }
     height: 100vh;
     background-color:#121217;
-    overflow-y: scroll;
 `;
 export const TwitterComponent = styled.div`
     margin: 5vh;
 `;
 export const RecentBlogComponent = styled.div`
     height: 30%;
+    border-radius:10px;
     background-color: #1c1c24;
 `;
 export const SidebarComponent = styled.div`
@@ -55,13 +56,15 @@ export const SidebarComponent = styled.div`
     font-size: 1.2em;
 `;
 export const OtherBlogComponent = styled.div`
-    margin-top: 2vh;
+    margin: 2vh auto;
     height: 60%;
-    //overflow-y: scroll;
+    /* text-align: center; */
+    /* overflow-y: scroll; */
     /* background-color: #090C10; */
 `;
 export const TableBody = styled.div`
-    overflow-y: scroll;
+    display: grid;
+    /* overflow-y: scroll; */
 `;
 export const Table = styled.table`
     table-layout: block;

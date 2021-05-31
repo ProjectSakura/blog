@@ -1,6 +1,6 @@
-import { Container } from "semantic-ui-react";
 import Card from "../SecondaryCard/SecondaryCard";
 // semantic-ui
+import { TableData, ContainerDiv } from "./styles";
 
 function Posts({ cardData, loading }) {
   if (loading) {
@@ -15,25 +15,25 @@ function Posts({ cardData, loading }) {
       if (count % 2 === 0) {
         return (
           <>
-            <td key={data.id}>
+            <TableData key={data.id}>
               <Card data={data} />
-            </td>
+            </TableData>
             <br />
           </>
         );
       }
       return (
-        <td key={data.id}>
+        <TableData key={data.id}>
           <Card data={data} />
-        </td>
+        </TableData>
       );
     });
     return cards;
   };
   return (
-    <Container>
+    <ContainerDiv>
       {renderCards()}
-    </Container>
+    </ContainerDiv>
   );
 }
 export default Posts;
