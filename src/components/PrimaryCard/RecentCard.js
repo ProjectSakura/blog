@@ -8,10 +8,11 @@ import {
 
 function RecentCard() {
     const data = {
-        title: "Blur, Transparency, Stability and much more in the May 2021 release of Project Sakura.",
+        title: "Mid-May happiness with Project Sakura.",
         author: "LordShenron",
-        date: "2018-08-03",
-        desc: "Whats new in the latest release of Project Sakura? Check out.. ",
+        date: new Date(Date.parse("2021-05-23")),
+        url: "/5.R-mid-may-2021-update",
+        desc: "Whats new in the latest release of Project Sakura? Check out.."
     };
     return (
         <Body>

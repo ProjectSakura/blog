@@ -37,12 +37,6 @@ function Home() {
   const currentPosts = posts.slice(indexOfFirstPost, indexOfLastPost);
   const paginate = (pageNumber) => setCurrentPage(pageNumber);
   //?---------------------- 
-  // const data = {
-  //   title: "Blur, Transparency, Stability and much more in the May 2021 release of Project Sakura.",
-  //   author: "LordShenron",
-  //   date: "2018-08-03",
-  //   desc: "Whats new in the latest release of Project Sakura? Check out.. ",
-  // };
   return (
     <Container>
       <NavBarDiv>
