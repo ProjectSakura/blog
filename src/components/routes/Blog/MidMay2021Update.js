@@ -19,6 +19,9 @@ import {
 import DisqusComment from "../../DisqusComment/DisqusComments";
 import Footer from "../../Footer/Footer";
 import Navbar from "../../Navbar/Navbar";
+//sponsors images
+import MobileImg from "../../../images/ninjas/mobilead.png";
+import PCImg from "../../../images/ninjas/pcad.png";
 
 function MidMay2021Update() {
   return (
@@ -42,8 +45,8 @@ function MidMay2021Update() {
             <br />
             <br />
             <Anchor href="https://www.codingninjas.com/courses/online-android-Development-kotlin?utm_source=projectsakura&utm_medium=referral&utm_campaign=android-development" />
-            <SponsorPCImg src="../../../images/ninjas/pcad.png" />
-            <SponsorMobImg src="../../../images/ninjas/mobilead.png" />
+            <SponsorPCImg src={PCImg} alt="pc-img" />
+            <SponsorMobImg src={MobileImg} alt="mob-img" />
             <br />
             <br />
             So, what do we have this time? Here goes the changelog..

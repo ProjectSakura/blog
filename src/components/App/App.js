@@ -38,8 +38,8 @@ function App() {
         <Switch>
           <Route path="/oldhome" exact component={Home} />
           <Route path="/" exact component={NewHome} />
-          <Route path="/5.R-May-2021-update" exact component={May2021Update} />
-          <Route path="/5.R-mid-may-2021-update" exact component={MidMay2021Update} />
+          <Route path="/5.R-May-2021-update" exact component={MidMay2021Update} />
+          <Route path="/5.R-mid-may-2021-update" exact component={May2021Update} />
           <Route path="/5.R-April-2021-update" exact component={April2021Update} />
           <Route path="/gssoc-association-website-update-march" exact component={GssocAssociationWebsiteUpdateMarch} />
           <Route path="/5.R-android-11-second-update-march" exact component={Android11SecondUpdateMarch} />

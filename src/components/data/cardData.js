@@ -92,11 +92,11 @@ const data = [
   },
   {
     id: 8,
-    url: "/android-11-beta-1",
-    title: "First Beta of Project Sakura based on Android 11 is here",
-    author: "LordShenron",
-    date: new Date(Date.parse("2020-11-09")),
-    desc: "Whats new in this release? checkout..",
+    url: "/oursponsor",
+    title: "XSLTEL decided to sponsor Project Sakura",
+    author: "Manish",
+    date: new Date(Date.parse("2020-05-01")),
+    desc: "XSLTEL OU is a european company that have decided to sponsor Project Sakura with servers..",
   },
   {
     id: 7,
@@ -156,11 +156,11 @@ const data = [
   },
   {
     id: 0,
-    url: "/oursponsor",
-    title: "XSLTEL decided to sponsor Project Sakura",
-    author: "Manish",
-    date: new Date(Date.parse("2020-05-01")),
-    desc: "XSLTEL OU is a european company that have decided to sponsor Project Sakura with servers..",
+    url: "/android-11-beta-1",
+    title: "First Beta of Project Sakura based on Android 11 is here",
+    author: "LordShenron",
+    date: new Date(Date.parse("2020-11-09")),
+    desc: "Whats new in this release? checkout..",
   },
 ];
 export default data;
