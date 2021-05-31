@@ -2,29 +2,30 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 
 export const Body = styled.div`
-    padding: 2vh;
+    /* padding: 2vh; */
     display: flex;
 `;
 
 export const ImgDiv = styled.div` 
-  vertical-align: middle;
+  /* padding: 2vh; */
+  flex: 1;
 `;
 
 export const Image = styled.img` 
     @media(min-width: 850px) {
         max-width: 100%;
-        max-height: 32vh;
     }
     @media(max-width: 850px) {
-        max-width: 100%;
-        max-height: 20vh;
+        max-width: 100%;    
     }
-  border-radius: 5px;
+    width: inherit;
+    max-height: inherit;
+    border-radius: 5px;
 `;
 
 export const ContentDiv = styled.div` 
-    padding-left:3vh;
-    padding-right: 2vh;
+    padding: 2vh 2vh 3vh 2vh;
+    flex: 1;
 `;
 
 export const Heading = styled.h2`

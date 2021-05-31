@@ -24,13 +24,13 @@ function Android11SecondUpdateMarch() {
           <Description>Okay good, so what we have new in this release..</Description>
           <UnorderedList>
             <ListItem>Bubbles are fixed, we were constantly spammed for this one. </ListItem>
-            <br/>
+            <br />
             <ListItem>AOKP system animations are no more available in ROM. </ListItem>
-            <br/>
+            <br />
             <ListItem>For your ugly face that even satan can't recognize, Newer Faceunlock. </ListItem>
-            <br/>
+            <br />
             <ListItem>FOD icon picker and animations. </ListItem>
-            <br/>
+            <br />
             <ListItem>FOD animation effects. </ListItem>
           </UnorderedList>
           <Description>
