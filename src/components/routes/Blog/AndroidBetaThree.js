@@ -45,10 +45,15 @@ function AndroidBetaThree() {
           </Description>
           <UnorderedList>
             <ListItem>For your ugly faces, Face unlock.</ListItem>
+            <br/>
             <ListItem>Custom Icon Pack support in Trebuchet Launcher.</ListItem>
+            <br/>
             <ListItem>Project Sakura's own custom header pack.</ListItem>
+            <br/>
             <ListItem>QS tint for quick settings tiles. </ListItem>
+            <br/>
             <ListItem>OneUI styled setting actionbar.</ListItem>
+            <br/>
             <ListItem>A ton of upstreams from Lineage 18.0.</ListItem>
           </UnorderedList>
           <Description>
