@@ -41,10 +41,15 @@ export const Right = styled.div`
     background-color:#121217;
 `;
 export const TwitterComponent = styled.div`
-    margin: 5vh;
+    @media (max-width: 850px) {
+        display: none;
+    }
+    @media (min-width: 850px) {
+        margin: 3vh 5vh;
+    }
 `;
 export const SponsorImg = styled.img`
-    /* margin: 5vh; */
+
 `;
 export const RecentBlogComponent = styled.div`
     height: 30%;
@@ -61,22 +66,6 @@ export const SidebarComponent = styled.div`
 export const OtherBlogComponent = styled.div`
     margin: 2vh auto;
     height: 60%;
-    /* text-align: center; */
-    /* overflow-y: scroll; */
-    /* background-color: #090C10; */
-`;
-export const TableBody = styled.div`
-    display: grid;
-    /* overflow-y: scroll; */
-`;
-export const Table = styled.table`
-    table-layout: block;
-`;
-export const TableRow = styled.tr`
-    width: 100%;
-`;
-export const TableData = styled.td`
-    /* width: 50%; */
 `;
 export const FooterDiv = styled.div`
     @media (min-width: 850px) {

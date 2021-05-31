@@ -2,23 +2,31 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 
 export const Body = styled.div`
-    @media(min-width: 850px) {
-      margin: 1vh 2vh;
-      /* max-width: fit-content;
-      max-height: fit-content; */
-      /* width: 50vh; */
-      display: block;
-    } 
-    @media(max-width: 850px) {
-      margin: 0.5vh;
-      max-width: max-content;
-      display:flex;
-      flex-direction:column;
-    }
     padding: 2vh;
-    border-radius:5px;
-    background-color: #1c1c24;
+    display: flex;
 `;
+
+export const ImgDiv = styled.div` 
+  vertical-align: middle;
+`;
+
+export const Image = styled.img` 
+    @media(min-width: 850px) {
+        max-width: 100%;
+        max-height: 32vh;
+    }
+    @media(max-width: 850px) {
+        max-width: 100%;
+        max-height: 20vh;
+    }
+  border-radius: 5px;
+`;
+
+export const ContentDiv = styled.div` 
+    padding-left:3vh;
+    padding-right: 2vh;
+`;
+
 export const Heading = styled.h2`
     @media(max-width: 850px) {
         font-size: 1.5em;
@@ -30,10 +38,6 @@ export const Heading = styled.h2`
     }
     margin-top: 1vh;
     color: #039be5;
-    white-space: nowrap; 
-    width: 20vw; 
-    overflow: hidden;
-    text-overflow: ellipsis;
 `;
 export const SubHeading = styled.div`
   @media(max-width: 850px) {
