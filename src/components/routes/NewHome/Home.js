@@ -9,13 +9,14 @@ import Footer from "../../Footer/Footer";
 import Sidebar from "../../Sidebar/Sidebar";
 //?Styles
 import {
-  Container, Left, Mid, OtherBlogComponent, RecentBlogComponent, Right, TwitterComponent, SidebarComponent, Table, TableRow, FooterDiv, NavBarDiv,
+  Container, Left, Mid, OtherBlogComponent, RecentBlogComponent, Right, TwitterComponent, SidebarComponent, FooterDiv, NavBarDiv,
 } from "./Style";
 import Posts from "../../Posts/Posts";
+//navbar
 import Navbar from "../../Navbar/Navbar";
 //card data
 import cardData from "../../data/cardData";
-import { TableBody } from "semantic-ui-react";
+import RecentBlog from "../../PrimaryCard/RecentCard";
 
 function Home() {
   //?--------Pagination--------
@@ -53,25 +54,16 @@ function Home() {
         </SidebarComponent>
       </Left>
       <Mid>
-        {/* <h1>Blogs</h1> */}
         <RecentBlogComponent>
-          <h2>Recent Blog</h2>
+          <RecentBlog />
         </RecentBlogComponent>
         <OtherBlogComponent>
-          {/* <h2>Secondary Section</h2> */}
-          {/* <TableBody>
-            <Table>
-              <TableRow> */}
-                <Posts cardData={currentPosts} loading={loading} />
-              {/* </TableRow>
-            </Table>
-          </TableBody> */}
+          <Posts cardData={currentPosts} loading={loading} />
         </OtherBlogComponent>
         <Pagination postsPerPage={postsPerPage} totalPosts={posts.length} paginate={paginate} />
       </Mid>
       <Right>
         <TwitterComponent>
-          {/* <TwitterComponentEmbed /> */}
           <TwitterTimelineEmbed sourceType="profile" screenName="ProjectSakura_" theme="dark" options={{ height: 600 }} />
         </TwitterComponent>
       </Right>
