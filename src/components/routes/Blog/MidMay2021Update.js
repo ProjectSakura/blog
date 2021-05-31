@@ -53,19 +53,12 @@ function MidMay2021Update() {
           </Description>
           <UnorderedList>
             <ListItem>Fixed the weird ghost space in dock with vanilla builds (because of lack of Google app).</ListItem>
-            <br />
             <ListItem>Finally, the weird looking arrow above the dock is gone.</ListItem>
-            <br />
             <ListItem>Fixed the issue of wrong slot detection for VoLTE icons.</ListItem>
-            <br />
             <ListItem> We have switched to full gesture navigation as our default.</ListItem>
-            <br />
             <ListItem>You can now see your battery's temperature in Battery Settings.</ListItem>
-            <br />
             <ListItem>Blur will start working again for Samsung devices.</ListItem>
-            <br />
             <ListItem>And we are now translated to few more languages.</ListItem>
-            <br />
           </UnorderedList>
           <Description>
             Last week we added support for Xiaomi Redmi Note 7 and restored support for Poco X2 and with that we have so far supported 50 different devices. So, hats off to us and the maintainers. If you are wondering how you can get official then we have a nice article on our Wiki at
