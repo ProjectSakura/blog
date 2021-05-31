@@ -3,7 +3,6 @@ import { useState, useEffect } from "react";
 import Pagination from "../../Pagination/Pagination";
 //?Secondary Cards
 import { TwitterTimelineEmbed } from "react-twitter-embed";
-import SecondaryCard from "../../SecondaryCard/SecondaryCard";
 //?Twitter
 import Footer from "../../Footer/Footer";
 //?Sidebar

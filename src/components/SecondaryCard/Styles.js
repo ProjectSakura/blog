@@ -5,7 +5,9 @@ export const Body = styled.div`
     @media(min-width: 850px) {
       margin: auto 2vh;
       /* width: min-content;  */
-      width: fit-content;
+      max-width: fit-content;
+      max-height: fit-content;
+      /* width: 50vh; */
       display: block;
     } 
     @media(max-width: 850px) {
@@ -24,7 +26,7 @@ export const Heading = styled.h2`
         margin-bottom: 0vh;
     }
     @media(min-width: 850px) {
-        font-size: 1em;
+        font-size: 1.2em;
         margin-bottom: 1vh;
     }
     margin-top: 1vh;

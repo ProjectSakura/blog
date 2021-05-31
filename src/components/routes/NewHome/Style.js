@@ -43,6 +43,9 @@ export const Right = styled.div`
 export const TwitterComponent = styled.div`
     margin: 5vh;
 `;
+export const SponsorImg = styled.img`
+    /* margin: 5vh; */
+`;
 export const RecentBlogComponent = styled.div`
     height: 30%;
     border-radius:10px;

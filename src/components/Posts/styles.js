@@ -10,6 +10,7 @@ export const ContainerDiv = styled(Container)`
     @media(min-width: 850px) {
       padding: 0vh;
       margin: auto !important;
+      display: list-item !important;
       /* display: flex !important; */
       /* flex-direction:column !important; */
     } 
