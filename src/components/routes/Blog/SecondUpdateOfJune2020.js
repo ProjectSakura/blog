@@ -20,17 +20,11 @@ function SecondUpdateOfJune2020() {
           </Description>
           <UnorderedList>
             <ListItem>A bigger header image.</ListItem>
-            <br />
             <ListItem>Mizu Themes, a transparent theme we adapted from rebellion theme.</ListItem>
-            <br />
             <ListItem>The very much requested Gaming Mode.</ListItem>
-            <br />
             <ListItem>Fixed the rounded corner settings.</ListItem>
-            <br />
             <ListItem>Statusbar screen burn protection for OLED and amoled displays.</ListItem>
-            <br />
             <ListItem>Synced all sources up to latest LineageOS</ListItem>
-            <br />
           </UnorderedList>
           <Description>
             These are the major changes, beside these there are many minor changes. Also, I hope you see the newer redesigned Blog and hopefully it is visually more pleasing. So, this is
