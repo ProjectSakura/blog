@@ -1,6 +1,6 @@
 import Card from "../SecondaryCard/SecondaryCard";
 // semantic-ui
-import { TableData, ContainerDiv } from "./styles";
+import { Parent, Child } from "./styles";
 
 function Posts({ cardData, loading }) {
   if (loading) {
@@ -8,32 +8,18 @@ function Posts({ cardData, loading }) {
       <h1>Loading...</h1>
     );
   }
-  let count = 0;
   const renderCards = () => {
-    const cards = cardData.map((data) => {
-      count += 1;
-      if (count % 2 === 0) {
-        return (
-          <>
-            <TableData key={data.id}>
-              <Card data={data} />
-            </TableData>
-            <br />
-          </>
-        );
-      }
-      return (
-        <TableData key={data.id}>
-          <Card data={data} />
-        </TableData>
-      );
-    });
+    const cards = cardData.map((data) => (
+      <Child key={data.id}>
+        <Card data={data} />
+      </Child>
+    ));
     return cards;
   };
   return (
-    <ContainerDiv>
+    <Parent>
       {renderCards()}
-    </ContainerDiv>
+    </Parent>
   );
 }
 export default Posts;
