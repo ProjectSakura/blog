@@ -54,7 +54,9 @@ export const SponsorImg = styled.img`
 export const RecentBlogComponent = styled.div`
     height: 30%;
     border-radius:10px;
-    background-color: #1c1c24;
+    background-color: #0E0E0F;
+    margin-bottom: 2vh;
+    filter: drop-shadow(0 0 0.25rem #3AC0FF);
 `;
 export const SidebarComponent = styled.div`
     @media (max-width: 850px) {

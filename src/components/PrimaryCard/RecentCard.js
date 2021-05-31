@@ -21,7 +21,6 @@ function RecentCard() {
             </ImgDiv>
             <ContentDiv>
                 <Heading>{data.title}</Heading>
-                {/* <Hr /> */}
                 <SubHeading>
                     <LeftSection><Profile />  {data.author}</LeftSection>
                     <RightSection><Time /> {moment(data.date).format("LL")}</RightSection>
@@ -29,7 +28,7 @@ function RecentCard() {
                 <Description>
                     {data.desc}
                 </Description>
-                <Btn className="signin ui inverted blue button" to={data.url}>
+                <Btn className="signin ui inverted blue button mini" to={data.url}>
                     Read More
                 </Btn>
             </ContentDiv>
