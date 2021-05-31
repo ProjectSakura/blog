@@ -49,13 +49,13 @@ function AndroidElevenBeta() {
           <Description>Almost all of the features that Project Sakura 10 had, well most of them are there in Android 11 beta too.</Description>
           <UnorderedList>
             <ListItem>ASUS Zenfone Max Pro M1 by LordShenron</ListItem>
-            <br/>
+            <br />
             <ListItem>LeEco Le 2 by CakesTwix</ListItem>
-            <br/>
+            <br />
             <ListItem>Samsung Galaxy M20 and M30 by Haridhayal</ListItem>
-            <br/>
+            <br />
             <ListItem>Xiaomi Note 7 Pro by Nitish and Wally</ListItem>
-            <br/>
+            <br />
             <ListItem>Xiaomi Note 9 Pro Global by A9ito, the list can be changed later</ListItem>
           </UnorderedList>
           <Description>

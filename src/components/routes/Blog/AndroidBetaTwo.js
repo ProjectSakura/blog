@@ -45,15 +45,15 @@ function AndroidBetaTwo() {
           </Description>
           <UnorderedList>
             <ListItem>Everyone's favorite gimmick, Gaming mode.</ListItem>
-            <br/>
+            <br />
             <ListItem>Moar Clock faces, some ugly ones too.</ListItem>
-            <br/>
+            <br />
             <ListItem>Fixed the issue where wifi tile was not expanding in QS.</ListItem>
-            <br/>
+            <br />
             <ListItem>Volume dialog's visibility time can be changed now.</ListItem>
-            <br/>
+            <br />
             <ListItem>For weak ass displays that never goes over 60, we have fps meter :)</ListItem>
-            <br/>
+            <br />
             <ListItem>A ton of misc changes.</ListItem>
           </UnorderedList>
           <Description>

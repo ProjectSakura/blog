@@ -25,33 +25,33 @@ function Android11InitialRelease() {
           <Description>So, What took us so long for this update? Here goes the changelog.</Description>
           <UnorderedList>
             <ListItem>March Security Patch. </ListItem>
-            <br/>
+            <br />
             <ListItem>Better icon pack support in Trebuchet </ListItem>
-            <br/>
+            <br />
             <ListItem>App Drawer Opacity support in Trebuchet </ListItem>
-            <br/>
+            <br />
             <ListItem>Icon size support in Trebuchet </ListItem>
-            <br/>
+            <br />
             <ListItem>Moved Lineage Settings from System to SakuraConfig</ListItem>
-            <br/>
+            <br />
             <ListItem>Lockscreen weather </ListItem>
-            <br/>
+            <br />
             <ListItem>New IDE lockscreen clock </ListItem>
-            <br/>
+            <br />
             <ListItem>Data usage in QS Panel </ListItem>
-            <br/>
+            <br />
             <ListItem>Redesigned Volume Panel </ListItem>
-            <br/>
+            <br />
             <ListItem>Materialized Toasts </ListItem>
-            <br/>
+            <br />
             <ListItem>QS media player can be toggled ON and OFF</ListItem>
-            <br/>
+            <br />
             <ListItem>FaceUnlock animations </ListItem>
-            <br/>
+            <br />
             <ListItem>Notification sounds can be suppressed while screen is ON </ListItem>
-            <br/>
+            <br />
             <ListItem>Long ScreenShot support (Though it's kinda buggy) </ListItem>
-            <br/>
+            <br />
             <ListItem>And everything else that we cannot write here.. </ListItem>
           </UnorderedList>
           <Description>

@@ -42,15 +42,15 @@ function AugustSecondUpdate2020() {
           </Description>
           <UnorderedList>
             <ListItem>You can now change the icons in Settings dashboard. To random, oneplus and many more.</ListItem>
-            <br/>
+            <br />
             <ListItem>We have more features for notched devices now.</ListItem>
-            <br/>
+            <br />
             <ListItem>You can now have a oneUI actionbar in Settings dashboard.</ListItem>
-            <br/>
+            <br />
             <ListItem>We also fixed QS bug where long pressed panels won't close.</ListItem>
-            <br/>
+            <br />
             <ListItem>A fully redesigned Sakura Config, much more minimal much more responsive.</ListItem>
-            <br/>
+            <br />
             <ListItem>December Security Patch.We also caught to up to the Lineage OS changes like skipping screen on animation when unlocking with biometrics and much more.</ListItem>
           </UnorderedList>
           <Description>
