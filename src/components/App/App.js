@@ -36,8 +36,8 @@ function App() {
       {/* <Navbar /> */}
       <Router basename="/blogs">
         <Switch>
-          <Route path="/" exact component={Home} />
-          <Route path="/newhome" exact component={NewHome} />
+          <Route path="/oldhome" exact component={Home} />
+          <Route path="/" exact component={NewHome} />
           <Route path="/5.R-May-2021-update" exact component={May2021Update} />
           <Route path="/5.R-mid-may-2021-update" exact component={MidMay2021Update} />
           <Route path="/5.R-April-2021-update" exact component={April2021Update} />
