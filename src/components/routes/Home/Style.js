@@ -78,4 +78,5 @@ export const NavBarDiv = styled.div`
     @media (min-width: 850px) {
         display: none;
     }
+    margin-right: 0vh;
 `;

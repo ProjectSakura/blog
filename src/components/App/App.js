@@ -3,7 +3,6 @@ import { Route, HashRouter as Router, Switch } from "react-router-dom";
 import { Body } from "./styles";
 // routes
 import Home from "../routes/Home/Home";
-import NewHome from "../routes/NewHome/Home";
 //blogs route
 import May2021Update from "../routes/Blog/MidMay2021Update";
 import MidMay2021Update from "../routes/Blog/May2021Update";
@@ -29,10 +28,9 @@ import July2020Update from "../routes/Blog/July2020Update";
 function App() {
   return (
     <Body>
-      <Router basename="/blogs">
+      <Router basename="/blog">
         <Switch>
-          <Route path="/oldhome" exact component={Home} />
-          <Route path="/" exact component={NewHome} />
+          <Route path="/" exact component={Home} />
           <Route path="/5.R-May-2021-update" exact component={MidMay2021Update} />
           <Route path="/5.R-mid-may-2021-update" exact component={May2021Update} />
           <Route path="/5.R-April-2021-update" exact component={April2021Update} />

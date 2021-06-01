@@ -4,9 +4,6 @@ import { Link } from "react-router-dom";
 export const Body = styled.div`
     @media(min-width: 850px) {
       margin: 1vh 2vh;
-      /* max-width: fit-content;
-      max-height: fit-content; */
-      /* width: 50vh; */
       display: block;
     } 
     @media(max-width: 850px) {
@@ -39,13 +36,14 @@ export const SubHeading = styled.div`
   @media(max-width: 850px) {
     margin-top: 1vh;
     margin-bottom: 1vh;
+    font-size:0.7em;
   }
   @media(min-width: 850px) {
     margin-bottom:5vh;
     margin-top: 1vh;
+    font-size:1em;
   }
   display:block;
-  font-size:1em;
 `;
 export const LeftSection = styled.div`
   color: #53c497;
