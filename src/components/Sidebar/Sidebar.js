@@ -16,8 +16,6 @@ function Sidebar() {
       <LinkDiv>
         <Anchor href="https://projectsakura.github.io/"> Home </Anchor>
         <br />
-        <Anchor href="https://projectsakura.github.io/blogs"> Blog </Anchor>
-        <br />
         <Anchor href="https://projectsakura.github.io/stats.html"> Stats </Anchor>
         <br />
         <Anchor href="https://twitter.com/ProjectSakura_"> Twitter </Anchor>
