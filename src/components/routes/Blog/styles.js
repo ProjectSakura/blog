@@ -5,7 +5,7 @@ export const Body = styled.div`
       padding: 0vh;
     } 
     @media(max-width: 768px) {
-      padding: 1vh;
+      padding: 0vh;
       display:flex;
       flex-direction:column;
     }
