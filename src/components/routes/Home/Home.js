@@ -8,15 +8,18 @@ import { TwitterTimelineEmbed } from "react-twitter-embed";
 import Sidebar from "../../Sidebar/Sidebar";
 //?Styles
 import {
-  Container, Left, Mid, OtherBlogComponent, RecentBlogComponent, Right, TwitterComponent, SidebarComponent, FooterDiv, NavBarDiv,
+  Container, Left, Mid, OtherBlogComponent, RecentBlogComponent, Right, TwitterComponent, SidebarComponent, FooterDiv, NavBarDiv, AdvBanner,
 } from "./Style";
 import Posts from "../../Posts/Posts";
 //navbar
 import Navbar from "../../Navbar/Navbar";
+//footer
+import Footer from "../../Footer/Footer";
 //card data
 import cardData from "../../data/cardData";
 import RecentBlog from "../../PrimaryCard/RecentCard";
-
+//adv
+import AdComponent from "../../AdComponent/AdComponent";
 function Home() {
   //?--------Pagination--------
   const [posts, setPosts] = useState([]);
@@ -38,6 +41,7 @@ function Home() {
   //?---------------------- 
   return (
     <Container>
+        <AdComponent/>
       <NavBarDiv>
         <Navbar />
       </NavBarDiv>
@@ -60,9 +64,9 @@ function Home() {
           <TwitterTimelineEmbed sourceType="profile" screenName="ProjectSakura_" theme="dark" options={{ height: 600 }} />
         </TwitterComponent>
       </Right>
-      {/* <FooterDiv>
+      <FooterDiv>
         <Footer />
-      </FooterDiv> */}
+      </FooterDiv>
     </Container>
   );
 }

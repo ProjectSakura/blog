@@ -13,6 +13,7 @@ export default class AdComponent extends React.Component {
         data-ad-client="ca-pub-1277633863266032"
         data-ad-slot="8931146882"
         data-ad-format="auto"
+        data-adtest="on"
         data-full-width-responsive="true"
       />
     );
