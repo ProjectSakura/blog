@@ -8,7 +8,10 @@ export const SideDiv = styled.div`
 export const ImgDiv = styled.div`
 `;
 export const SponserImgDiv = styled.div`
-    position: relative;
+    /* position: fixed; */
+    height: 40vh;
+    display: flex;
+    align-items: flex-end;
 `;
 export const Image = styled.img`
     border-radius: 2em;
@@ -17,10 +20,12 @@ export const Image = styled.img`
     height: 7vh;
 `;
 export const SponsorImage = styled.img`
-    position: absolute;
-    bottom: 2vh;
-    width: 15vh;
-    left: 2vh;
+    /* margin: auto; */
+    /* position: fixed; */
+    display: block;
+    max-width: 100%;
+    height: auto;
+    /* bottom: 0; */
 `;
 export const Span = styled.h6`
     margin-top:1vh;

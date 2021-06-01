@@ -40,7 +40,7 @@ function _templateObject6() {
 }
 
 function _templateObject5() {
-  var data = _taggedTemplateLiteral(["\n    position: absolute;\n    bottom: 2vh;\n    width: 15vh;\n    left: 2vh;\n"]);
+  var data = _taggedTemplateLiteral(["\n    /* margin: auto; */\n    /* position: fixed; */\n    display: block;\n    max-width: 100%;\n    height: auto;\n    /* bottom: 0; */\n"]);
 
   _templateObject5 = function _templateObject5() {
     return data;
@@ -60,7 +60,7 @@ function _templateObject4() {
 }
 
 function _templateObject3() {
-  var data = _taggedTemplateLiteral(["\n    position: relative;\n"]);
+  var data = _taggedTemplateLiteral(["\n    /* position: fixed; */\n    height: 40vh;\n    display: flex;\n    align-items: flex-end;\n"]);
 
   _templateObject3 = function _templateObject3() {
     return data;

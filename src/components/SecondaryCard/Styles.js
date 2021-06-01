@@ -8,7 +8,7 @@ export const Body = styled.div`
     } 
     @media(max-width: 850px) {
       margin: 0.5vh;
-      max-width: max-content;
+      /* max-width: max-content; */
       display:flex;
       flex-direction:column;
     }
@@ -24,13 +24,14 @@ export const Heading = styled.h2`
     @media(min-width: 850px) {
         font-size: 1.2em;
         margin-bottom: 1vh;
+        white-space: nowrap; 
+        width: 20vw; 
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
     margin-top: 1vh;
     color: #039be5;
-    white-space: nowrap; 
-    width: 20vw; 
-    overflow: hidden;
-    text-overflow: ellipsis;
+    
 `;
 export const SubHeading = styled.div`
   @media(max-width: 850px) {
@@ -59,6 +60,7 @@ export const Description = styled.p`
     margin: 2vh auto;
   }
   @media(max-width: 850px) {
+    display: none;
     margin-top: 0vh;
   }
   font-size: 1em;

@@ -1,7 +1,7 @@
 // styles
 // import { Menu } from "semantic-ui-react";
 import {
-  SideDiv, Image, LinkDiv, Anchor, ImgDiv, Span, SponsorImage,
+  SideDiv, Image, LinkDiv, Anchor, ImgDiv, Span, SponsorImage, SponserImgDiv,
 } from "./styles";
 // Logo
 import Logo from "../../images/logo.png";
@@ -26,9 +26,9 @@ function Sidebar() {
         <br />
       </LinkDiv>
       {/* Sponser Section */}
-      <ImgDiv>
+      <SponserImgDiv>
         <SponsorImage src="https://projectsakura.xyz/image/spon-white.png" alt="logo" />
-      </ImgDiv>
+      </SponserImgDiv>
     </SideDiv>
   );
 }
