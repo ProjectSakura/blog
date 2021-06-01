@@ -8,7 +8,7 @@ import Logo from "../../images/logo.png";
 
 function Navbar() {
   const home = "https://projectsakura.github.io/";
-  const blogs = "https://projectsakura.github.io/blogs";
+  const blogs = "https://projectsakura.github.io/blog";
   const stats = "https://projectsakura.github.io/stats.html";
   const twitter = "https://twitter.com/ProjectSakura_";
   const telegram = "https://t.me/ProjectSakura";
