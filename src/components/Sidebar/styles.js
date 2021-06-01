@@ -7,12 +7,22 @@ export const SideDiv = styled.div`
 `;
 export const ImgDiv = styled.div`
 `;
+export const SponserImgDiv = styled.div`
+    position: relative;
+`;
 export const Image = styled.img`
     border-radius: 2em;
     margin: auto;
     width: 7vh;
     height: 7vh;
-`; export const Span = styled.h6`
+`;
+export const SponsorImage = styled.img`
+    position: absolute;
+    bottom: 2vh;
+    width: 15vh;
+    left: 2vh;
+`;
+export const Span = styled.h6`
     margin-top:1vh;
     color: #53c497;
 `;
