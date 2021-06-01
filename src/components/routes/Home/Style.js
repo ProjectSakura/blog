@@ -18,14 +18,16 @@ export const Left = styled.div`
 `;
 export const Mid = styled.div`
     @media (max-width: 850px) {
+        height: 100%;
         width: 100%;
     }
     @media (min-width: 850px) {
         float: left;
         width: 60%;
+        height: 100vh;
     }
     margin: auto;
-    height: 100vh;
+    
     padding: 2vh;
     background-color: #090C10;
 `;
