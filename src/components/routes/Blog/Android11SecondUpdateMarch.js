@@ -2,7 +2,7 @@ import { Container } from "semantic-ui-react";
 import {
   AuthorHead, AuthorSec, AuthorSubHead, Body, BodyInner, Description, Heading, ListItem, UnorderedList, Anchor, Date, Code,
 } from "./styles";
-import googleAd from "../../AdComponent/AdComponent";
+import { AdComponentBlogDisqus, AdComponentBlogFooter } from "../../AdComponent/AdComponent";
 import Footer from "../../Footer/Footer";
 import DisqusComment from "../../DisqusComment/DisqusComments";
 import Navbar from "../../Navbar/Navbar";
@@ -54,6 +54,7 @@ function Android11SecondUpdateMarch() {
             Well, this was it for this update and if you find any bugs do report it to us with logcat coz Logcat or gtfo. As always do follow us on twitter{" "}
             <Anchor href="https://twitter.com/ProjectSakura_">@ProjectSakura_</Anchor> coz we keep posting fun stuff on it ;)
           </Description>
+          <AdComponentBlogDisqus />
           <DisqusComment />
         </BodyInner>
 
@@ -65,6 +66,7 @@ function Android11SecondUpdateMarch() {
             with some college work.
           </Description>
         </AuthorSec>
+        <AdComponentBlogFooter />
       </Container>
       <Footer />
     </Body>
