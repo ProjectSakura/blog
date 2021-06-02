@@ -13,7 +13,7 @@ import {
   Anchor,
   Date,
 } from "./styles";
-import googleAd from "../../AdComponent/AdComponent";
+import { AdComponentBlogDisqus, AdComponentBlogFooter } from "../../AdComponent/AdComponent";
 import DisqusComment from "../../DisqusComment/DisqusComments";
 import Footer from "../../Footer/Footer";
 import Navbar from "../../Navbar/Navbar";
@@ -76,7 +76,10 @@ function AndroidBetaThree() {
             <br />
             <googleAd />
           </Description>
+          <AdComponentBlogDisqus />
+
           <DisqusComment />
+
         </BodyInner>
         <AuthorSec>
           <AuthorHead>About Author</AuthorHead>
@@ -85,6 +88,7 @@ function AndroidBetaThree() {
             LordShenron is the lead developer of the project. He is also an IT Engg Student and he loves anime and Japanese pop music. When he is not online he is mostly sleeping or busy with some college work.
           </Description>
         </AuthorSec>
+        <AdComponentBlogFooter />
       </Container>
       <Footer />
     </Body>
