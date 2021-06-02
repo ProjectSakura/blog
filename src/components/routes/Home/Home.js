@@ -19,7 +19,7 @@ import Footer from "../../Footer/Footer";
 import cardData from "../../data/cardData";
 import RecentBlog from "../../PrimaryCard/RecentCard";
 //adv
-import AdComponent from "../../AdComponent/AdComponent";
+import {AdComponentHome} from "../../AdComponent/AdComponent";
 function Home() {
   //?--------Pagination--------
   const [posts, setPosts] = useState([]);
@@ -41,7 +41,6 @@ function Home() {
   //?---------------------- 
   return (
     <Container>
-        <AdComponent/>
       <NavBarDiv>
         <Navbar />
       </NavBarDiv>
@@ -64,6 +63,7 @@ function Home() {
           <TwitterTimelineEmbed sourceType="profile" screenName="ProjectSakura_" theme="dark" options={{ height: 600 }} />
         </TwitterComponent>
       </Right>
+      <AdComponentHome/>
       <FooterDiv>
         <Footer />
       </FooterDiv>

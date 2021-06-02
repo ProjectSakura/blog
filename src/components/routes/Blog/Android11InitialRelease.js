@@ -2,7 +2,7 @@ import { Container } from "semantic-ui-react";
 import {
   AuthorHead, AuthorSec, AuthorSubHead, Body, BodyInner, Description, Heading, ListItem, UnorderedList, Anchor, Date,
 } from "./styles";
-import googleAd from "../../AdComponent/AdComponent";
+import { AdComponentBlogDisqus, AdComponentBlogFooter } from "../../AdComponent/AdComponent";
 import Footer from "../../Footer/Footer";
 import Navbar from "../../Navbar/Navbar";
 import DisqusComment from "../../DisqusComment/DisqusComments";
@@ -67,7 +67,7 @@ function Android11InitialRelease() {
             <Anchor href="https://twitter.com/ProjectSakura_">@ProjectSakura_</Anchor> coz we keep posting fun stuff on it ;)
           </Description>
           <Description>One more ad lol.</Description>
-          <googleAd />
+          <AdComponentBlogDisqus />
 
           <DisqusComment />
 
@@ -81,6 +81,7 @@ function Android11InitialRelease() {
             with some college work.
           </Description>
         </AuthorSec>
+        <AdComponentBlogFooter />
       </Container>
       <Footer />
     </Body>

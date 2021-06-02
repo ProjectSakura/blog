@@ -32,7 +32,7 @@ export const Anchor = styled.a`
 `;
 export const TagLine = styled.p`
     @media(max-width: 850px){
-        display: none;;
+        display: none;
     }
     word-wrap: break-word;
     font-size: 1.2em;
