@@ -37,7 +37,7 @@ function AndroidBetaTwo() {
             <br />
             Now see an ad.
             <br />
-            <googleAd />
+            <AdComponentBlogDisqus />
             <br />
             Okay good, so what we have new in this release..
             <br />
