@@ -31,7 +31,7 @@ function April2021Update() {
             <br />
             See a smol cute ad first.
             <br />
-            <googleAd />
+            <AdComponentBlogDisqus />
             <br />
             Okay good, so what we have new in this release..
           </Description>

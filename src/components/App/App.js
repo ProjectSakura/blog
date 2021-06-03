@@ -28,7 +28,7 @@ import July2020Update from "../routes/Blog/July2020Update";
 function App() {
   return (
     <Body>
-      <Router basename="/blog">
+      <Router>
         <Switch>
           <Route path="/" exact component={Home} />
           <Route path="/5.R-May-2021-update" exact component={MidMay2021Update} />
