@@ -13,7 +13,7 @@ import {
   Anchor,
   Date,
 } from "./styles";
-import googleAd from "../../AdComponent/AdComponent";
+import { AdComponentBlogDisqus, AdComponentBlogFooter } from "../../AdComponent/AdComponent";
 import DisqusComment from "../../DisqusComment/DisqusComments";
 import Footer from "../../Footer/Footer";
 import Navbar from "../../Navbar/Navbar";
@@ -37,7 +37,7 @@ function AndroidBetaTwo() {
             <br />
             Now see an ad.
             <br />
-            <googleAd />
+            <AdComponentBlogDisqus />
             <br />
             Okay good, so what we have new in this release..
             <br />
@@ -77,7 +77,7 @@ function AndroidBetaTwo() {
             <br />
             One more ad lol.
             <br />
-            <googleAd />
+            <AdComponentBlogDisqus />
           </Description>
           <DisqusComment />
         </BodyInner>
@@ -88,6 +88,7 @@ function AndroidBetaTwo() {
             LordShenron is the lead developer of the project. He is also an IT Engg Student and he loves anime and Japanese pop music. When he is not online he is mostly sleeping or busy with some college work.
           </Description>
         </AuthorSec>
+        <AdComponentBlogFooter />
       </Container>
       <Footer />
     </Body>

@@ -82,3 +82,5 @@ export const NavBarDiv = styled.div`
     }
     margin-right: 0vh;
 `;
+export const AdvBanner = styled.div`
+`;
