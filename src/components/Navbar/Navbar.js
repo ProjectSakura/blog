@@ -1,7 +1,7 @@
 // styles
 import { Menu } from "semantic-ui-react";
 import {
-  NavMenu, NavMenuItem, Image, DropDown, DropDownItem, DropDownMenu,
+  NavMenu, NavMenuItem, Image, DropDown, DropDownItem, DropDownMenu, DropDownLink,
 } from "./styles";
 // Logo
 import Logo from "../../images/logo.png";
@@ -9,7 +9,7 @@ import Logo from "../../images/logo.png";
 function Navbar() {
   const home = "https://projectsakura.github.io/";
   const blogs = "https://projectsakura.github.io/blog";
-  const donation = "https://projectsakura.github.io/blog/donation";
+  const donation = "/donation";
   const download = "https://projectsakura.github.io/download";
   const stats = "https://projectsakura.github.io/stats.html";
   const twitter = "https://twitter.com/ProjectSakura_";
@@ -32,7 +32,7 @@ function Navbar() {
             <DropDownItem href={stats}>Stats</DropDownItem>
             <DropDownItem href={twitter}>Twitter</DropDownItem>
             <DropDownItem href={telegram}>Telegram</DropDownItem>
-            <DropDownItem href={donation}>Donation</DropDownItem>
+            <DropDownItem><DropDownLink to={donation}>Donation</DropDownLink></DropDownItem>
             <DropDownItem href={download}>Download</DropDownItem>
           </DropDownMenu>
         </DropDown>

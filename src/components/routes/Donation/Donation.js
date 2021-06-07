@@ -1,24 +1,23 @@
 /* eslint-disable */
 import {
-    Body, BodyInner, DonorChild, DonorDiv, Span, Heading, DonorParent,
+    Body, BodyInner, DonorChild, DonorDiv, Heading, DonorParent, Image, SubHeading, Loader, Hr, FillLoader, GoalLoader,
 } from "./styles";
-import Donator from "../../data/donator";
+// import Bitcoin from "../../../images/donation/bitcoin.png";
+import {donator, method} from "../../data/donator";
 import Footer from "../../Footer/Footer";
 import Navbar from "../../Navbar/Navbar";
 
 function Donation() {
-    const renderCards = () => {
-        const cards = Donator.map((data) => (
+    const renderCards = (arr) => {
+        const cards = arr.map((data) => (
             <DonorChild key={data.id}>
-                <DonorDiv>
+               
+                    <Image src={data.img}/>
                     <Heading>
-                        <Span role="img" aria-label="donor">
-                            👑
-                        </Span>
-                        {"  "}
                         {data.name}
                     </Heading>
-                </DonorDiv>
+                    {/* <SubHeading>{data.url}</SubHeading> */}
+                
             </DonorChild>
         ));
         return cards;
@@ -27,9 +26,27 @@ function Donation() {
         <Body>
             <Navbar />
             <BodyInner>
+                <Loader>
+                    <FillLoader>
+                        <Heading>$ 33</Heading>
+                    </FillLoader>
+                    <GoalLoader>
+                        <Heading>Goal $ 50</Heading>
+                    </GoalLoader>
+                </Loader>
+            </BodyInner>
+            <BodyInner>
+                <Heading>Donation Methods</Heading>
                 <DonorParent>
-                    {renderCards()}
+                    {renderCards(method)}
                 </DonorParent>
+            </BodyInner>
+            <Hr/>
+            <BodyInner>
+                <Heading>Top Donators</Heading>
+                <DonorParent>
+                        {renderCards(donator)}
+                    </DonorParent>
             </BodyInner>
             <Footer />
         </Body>

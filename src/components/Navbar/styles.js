@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { Dropdown, Menu } from "semantic-ui-react";
 import styled from "styled-components";
 
@@ -39,4 +40,7 @@ export const DropDownMenu = styled(Dropdown.Menu)`
 `;
 export const DropDownItem = styled(Dropdown.Item)`
     
+`;
+export const DropDownLink = styled(Link)`
+    color: black;
 `;
