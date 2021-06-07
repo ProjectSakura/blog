@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 export const SideDiv = styled.div`
     /* background-color: #1c1c24 !important; */
@@ -36,6 +37,14 @@ export const LinkDiv = styled.div`
     margin-top: 3vh;
 `;
 export const Anchor = styled.a`
+    margin: 1vh auto;
+    color: white;
+    &:hover {
+        color: #53c497;
+        cursor: pointer;
+    }
+`;
+export const NavLink = styled(Link)`
     margin: 1vh auto;
     color: white;
     &:hover {
