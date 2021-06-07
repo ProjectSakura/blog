@@ -22,6 +22,8 @@ function Sidebar() {
         <br />
         <Anchor href="https://t.me/ProjectSakura"> Telegram </Anchor>
         <br />
+        <Anchor href="https://projectsakura.xyz/blog/donation"> Donation </Anchor>
+        <br />
         <Anchor href="https://projectsakura.xyz/download"> Downloads </Anchor>
         <br />
       </LinkDiv>
