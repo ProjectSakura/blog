@@ -74,12 +74,9 @@ function AndroidBetaThree() {
             <br />
             One more ad lol.
             <br />
-            <googleAd />
           </Description>
           <AdComponentBlogDisqus />
-
           <DisqusComment />
-
         </BodyInner>
         <AuthorSec>
           <AuthorHead>About Author</AuthorHead>
