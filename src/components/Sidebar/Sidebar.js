@@ -1,7 +1,7 @@
 // styles
 // import { Menu } from "semantic-ui-react";
 import {
-  SideDiv, Image, LinkDiv, Anchor, ImgDiv, Span, SponsorImage, SponserImgDiv,
+  SideDiv, Image, LinkDiv, Anchor, ImgDiv, Span, SponsorImage, SponserImgDiv, NavLink,
 } from "./styles";
 // Logo
 import Logo from "../../images/logo.png";
@@ -21,6 +21,8 @@ function Sidebar() {
         <Anchor href="https://twitter.com/ProjectSakura_"> Twitter </Anchor>
         <br />
         <Anchor href="https://t.me/ProjectSakura"> Telegram </Anchor>
+        <br />
+        <NavLink to="/donation" alt="donation-link"> Donation </NavLink>
         <br />
         <Anchor href="https://projectsakura.xyz/download"> Downloads </Anchor>
         <br />

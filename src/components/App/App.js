@@ -24,6 +24,7 @@ import Maintainership from "../routes/Blog/Maintainership";
 import AugustSecondUpdate2020 from "../routes/Blog/AugustSecondUpdate2020";
 import AugustUpdate2020 from "../routes/Blog/AugustUpdate2020";
 import July2020Update from "../routes/Blog/July2020Update";
+import Donation from "../routes/Donation/Donation";
 
 function App() {
   return (
@@ -51,6 +52,7 @@ function App() {
           <Route path="/maintainership" exact component={Maintainership} />
           <Route path="/second-update-of-august-2020" exact component={AugustSecondUpdate2020} />
           <Route path="/august-2020-update" exact component={AugustUpdate2020} />
+          <Route path="/donation" exact component={Donation} />
         </Switch>
       </Router>
     </Body>
