@@ -1,6 +1,6 @@
 /* eslint-disable */
 import {
-    Body, BodyInner, DonorChild, Heading, DonorParent, Image, SubHeading, Loader, Hr, FillLoader, GoalLoader, Anchor
+    Body, BodyInner, Child, Heading, Parent, Image, SubHeading, Loader, Hr, FillLoader, GoalLoader, Anchor
 } from "./styles";
 import { donator, method } from "../../data/donator";
 import Footer from "../../Footer/Footer";
@@ -8,18 +8,33 @@ import Navbar from "../../Navbar/Navbar";
 
 function Donation() {
 
-    const renderCards = (arr) => {
-        const cards = arr.map((data) => (
-            <DonorChild key={data.id}>
-                <Anchor href={data.url}>
+    const renderCards = (arr,section) => {
+        let cards; 
+        if(section==="method"){
+            cards= arr.map((data) => (
+                <Child key={data.id}>
                     <Image src={data.img} />
-                </Anchor>
-                <Heading>
-                    {data.name}
-                </Heading>
-                {/* <SubHeading>{data.url}</SubHeading> */}
-            </DonorChild>
-        ));
+                    
+                    <Heading>
+                        <Anchor href={data.url}>
+                            Donate via {data.name}
+                        </Anchor>
+                    </Heading>
+                    {/* <SubHeading>{data.url}</SubHeading> */}
+                </Child>
+            ));
+        }
+        else{
+            cards= arr.map((data) => (
+                <Child key={data.id}>
+                    <Image src={data.img} />
+                    <Heading>
+                        {data.name}
+                    </Heading>
+                    {/* <SubHeading>{data.url}</SubHeading> */}
+                </Child>
+            ));
+        }
         return cards;
     };
     return (
@@ -37,16 +52,16 @@ function Donation() {
             </BodyInner>
             <BodyInner>
                 <Heading>Donation Methods</Heading>
-                <DonorParent>
-                    {renderCards(method)}
-                </DonorParent>
+                <Parent>
+                    {renderCards(method,"method")}
+                </Parent>
             </BodyInner>
             <Hr />
             <BodyInner>
                 <Heading>Top Donators</Heading>
-                <DonorParent>
-                    {renderCards(donator)}
-                </DonorParent>
+                <Parent>
+                    {renderCards(donator,"donator")}
+                </Parent>
             </BodyInner>
             <Footer />
         </Body>
