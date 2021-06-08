@@ -61,15 +61,20 @@ export const Anchor = styled.a`
   text-decoration: none;
 `;
 export const Loader = styled.div`
+  @media(max-width: 850px) {
+    height: 5vh;
+  }
+  @media(min-width: 850px) {
+    height: 6vh;
+  }
   max-width: 100%;
-  height: 5vh;
   border-radius: 50px;
   border:1px solid #3AC0FF;
   display: flex;
   margin: 2vh;
 `;
 export const FillLoader = styled.div`
-  width: 33%;
+  width: 66%;
   margin: 0;
   padding: 0;
   height: inherit;
@@ -79,7 +84,7 @@ export const FillLoader = styled.div`
 `;
 export const GoalLoader = styled.div`
     text-align: right;
-    width: 77%;
+    width: 34%;
     padding: 1vh;
 `;
 export const Hr = styled.hr`
