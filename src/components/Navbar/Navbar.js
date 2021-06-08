@@ -25,6 +25,7 @@ function Navbar() {
         <NavMenuItem href={stats} name="Stats" />
         <NavMenuItem href={twitter} name="Twitter" />
         <NavMenuItem href={telegram} name="Telegram" />
+        <NavMenuItem href={download} name="Download" />
         <DropDown item icon="bars" simple>
           <DropDownMenu>
             <DropDownItem href={home}>Home</DropDownItem>
