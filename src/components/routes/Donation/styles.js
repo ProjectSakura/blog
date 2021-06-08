@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Button } from "semantic-ui-react";
 
 export const Body = styled.div`
     background-color: #121217;
@@ -24,7 +25,7 @@ export const DonorParent = styled.div`
 `;
 export const DonorChild = styled.div`
     @media(min-width: 850px) {
-      margin: 2vh 5vh; 
+      margin: 2vh 10vh; 
       /* display: block;  */
     } 
     @media(max-width: 850px) {
@@ -40,8 +41,8 @@ export const DonorChild = styled.div`
 `;
 export const Image = styled.img`
   border-radius: 50px;
-  height: 10vh;
-  width: 10vh;
+  height: 12vh;
+  width: 12vh;
 `;
 export const Heading = styled.h1`
   @media(max-width: 850px) {
@@ -54,6 +55,10 @@ export const Heading = styled.h1`
 `;
 export const SubHeading = styled.code`
 
+`;
+export const Anchor = styled.a`
+  color: white;
+  text-decoration: none;
 `;
 export const Loader = styled.div`
   max-width: 100%;
@@ -84,4 +89,7 @@ export const Hr = styled.hr`
   border-top-style: dotted;
   border-width: thick;
   /* margin: 50px auto; */
+`;
+export const Btn = styled(Button)`
+
 `;

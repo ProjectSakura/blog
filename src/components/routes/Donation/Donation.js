@@ -1,23 +1,23 @@
 /* eslint-disable */
 import {
-    Body, BodyInner, DonorChild, DonorDiv, Heading, DonorParent, Image, SubHeading, Loader, Hr, FillLoader, GoalLoader,
+    Body, BodyInner, DonorChild, Heading, DonorParent, Image, SubHeading, Loader, Hr, FillLoader, GoalLoader, Anchor
 } from "./styles";
-// import Bitcoin from "../../../images/donation/bitcoin.png";
-import {donator, method} from "../../data/donator";
+import { donator, method } from "../../data/donator";
 import Footer from "../../Footer/Footer";
 import Navbar from "../../Navbar/Navbar";
 
 function Donation() {
+
     const renderCards = (arr) => {
         const cards = arr.map((data) => (
             <DonorChild key={data.id}>
-               
-                    <Image src={data.img}/>
-                    <Heading>
-                        {data.name}
-                    </Heading>
-                    {/* <SubHeading>{data.url}</SubHeading> */}
-                
+                <Anchor href={data.url}>
+                    <Image src={data.img} />
+                </Anchor>
+                <Heading>
+                    {data.name}
+                </Heading>
+                {/* <SubHeading>{data.url}</SubHeading> */}
             </DonorChild>
         ));
         return cards;
@@ -41,12 +41,12 @@ function Donation() {
                     {renderCards(method)}
                 </DonorParent>
             </BodyInner>
-            <Hr/>
+            <Hr />
             <BodyInner>
                 <Heading>Top Donators</Heading>
                 <DonorParent>
-                        {renderCards(donator)}
-                    </DonorParent>
+                    {renderCards(donator)}
+                </DonorParent>
             </BodyInner>
             <Footer />
         </Body>

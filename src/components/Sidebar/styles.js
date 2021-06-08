@@ -10,7 +10,7 @@ export const ImgDiv = styled.div`
 `;
 export const SponserImgDiv = styled.div`
     /* position: fixed; */
-    height: 40vh;
+    height: 35vh;
     display: flex;
     align-items: flex-end;
 `;
