@@ -14,7 +14,7 @@ export const BodyInner = styled.div`
         padding: 3vh;
     }
 `;
-export const DonorParent = styled.div`
+export const Parent = styled.div`
   @media(max-width:850px){
     flex-direction: column;
   }
@@ -23,7 +23,7 @@ export const DonorParent = styled.div`
   margin-bottom: 5vh;
 
 `;
-export const DonorChild = styled.div`
+export const Child = styled.div`
     @media(min-width: 850px) {
       margin: 2vh 10vh; 
       /* display: block;  */
@@ -57,7 +57,14 @@ export const SubHeading = styled.code`
 
 `;
 export const Anchor = styled.a`
-  color: white;
+  &:hover{
+    color: white;
+    background-color: #3AC0FF;
+  }
+  border:1px solid #3AC0FF;
+  border-radius: 5px;
+  padding: 1vh;
+  color: #3AC0FF;
   text-decoration: none;
 `;
 export const Loader = styled.div`
