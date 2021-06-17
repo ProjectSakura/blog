@@ -2,7 +2,7 @@ import { Container } from "semantic-ui-react";
 import {
   AuthorHead, AuthorSec, AuthorSubHead, Body, BodyInner, Description, Heading, Image, ImgDiv, ListItem, SubHeading, UnorderedList, Anchor, Date,
 } from "./styles";
-import { AdComponentBlogDisqus, AdComponentBlogFooter } from "../../AdComponent/AdComponent";
+import AdComponent from "../../AdComponent/AdComponent";
 import DisqusComment from "../../DisqusComment/DisqusComments";
 import Footer from "../../Footer/Footer";
 import Navbar from "../../Navbar/Navbar";
@@ -31,7 +31,7 @@ function April2021Update() {
             <br />
             See a smol cute ad first.
             <br />
-            <AdComponentBlogDisqus />
+            <AdComponent />
             <br />
             Okay good, so what we have new in this release..
           </Description>
@@ -97,7 +97,7 @@ function April2021Update() {
             <br />
             One more ad lol.
           </Description>
-          <AdComponentBlogDisqus />
+          <AdComponent />
           <DisqusComment />
         </BodyInner>
         <AuthorSec>
@@ -108,7 +108,7 @@ function April2021Update() {
             with some college work.
           </Description>
         </AuthorSec>
-        <AdComponentBlogFooter />
+        <AdComponent />
       </Container>
       <Footer />
     </Body>

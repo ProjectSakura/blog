@@ -4,6 +4,7 @@ import { Body } from "./styles";
 // routes
 import Home from "../routes/Home/Home";
 //blogs route
+import June2021Update from "../routes/Blog/June2021Update";
 import May2021Update from "../routes/Blog/MidMay2021Update";
 import MidMay2021Update from "../routes/Blog/May2021Update";
 import GssocAssociationWebsiteUpdateMarch from "../routes/Blog/GssocAssociationWebsiteUpdateMarch";
@@ -32,6 +33,7 @@ function App() {
       <Router>
         <Switch>
           <Route path="/" exact component={Home} />
+          <Route path="/5.1-June-2021-update" exact component={June2021Update} />
           <Route path="/5.R-May-2021-update" exact component={MidMay2021Update} />
           <Route path="/5.R-mid-may-2021-update" exact component={May2021Update} />
           <Route path="/5.R-April-2021-update" exact component={April2021Update} />
