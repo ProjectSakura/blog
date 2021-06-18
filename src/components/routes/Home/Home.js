@@ -8,7 +8,7 @@ import { TwitterTimelineEmbed } from "react-twitter-embed";
 import Sidebar from "../../Sidebar/Sidebar";
 //?Styles
 import {
-  Container, Left, Mid, OtherBlogComponent, RecentBlogComponent, Right, TwitterComponent, SidebarComponent, FooterDiv, NavBarDiv, SponsorImage, SponsorImgDiv
+  Container, Left, Mid, OtherBlogComponent, RecentBlogComponent, Right, TwitterComponent, SidebarComponent, FooterDiv, NavBarDiv, SponsorImage, SponsorImgDiv, AdvBanner,
 } from "./Style";
 import Posts from "../../Posts/Posts";
 //navbar
@@ -53,7 +53,9 @@ function Home() {
         <RecentBlogComponent>
           <RecentBlog />
         </RecentBlogComponent>
-        <AdComponent />
+        <AdvBanner>
+          <AdComponent />
+        </AdvBanner>
         <OtherBlogComponent>
           <Posts cardData={currentPosts} loading={loading} />
         </OtherBlogComponent>
@@ -65,7 +67,6 @@ function Home() {
         </TwitterComponent>
         <SponsorImgDiv>
           <h2>Sponsored By</h2>
-          
           <SponsorImage src="https://projectsakura.xyz/image/spon-white.png" alt="logo" />
         </SponsorImgDiv>
       </Right>

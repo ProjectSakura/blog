@@ -1,8 +1,13 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-    display: flex;
-    height: 100%;
+    @media (min-width: 850px) {
+        display: flex;
+        height: 100%;
+    }   
+    @media (max-width: 850px) {
+        height: 100vh;
+    }
     /* background-color: #121217; */
 `;
 export const Left = styled.div`
@@ -12,14 +17,14 @@ export const Left = styled.div`
     @media (min-width: 850px) {
         float: left;
         width: 10%;
+        height: 100%;
+        padding: 2vh;
+        background-color: #121217;
     }
-    height: 100%;
-    padding: 2vh;
-    background-color: #121217;
 `;
 export const Mid = styled.div`
     @media (max-width: 850px) {
-        height: 100%;
+        height: 100vh;
         width: 100%;
     }
     @media (min-width: 850px) {
@@ -39,9 +44,9 @@ export const Right = styled.div`
     @media (min-width: 850px) {
         float: right;
         width: 30%;
+        height: 100%;
         /* padding: 2vh; */ 
-    }
-    height: 100%;
+    }   
     background-color:#121217;
 `;
 export const TwitterComponent = styled.div`
@@ -89,5 +94,7 @@ export const NavBarDiv = styled.div`
     margin-right: 0vh;
 `;
 export const AdvBanner = styled.div`
-    /* display: flex; */
+    @media (max-width: 850px) {
+        display: none;
+    }
 `;
