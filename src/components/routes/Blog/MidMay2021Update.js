@@ -16,6 +16,7 @@ import {
   SponsorPCImg,
   SponsorMobImg,
 } from "./styles";
+import AdComponent from "../../AdComponent/AdComponent";
 import DisqusComment from "../../DisqusComment/DisqusComments";
 import Footer from "../../Footer/Footer";
 import Navbar from "../../Navbar/Navbar";
@@ -42,6 +43,7 @@ function MidMay2021Update() {
             Heyo! we are back with some fixes and a fresh batch of bugs so you guys can keep crying about it. But before we begin, you can see in banner that sakura chan is also wearing a mask. So, If you are somebody reading this blog from India then please wear a mask all the time and wash hands properly to stay safe from Mucormycosis and COVID-19. Now, let's get started with another update..
             <br />
             Oh an ad. what? Seeing it even after adblock? Cry now.
+            <AdComponent />
             <br />
             <br />
             <Anchor href="https://www.codingninjas.com/courses/online-android-Development-kotlin?utm_source=projectsakura&utm_medium=referral&utm_campaign=android-development" />
@@ -75,6 +77,7 @@ function MidMay2021Update() {
             One more ad lol.
             <br />
           </Description>
+          <AdComponent />
           <DisqusComment />
         </BodyInner>
         <AuthorSec>

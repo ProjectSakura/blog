@@ -2,6 +2,7 @@ import { Container } from "semantic-ui-react";
 import {
   AuthorHead, AuthorSec, AuthorSubHead, Body, BodyInner, Description, Heading, Image, ImgDiv, ListItem, UnorderedList, Anchor, Date,
 } from "./styles";
+import AdComponent from "../../AdComponent/AdComponent";
 import DisqusComment from "../../DisqusComment/DisqusComments";
 import Footer from "../../Footer/Footer";
 import Navbar from "../../Navbar/Navbar";
@@ -42,6 +43,7 @@ function GssocAssociationWebsiteUpdateMarch() {
             <Anchor href="https://t.me/C0un13rT3rr0r1st">@C0un13rT3rr0r1st</Anchor>) . As always do follow us on twitter{" "}
             <Anchor href="https://twitter.com/ProjectSakura_">@ProjectSakura_</Anchor> coz we keep posting fun stuff on it ;)
           </Description>
+          <AdComponent />
           <DisqusComment />
         </BodyInner>
 

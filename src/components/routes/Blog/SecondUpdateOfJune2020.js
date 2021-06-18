@@ -2,6 +2,7 @@ import { Container } from "semantic-ui-react";
 import {
   AuthorHead, AuthorSec, AuthorSubHead, Body, BodyInner, Description, Heading, ListItem, UnorderedList, Date, CenterDiv,
 } from "./styles";
+import AdComponent from "../../AdComponent/AdComponent";
 import DisqusComment from "../../DisqusComment/DisqusComments";
 import Footer from "../../Footer/Footer";
 import Navbar from "../../Navbar/Navbar";
@@ -31,6 +32,7 @@ function SecondUpdateOfJune2020() {
             it and enjoy the update until we come back in july.
           </Description>
           <CenterDiv><b>What do you think?</b></CenterDiv>
+          <AdComponent />
           <DisqusComment />
         </BodyInner>
         <AuthorSec>
