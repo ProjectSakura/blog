@@ -3,7 +3,7 @@ import { CgProfile as Profile } from "react-icons/cg";
 import { AiOutlineClockCircle as Time } from "react-icons/ai";
 import data from "../data/cardData";
 import {
-  Body, Image, ImgDiv, ContentDiv, Heading, SubHeading, Btn, LeftSection, RightSection,
+  Body, Image, ImgDiv, ContentDiv, Heading, SubHeading, Btn, LeftSection, RightSection, Description,
 } from "./styles";
 
 function RecentCard() {

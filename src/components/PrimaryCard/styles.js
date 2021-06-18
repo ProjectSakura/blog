@@ -67,7 +67,7 @@ export const RightSection = styled.div`
 export const Description = styled.p`
   @media(min-width: 850px) {
     margin: 2vh auto;
-    font-size: 1.2em;
+    font-size: 1em;
   }
   @media(max-width: 850px) {
     padding-top: 3vh;
