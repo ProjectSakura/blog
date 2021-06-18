@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Container = styled.div`
     height: 100%;
-    background-color: white;
+    background-color: pink;
 `;
 export const Left = styled.div`
     @media (max-width: 850px) {
@@ -47,7 +47,7 @@ export const TwitterComponent = styled.div`
         display: none;
     }
     @media (min-width: 850px) {
-        margin: 3vh 5vh;
+        margin: 2vh 2vh;
     }
 `;
 export const SponsorImg = styled.img`

@@ -42,10 +42,10 @@ function MidMay2021Update() {
           <Description>
             Heyo! we are back with some fixes and a fresh batch of bugs so you guys can keep crying about it. But before we begin, you can see in banner that sakura chan is also wearing a mask. So, If you are somebody reading this blog from India then please wear a mask all the time and wash hands properly to stay safe from Mucormycosis and COVID-19. Now, let's get started with another update..
             <br />
+            <br />
             Oh an ad. what? Seeing it even after adblock? Cry now.
+            <br />
             <AdComponent />
-            <br />
-            <br />
             <Anchor href="https://www.codingninjas.com/courses/online-android-Development-kotlin?utm_source=projectsakura&utm_medium=referral&utm_campaign=android-development" />
             <SponsorPCImg src={PCImg} alt="pc-img" />
             <SponsorMobImg src={MobileImg} alt="mob-img" />
