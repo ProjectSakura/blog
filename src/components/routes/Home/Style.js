@@ -1,8 +1,9 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
+    display: flex;
     height: 100%;
-    background-color: pink;
+    /* background-color: #121217; */
 `;
 export const Left = styled.div`
     @media (max-width: 850px) {
@@ -12,7 +13,7 @@ export const Left = styled.div`
         float: left;
         width: 10%;
     }
-    height: 100vh;
+    height: 100%;
     padding: 2vh;
     background-color: #121217;
 `;
@@ -24,7 +25,7 @@ export const Mid = styled.div`
     @media (min-width: 850px) {
         float: left;
         width: 60%;
-        height: 100vh;
+        height: 100%;
     }
     margin: auto;
     
@@ -40,7 +41,7 @@ export const Right = styled.div`
         width: 30%;
         /* padding: 2vh; */ 
     }
-    height: 100vh;
+    height: 100%;
     background-color:#121217;
 `;
 export const TwitterComponent = styled.div`
@@ -48,11 +49,15 @@ export const TwitterComponent = styled.div`
         display: none;
     }
     @media (min-width: 850px) {
-        margin: 2vh 2vh;
+        margin: 3vh 5vh;
     }
 `;
-export const SponsorImg = styled.img`
-
+export const SponsorImage = styled.img`
+    max-width: fit-content;
+    height: auto;
+`;
+export const SponsorImgDiv = styled.div`
+    text-align: center;
 `;
 export const RecentBlogComponent = styled.div`
     height: 30%;
@@ -84,5 +89,5 @@ export const NavBarDiv = styled.div`
     margin-right: 0vh;
 `;
 export const AdvBanner = styled.div`
-    display: flex;
+    /* display: flex; */
 `;
