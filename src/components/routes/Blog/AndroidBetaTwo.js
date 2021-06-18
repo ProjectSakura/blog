@@ -52,7 +52,7 @@ function AndroidBetaTwo() {
             <br />
             <ListItem>Volume dialog's visibility time can be changed now.</ListItem>
             <br />
-            <ListItem>For weak ass displays that never goes over 60, we have fps meter :)</ListItem>
+            <ListItem>For weak ass displays that never goes over 60, we have fps meter </ListItem>
             <br />
             <ListItem>A ton of misc changes.</ListItem>
           </UnorderedList>
@@ -88,7 +88,6 @@ function AndroidBetaTwo() {
             LordShenron is the lead developer of the project. He is also an IT Engg Student and he loves anime and Japanese pop music. When he is not online he is mostly sleeping or busy with some college work.
           </Description>
         </AuthorSec>
-        <AdComponent />
       </Container>
       <Footer />
     </Body>

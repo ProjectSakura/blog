@@ -40,7 +40,7 @@ function App() {
           <Route path="/gssoc-association-website-update-march" exact component={GssocAssociationWebsiteUpdateMarch} />
           <Route path="/5.R-android-11-second-update-march" exact component={Android11SecondUpdateMarch} />
           <Route path="/5.R-android-11-initial-release" exact component={Android11InitialRelease} />
-          <Route path="/3-R-android-11-beta-2" exact component={AndroidBetaTwo} />
+          <Route path="/3.R-android-11-beta-2" exact component={AndroidBetaTwo} />
           <Route path="/3.R-android-11-beta-3" exact component={AndroidBetaThree} />
           <Route path="/4.R-android-11-update" exact component={FourAndroidUpdate} />
           <Route path="/4.R-february-2021-update" exact component={FourRFebUpdate} />
