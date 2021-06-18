@@ -2,6 +2,7 @@ import { Container } from "semantic-ui-react";
 import {
   AuthorHead, AuthorSec, AuthorSubHead, Body, BodyInner, Description, Heading, ListItem, UnorderedList, Anchor, Date,
 } from "./styles";
+import AdComponent from "../../AdComponent/AdComponent";
 import DisqusComment from "../../DisqusComment/DisqusComments";
 import Footer from "../../Footer/Footer";
 import Navbar from "../../Navbar/Navbar";
@@ -64,6 +65,7 @@ function OurSponsor() {
               <b>Bleeding Edge Hardware: </b>They are not dependent on old technology and stay updated with the current technology
             </ListItem>
           </UnorderedList>
+          <AdComponent />
           <DisqusComment />
         </BodyInner>
         <AuthorSec>

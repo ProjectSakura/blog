@@ -12,6 +12,7 @@ import {
   Date,
   Anchor,
 } from "./styles";
+import AdComponent from "../../AdComponent/AdComponent";
 import DisqusComment from "../../DisqusComment/DisqusComments";
 import Footer from "../../Footer/Footer";
 import Navbar from "../../Navbar/Navbar";
@@ -96,6 +97,7 @@ function AugustSecondUpdate2020() {
             <ListItem>Meizu 16TH and 16T, Maintained by thedauke.</ListItem>
             <ListItem>Realme 1, Maintained by CyberJalagam.</ListItem>
           </UnorderedList>
+          <AdComponent />
           <DisqusComment />
         </BodyInner>
         <AuthorSec>

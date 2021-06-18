@@ -77,8 +77,8 @@ function AndroidBetaTwo() {
             <br />
             One more ad lol.
             <br />
-            <AdComponent />
           </Description>
+          <AdComponent />
           <DisqusComment />
         </BodyInner>
         <AuthorSec>

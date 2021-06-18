@@ -60,7 +60,7 @@ function Home() {
       </Mid>
       <Right>
         <TwitterComponent>
-          <TwitterTimelineEmbed sourceType="profile" screenName="ProjectSakura_" theme="dark" options={{ height: 600 }} />
+          <TwitterTimelineEmbed sourceType="profile" screenName="ProjectSakura_" theme="dark" options={{ height: 500 }} />
         </TwitterComponent>
       </Right>
       <AdComponent />

@@ -12,6 +12,7 @@ import {
   Anchor,
   Date,
 } from "./styles";
+import AdComponent from "../../AdComponent/AdComponent";
 import Footer from "../../Footer/Footer";
 import DisqusComment from "../../DisqusComment/DisqusComments";
 import Navbar from "../../Navbar/Navbar";
@@ -32,6 +33,7 @@ function FourRFebUpdate() {
             A lot of shit is now gone with 2020 like Pubg from India and Covid-19. Well the great stuff like our new updates are still continuing and we are here with the first update of 2021. It's cold and my exams are ongoing but I still made some time for the January Update. I don't have much to talk for this release, it's a small update but we did made some decisions like not including any launcher other than Trebuchet by default on all builds (Go, Gapps, Vanilla or any other in future). Why? Coz having another launcher was becoming a pain in the ass for me.
             <br />
             Now see an ad.
+            <AdComponent />
             <br />
             So did we fix any of the bugs we had last time? Haha Nope, but here goes the changelog.
           </Description>
@@ -59,6 +61,7 @@ function FourRFebUpdate() {
             <br />
             One more ad lol.
           </Description>
+          <AdComponent />
           <DisqusComment />
         </BodyInner>
         <AuthorSec>
