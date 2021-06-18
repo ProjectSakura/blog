@@ -8,7 +8,7 @@ import { TwitterTimelineEmbed } from "react-twitter-embed";
 import Sidebar from "../../Sidebar/Sidebar";
 //?Styles
 import {
-  Container, Left, Mid, OtherBlogComponent, RecentBlogComponent, Right, TwitterComponent, SidebarComponent, FooterDiv, NavBarDiv, AdvBanner,
+  Container, Left, Mid, OtherBlogComponent, RecentBlogComponent, Right, TwitterComponent, SidebarComponent, FooterDiv, NavBarDiv, SponsorImage, SponsorImgDiv
 } from "./Style";
 import Posts from "../../Posts/Posts";
 //navbar
@@ -53,21 +53,23 @@ function Home() {
         <RecentBlogComponent>
           <RecentBlog />
         </RecentBlogComponent>
-        
+        <AdComponent />
         <OtherBlogComponent>
           <Posts cardData={currentPosts} loading={loading} />
         </OtherBlogComponent>
         <Pagination postsPerPage={postsPerPage} totalPosts={posts.length} paginate={paginate} />
       </Mid>
       <Right>
-        {/* <AdComponent /> */}
         <TwitterComponent>
-          <TwitterTimelineEmbed sourceType="profile" screenName="ProjectSakura_" theme="dark" options={{ height: 500 }} />  
+          <TwitterTimelineEmbed sourceType="profile" screenName="ProjectSakura_" theme="dark" options={{ height: 800 }} />  
         </TwitterComponent>
-        <AdvBanner>
-          <AdComponent />
-        </AdvBanner>
+        <SponsorImgDiv>
+          <h2>Sponsored By</h2>
+          
+          <SponsorImage src="https://projectsakura.xyz/image/spon-white.png" alt="logo" />
+        </SponsorImgDiv>
       </Right>
+
       <FooterDiv>
         <Footer />
       </FooterDiv>
