@@ -53,6 +53,7 @@ function Home() {
         <RecentBlogComponent>
           <RecentBlog />
         </RecentBlogComponent>
+        
         <OtherBlogComponent>
           <Posts cardData={currentPosts} loading={loading} />
         </OtherBlogComponent>
@@ -60,10 +61,13 @@ function Home() {
       </Mid>
       <Right>
         <TwitterComponent>
-          <TwitterTimelineEmbed sourceType="profile" screenName="ProjectSakura_" theme="dark" options={{ height: 500 }} />
+          <TwitterTimelineEmbed sourceType="profile" screenName="ProjectSakura_" theme="dark" options={{ height: 200 }} />
+          {/* <div> */}
+            <AdComponent />
+          {/* </div> */}
         </TwitterComponent>
       </Right>
-      <AdComponent />
+      
       <FooterDiv>
         <Footer />
       </FooterDiv>
