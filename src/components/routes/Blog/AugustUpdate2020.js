@@ -13,7 +13,7 @@ import {
   Date,
 } from "./styles";
 
-// import googleAd from "../../AdComponent/AdComponent";
+import AdComponent from "../../AdComponent/AdComponent";
 import DisqusComment from "../../DisqusComment/DisqusComments";
 import Footer from "../../Footer/Footer";
 import Navbar from "../../Navbar/Navbar";
@@ -87,6 +87,7 @@ function AugustUpdate2020() {
             <br />
             <ListItem>And Motorola G7 (River), Maintained by Vitor.</ListItem>
           </UnorderedList>
+          <AdComponent />
           <DisqusComment />
         </BodyInner>
         <AuthorSec>

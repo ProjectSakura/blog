@@ -2,6 +2,7 @@ import { Container } from "semantic-ui-react";
 import {
   AuthorHead, AuthorSec, AuthorSubHead, Body, BodyInner, Description, Heading, ListItem, UnorderedList, Anchor, Date,
 } from "./styles";
+import AdComponent from "../../AdComponent/AdComponent";
 import DisqusComment from "../../DisqusComment/DisqusComments";
 import Footer from "../../Footer/Footer";
 import Navbar from "../../Navbar/Navbar";
@@ -39,6 +40,7 @@ function September2020Update() {
             Oh and if you like our work, please consider buying me a coffee because it helps a lot.
             <Anchor href="https://ko-fi.com/lordshen">Buy me a coffee.</Anchor>
           </Description>
+          <AdComponent />
           <DisqusComment />
         </BodyInner>
 
