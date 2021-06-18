@@ -24,7 +24,7 @@ export const Left = styled.div`
 `;
 export const Mid = styled.div`
     @media (max-width: 850px) {
-        height: 100vh;
+        height: 100%;
         width: 100%;
     }
     @media (min-width: 850px) {
@@ -94,7 +94,7 @@ export const NavBarDiv = styled.div`
     margin-right: 0vh;
 `;
 export const AdvBanner = styled.div`
-    @media (max-width: 850px) {
+    /* @media (max-width: 850px) {
         display: none;
-    }
+    } */
 `;
