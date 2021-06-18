@@ -18,9 +18,9 @@ function RecentCard() {
           <LeftSection><Profile />  {data[0].author}</LeftSection>
           <RightSection><Time /> {moment(data[0].date).format("LL")}</RightSection>
         </SubHeading>
-        {/* <Description>
+        <Description>
           {data[0].desc}
-        </Description> */}
+        </Description>
         <Btn className="signin ui inverted blue button mini" to={data[0].url}>
           Read More
         </Btn>
