@@ -3,7 +3,7 @@ import { CgProfile as Profile } from "react-icons/cg";
 import { AiOutlineClockCircle as Time } from "react-icons/ai";
 import data from "../data/cardData";
 import {
-  Body, Image, ImgDiv, ContentDiv, Heading, SubHeading, Btn, LeftSection, RightSection,
+  Body, Image, ImgDiv, ContentDiv, Heading, SubHeading, Btn, LeftSection, RightSection, Description,
 } from "./styles";
 
 function RecentCard() {
@@ -18,9 +18,9 @@ function RecentCard() {
           <LeftSection><Profile />  {data[0].author}</LeftSection>
           <RightSection><Time /> {moment(data[0].date).format("LL")}</RightSection>
         </SubHeading>
-        {/* <Description>
+        <Description>
           {data[0].desc}
-        </Description> */}
+        </Description>
         <Btn className="signin ui inverted blue button mini" to={data[0].url}>
           Read More
         </Btn>

@@ -38,6 +38,7 @@ export const Right = styled.div`
     @media (min-width: 850px) {
         float: right;
         width: 30%;
+        /* padding: 2vh; */ 
     }
     height: 100vh;
     background-color:#121217;
@@ -83,4 +84,5 @@ export const NavBarDiv = styled.div`
     margin-right: 0vh;
 `;
 export const AdvBanner = styled.div`
+    display: flex;
 `;

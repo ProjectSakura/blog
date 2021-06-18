@@ -60,14 +60,14 @@ function Home() {
         <Pagination postsPerPage={postsPerPage} totalPosts={posts.length} paginate={paginate} />
       </Mid>
       <Right>
+        {/* <AdComponent /> */}
         <TwitterComponent>
-          <TwitterTimelineEmbed sourceType="profile" screenName="ProjectSakura_" theme="dark" options={{ height: 200 }} />
-          {/* <div> */}
-            <AdComponent />
-          {/* </div> */}
+          <TwitterTimelineEmbed sourceType="profile" screenName="ProjectSakura_" theme="dark" options={{ height: 500 }} />  
         </TwitterComponent>
+        <AdvBanner>
+          <AdComponent />
+        </AdvBanner>
       </Right>
-      
       <FooterDiv>
         <Footer />
       </FooterDiv>
