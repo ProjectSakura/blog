@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Parent = styled.div`
-  @media(max-width:850px){
+  @media(max-width:900px){
     flex-direction: column;
   }
   display: flex;

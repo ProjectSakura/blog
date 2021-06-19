@@ -2,11 +2,11 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 
 export const Body = styled.div`
-    @media(min-width: 850px) {
+    @media(min-width: 900px) {
       margin: 1vh 2vh;
       display: block;
     } 
-    @media(max-width: 850px) {
+    @media(max-width: 900px) {
       margin: 0.5vh;
       /* max-width: max-content; */
       display:flex;
@@ -17,11 +17,11 @@ export const Body = styled.div`
     background-color: #1c1c24;
 `;
 export const Heading = styled.h2`
-    @media(max-width: 850px) {
+    @media(max-width: 900px) {
         font-size: 1.5em;
         margin-bottom: 0vh;
     }
-    @media(min-width: 850px) {
+    @media(min-width: 900px) {
         font-size: 1.2em;
         margin-bottom: 1vh;
         white-space: nowrap; 
@@ -34,12 +34,12 @@ export const Heading = styled.h2`
     
 `;
 export const SubHeading = styled.div`
-  @media(max-width: 850px) {
+  @media(max-width: 900px) {
     margin-top: 1vh;
     margin-bottom: 1vh;
     font-size:0.7em;
   }
-  @media(min-width: 850px) {
+  @media(min-width: 900px) {
     margin-bottom:5vh;
     margin-top: 1vh;
     font-size:1em;
@@ -56,10 +56,10 @@ export const RightSection = styled.div`
 `;
 
 export const Description = styled.p`
-  @media(min-width: 850px) {
+  @media(min-width: 900px) {
     margin: 2vh auto;
   }
-  @media(max-width: 850px) {
+  @media(max-width: 900px) {
     display: none;
     margin-top: 0vh;
   }
