@@ -8,7 +8,7 @@ export const SideDiv = styled.div`
 `;
 export const ImgDiv = styled.div`
 `;
-export const SponserImgDiv = styled.div`
+export const SponsorImgDiv = styled.div`
     /* position: fixed; */
     height: 30vh;
     display: flex;

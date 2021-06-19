@@ -63,12 +63,12 @@ function Home() {
       </Mid>
       <Right>
         <TwitterComponent>
-          <TwitterTimelineEmbed sourceType="profile" screenName="ProjectSakura_" theme="dark" options={{ height: 800 }} />  
+          <TwitterTimelineEmbed sourceType="profile" screenName="ProjectSakura_" theme="dark" options={{ height: 500 }} />  
         </TwitterComponent>
-        <SponsorImgDiv>
+        {/* <SponsorImgDiv>
           <h2>Sponsored By</h2>
           <SponsorImage src="https://projectsakura.xyz/image/spon-white.png" alt="logo" />
-        </SponsorImgDiv>
+        </SponsorImgDiv> */}
       </Right>
 
       <FooterDiv>
