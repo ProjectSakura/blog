@@ -26,13 +26,30 @@ function Home() {
   const [loading, setLoading] = useState(false);
   const [currentPage, setCurrentPage] = useState(1);
   const [postsPerPage] = useState(4);
-
+  const [width,setWidth] = useState(window.innerWidth);
   useEffect(() => {
     setLoading(true);
     setPosts(cardData);
     setLoading(false);
   }, []);
 
+  useEffect(()=>{
+    window.addEventListener("resize", updateWidth);
+    return () => window.removeEventListener("resize", updateWidth);
+  });
+
+  const updateWidth = () => {
+    setWidth(window.innerWidth);
+  };
+  //twitter
+  const displayTwitter=()=>{
+    // console.log("width: ",width);
+    if(width>=900){ 
+      return(<TwitterTimelineEmbed sourceType="profile" screenName="ProjectSakura_" theme="dark" options={{ height: 500 }} />);
+    }
+    return;
+    
+  }
   // Get current posts
   const indexOfLastPost = currentPage * postsPerPage;
   const indexOfFirstPost = indexOfLastPost - postsPerPage;
@@ -63,7 +80,7 @@ function Home() {
       </Mid>
       <Right>
         <TwitterComponent>
-          <TwitterTimelineEmbed sourceType="profile" screenName="ProjectSakura_" theme="dark" options={{ height: 500 }} />  
+            {displayTwitter()}
         </TwitterComponent>
         {/* <SponsorImgDiv>
           <h2>Sponsored By</h2>
