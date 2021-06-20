@@ -18,6 +18,8 @@ import AdComponent from "../../AdComponent/AdComponent";
 import DisqusComment from "../../DisqusComment/DisqusComments";
 import Footer from "../../Footer/Footer";
 import Navbar from "../../Navbar/Navbar";
+//image
+import FourAndroidUpdateIMG from "../../../images/blogs/FourAndroidUpdateIMG.png";
 
 function FourAndroidUpdate() {
   return (
@@ -32,7 +34,7 @@ function FourAndroidUpdate() {
             4.R of Project Sakura is here!
           </Heading>
           <ImgDiv>
-            <Image src="https://i.imgur.com/gHcCRzi.jpg" />
+            <Image src={FourAndroidUpdateIMG} />
           </ImgDiv>
           <Description>
             A curvy, powerful and cool looking update of Project Sakura is here. With many yes, no and bootloops we are here. We have completely rebased to Lineage 18.1 for this release and trust me it was not easy. This one is not a BETA, its a buggy STABLE update so no more asking "Is this beta ser hehe? Is this build stable to use?" Well i secretly use blog posts to smash you users. This update will also start rolling from today or prolly tomorrow and almost all of the supported devices will get it by new year (No i didn't bothered asking maintainers before giving this ETA).

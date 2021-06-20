@@ -23,6 +23,8 @@ import Navbar from "../../Navbar/Navbar";
 //sponsors images
 import MobileImg from "../../../images/ninjas/mobilead.png";
 import PCImg from "../../../images/ninjas/pcad.png";
+//image
+import MidMay2021UpdateIMG from "../../../images/blogs/MidMay2021UpdateIMG.png";
 
 function MidMay2021Update() {
   return (
@@ -37,7 +39,7 @@ function MidMay2021Update() {
             Mid May Happiness from Project Sakura
           </Heading>
           <ImgDiv>
-            <Image src="https://i.imgur.com/1nn79L9.pngv" />
+            <Image src={MidMay2021UpdateIMG} />
           </ImgDiv>
           <Description>
             Heyo! we are back with some fixes and a fresh batch of bugs so you guys can keep crying about it. But before we begin, you can see in banner that sakura chan is also wearing a mask. So, If you are somebody reading this blog from India then please wear a mask all the time and wash hands properly to stay safe from Mucormycosis and COVID-19. Now, let's get started with another update..

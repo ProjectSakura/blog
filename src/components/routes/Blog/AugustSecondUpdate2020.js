@@ -18,6 +18,8 @@ import AdComponent from "../../AdComponent/AdComponent";
 import DisqusComment from "../../DisqusComment/DisqusComments";
 import Footer from "../../Footer/Footer";
 import Navbar from "../../Navbar/Navbar";
+//image
+import AugustSecondUpdate2020IMG from "../../../images/blogs/AugustSecondUpdate2020IMG.png";
 
 function AugustSecondUpdate2020() {
   return (
@@ -32,7 +34,7 @@ function AugustSecondUpdate2020() {
             Whats better than a warm cup of coffee? Yes! Project Sakura update.
           </Heading>
           <ImgDiv>
-            <Image src="https://i.imgur.com/kAx5OqE.jpg" />
+            <Image src={AugustSecondUpdate2020IMG} />
           </ImgDiv>
           <Description>
             So If you were following us on twitter you may would have noticed that we changed somethings, fixed somethings and broken somethings. Well, thats just how we work.
