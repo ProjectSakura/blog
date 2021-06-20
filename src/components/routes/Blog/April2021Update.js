@@ -6,6 +6,8 @@ import AdComponent from "../../AdComponent/AdComponent";
 import DisqusComment from "../../DisqusComment/DisqusComments";
 import Footer from "../../Footer/Footer";
 import Navbar from "../../Navbar/Navbar";
+//image
+import April2021UpdateIMG from "../../../images/blogs/April2021UpdateIMG.png";
 
 function April2021Update() {
   return (
@@ -16,7 +18,7 @@ function April2021Update() {
           <Date>12 April 2021</Date>
           <Heading>April security update of ProjectSakura is here!</Heading>
           <ImgDiv>
-            <Image src="https://i.imgur.com/gQIVeSH.png" />
+            <Image src={April2021UpdateIMG} />
           </ImgDiv>
           <SubHeading />
           <Description>

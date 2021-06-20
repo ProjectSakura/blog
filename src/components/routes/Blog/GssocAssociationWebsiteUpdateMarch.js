@@ -6,6 +6,8 @@ import AdComponent from "../../AdComponent/AdComponent";
 import DisqusComment from "../../DisqusComment/DisqusComments";
 import Footer from "../../Footer/Footer";
 import Navbar from "../../Navbar/Navbar";
+//image
+import GSSOC2021UpdateIMG from "../../../images/blogs/GSSOC2021UpdateIMG.png";
 
 function GssocAssociationWebsiteUpdateMarch() {
   return (
@@ -20,7 +22,7 @@ function GssocAssociationWebsiteUpdateMarch() {
             selected as GSSOC'21 and many of the contributors all around the world are coming and working on our website.
           </Description>
           <ImgDiv>
-            <Image src="https://gssoc.girlscript.tech/images/type-logo.png" />
+            <Image src={GSSOC2021UpdateIMG} />
           </ImgDiv>
           <Description>
             All have the same goal in mind to make user experience and user interface better, We are planning to create some new things which I am sure ,you gonna like it, For Now I want

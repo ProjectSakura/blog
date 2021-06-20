@@ -5,12 +5,14 @@ import data from "../data/cardData";
 import {
   Body, Image, ImgDiv, ContentDiv, Heading, SubHeading, Btn, LeftSection, RightSection, Description,
 } from "./styles";
+//image
+import bannerImg from "../../images/blogs/recent.png";
 
 function RecentCard() {
   return (
     <Body>
       <ImgDiv>
-        <Image src="https://i.imgur.com/1nn79L9.pngv" alt="banner-img" />
+        <Image src={bannerImg} alt="banner-img" />
       </ImgDiv>
       <ContentDiv>
         <Heading>{data[0].title}</Heading>

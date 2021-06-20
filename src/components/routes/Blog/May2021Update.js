@@ -19,6 +19,8 @@ import AdComponent from "../../AdComponent/AdComponent";
 import DisqusComment from "../../DisqusComment/DisqusComments";
 import Footer from "../../Footer/Footer";
 import Navbar from "../../Navbar/Navbar";
+//image
+import May2021UpdateIMG from "../../../images/blogs/May2021UpdateIMG.png";
 
 function May2021Update() {
   return (
@@ -33,7 +35,7 @@ function May2021Update() {
             Blur, Transparency, Stability and much more with May update of ProjectSakura
           </Heading>
           <ImgDiv>
-            <Image src="https://i.imgur.com/XYCf1os.jpg" alt="display" />
+            <Image src={May2021UpdateIMG} alt="display" />
           </ImgDiv>
           <SubHeading>
             Artwork by: cryptofox17 for ProjectSakura

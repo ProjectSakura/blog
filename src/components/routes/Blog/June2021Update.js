@@ -18,6 +18,8 @@ import AdComponent from "../../AdComponent/AdComponent";
 import DisqusComment from "../../DisqusComment/DisqusComments";
 import Footer from "../../Footer/Footer";
 import Navbar from "../../Navbar/Navbar";
+//image
+import June2021UpdateIMG from "../../../images/blogs/June2021UpdateIMG.png";
 
 function June2021Update() {
   return (
@@ -32,7 +34,7 @@ function June2021Update() {
             The best thing this summer is Project Sakura 5.1
           </Heading>
           <ImgDiv>
-            <Image src="https://i.imgur.com/VIqCP7G.png" alt="display" />
+            <Image src={June2021UpdateIMG} alt="display" />
           </ImgDiv>
           <Description>
             Far beyond the mountains and the sea there was a vast land with nothing but a beautiful green grass but there was a weird looking table there and a computer on it
