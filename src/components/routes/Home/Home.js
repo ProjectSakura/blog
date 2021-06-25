@@ -8,11 +8,9 @@ import { TwitterTimelineEmbed } from "react-twitter-embed";
 import Sidebar from "../../Sidebar/Sidebar";
 //?Styles
 import {
-  Container, Left, Mid, OtherBlogComponent, RecentBlogComponent, Right, TwitterComponent, SidebarComponent, FooterDiv, NavBarDiv, SponsorImage, SponsorImgDiv, AdvBanner,
+  Container, Left, Mid, OtherBlogComponent, RecentBlogComponent, Right, TwitterComponent, SidebarComponent, FooterDiv, NavBarDiv, AdvBanner, MerchBanner, PCImg, MobImg, Anchor
 } from "./Style";
 import Posts from "../../Posts/Posts";
-//merchcard
-import MerchCard from "../../MerchCard/MerchCard";
 //navbar
 import Navbar from "../../Navbar/Navbar";
 //footer
@@ -20,6 +18,8 @@ import Footer from "../../Footer/Footer";
 //card data
 import cardData from "../../data/cardData";
 import RecentBlog from "../../PrimaryCard/RecentCard";
+//merch
+import MerchPCBanner from "../../../images/merch/desktop.gif";
 //adv
 import AdComponent from "../../AdComponent/AdComponent";
 
@@ -29,14 +29,14 @@ function Home() {
   const [loading, setLoading] = useState(false);
   const [currentPage, setCurrentPage] = useState(1);
   const [postsPerPage] = useState(4);
-  const [width,setWidth] = useState(window.innerWidth);
+  const [width, setWidth] = useState(window.innerWidth);
   useEffect(() => {
     setLoading(true);
     setPosts(cardData);
     setLoading(false);
   }, []);
 
-  useEffect(()=>{
+  useEffect(() => {
     window.addEventListener("resize", updateWidth);
     return () => window.removeEventListener("resize", updateWidth);
   });
@@ -45,13 +45,13 @@ function Home() {
     setWidth(window.innerWidth);
   };
   //twitter
-  const displayTwitter=()=>{
+  const displayTwitter = () => {
     // console.log("width: ",width);
-    if(width>=900){ 
-      return(<TwitterTimelineEmbed sourceType="profile" screenName="ProjectSakura_" theme="dark" options={{ height: 450 }} />);
+    if (width >= 900) {
+      return (<TwitterTimelineEmbed sourceType="profile" screenName="ProjectSakura_" theme="dark" options={{ height: 450 }} />);
     }
     return;
-    
+
   }
   // Get current posts
   const indexOfLastPost = currentPage * postsPerPage;
@@ -76,6 +76,9 @@ function Home() {
         <AdvBanner>
           <AdComponent />
         </AdvBanner>
+        <MerchBanner>
+          <Anchor href="https://www.hellotux.com/projectsakura" target="blank"><PCImg src={MerchPCBanner} alt="pc-banner" /></Anchor>
+        </MerchBanner>
         <OtherBlogComponent>
           <Posts cardData={currentPosts} loading={loading} />
         </OtherBlogComponent>
@@ -83,11 +86,9 @@ function Home() {
       </Mid>
       <Right>
         <TwitterComponent>
-            {displayTwitter()}
+          {displayTwitter()}
         </TwitterComponent>
-        <MerchCard/>
       </Right>
-
       <FooterDiv>
         <Footer />
       </FooterDiv>

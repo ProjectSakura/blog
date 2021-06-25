@@ -58,12 +58,30 @@ export const TwitterComponent = styled.div`
         margin: 3vh 5vh;
     }
 `;
+export const MerchBanner = styled.div`
+    text-align: center;
+    background-color: #3C3555;
+`;
+export const PCImg = styled.img`
+   @media(min-width: 900px) {
+        max-width: 100%;
+        max-height: 30vh;
+    }
+    @media(max-width: 900px) {
+        max-width: 100%; 
+        max-height: max-content;   
+    }
+    border-radius: 5px;
+`;
 export const SponsorImage = styled.img`
     max-width: fit-content;
     height: auto;
 `;
 export const SponsorImgDiv = styled.div`
     text-align: center;
+`;
+export const Anchor = styled.a`
+    text-decoration:none;
 `;
 export const RecentBlogComponent = styled.div`
     height: 30%;
