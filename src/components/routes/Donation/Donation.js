@@ -1,6 +1,6 @@
 /* eslint-disable */
 import {
-    Body, BodyInner, Child, Heading, Parent, Image, SubHeading, Loader, Hr, FillLoader, GoalLoader, Anchor
+    Body, BodyInner, Child, Heading, Parent, Image, Hr, Anchor
 } from "./styles";
 import { donator, method } from "../../data/donator";
 import Footer from "../../Footer/Footer";
@@ -8,13 +8,13 @@ import Navbar from "../../Navbar/Navbar";
 
 function Donation() {
 
-    const renderCards = (arr,section) => {
-        let cards; 
-        if(section==="method"){
-            cards= arr.map((data) => (
+    const renderCards = (arr, section) => {
+        let cards;
+        if (section === "method") {
+            cards = arr.map((data) => (
                 <Child key={data.id}>
                     <Image src={data.img} />
-                    
+
                     <Heading>
                         <Anchor href={data.url}>
                             Donate via {data.name}
@@ -24,8 +24,8 @@ function Donation() {
                 </Child>
             ));
         }
-        else{
-            cards= arr.map((data) => (
+        else {
+            cards = arr.map((data) => (
                 <Child key={data.id}>
                     <Image src={data.img} />
                     <Heading>
@@ -41,26 +41,18 @@ function Donation() {
         <Body>
             <Navbar />
             <BodyInner>
-                <Loader>
-                    <FillLoader>
-                        <Heading>$ 33</Heading>
-                    </FillLoader>
-                    <GoalLoader>
-                        <Heading>Goal $ 50</Heading>
-                    </GoalLoader>
-                </Loader>
             </BodyInner>
             <BodyInner>
                 <Heading>Donation Methods</Heading>
                 <Parent>
-                    {renderCards(method,"method")}
+                    {renderCards(method, "method")}
                 </Parent>
             </BodyInner>
             <Hr />
             <BodyInner>
                 <Heading>Top Donators</Heading>
                 <Parent>
-                    {renderCards(donator,"donator")}
+                    {renderCards(donator, "donator")}
                 </Parent>
             </BodyInner>
             <Footer />
