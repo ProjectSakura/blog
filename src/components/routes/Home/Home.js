@@ -19,7 +19,7 @@ import Footer from "../../Footer/Footer";
 import cardData from "../../data/cardData";
 import RecentBlog from "../../PrimaryCard/RecentCard";
 //merch
-import MerchPCBanner from "../../../images/merch/desktop.gif";
+import MerchPCBanner from "../../../images/merch/desktop.GIF";
 //adv
 import AdComponent from "../../AdComponent/AdComponent";
 
