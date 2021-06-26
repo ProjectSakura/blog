@@ -22,11 +22,12 @@ import cardData from "../../data/cardData";
 //merch
 import MerchPCBanner from "../../../images/merch/merch.webm";
 //adv
-import AdComponent from "../../AdComponent/AdComponent";
+// import AdComponent from "../../AdComponent/AdComponent";
 //lazy components
 const RecentBlog = lazy(() => import("../../PrimaryCard/RecentCard"));
 const Posts = lazy(() => import("../../Posts/Posts"));
 const TwitterComponent = lazy(() => import("../../TwitterComponent/TwitterComponent"));
+const AdComponent = lazy(() => import("../../AdComponent/AdComponent"));
 
 const renderLoader = () => <p><center><BiLoaderCircle /></center></p>;
 
@@ -64,9 +65,11 @@ function Home() {
             <RecentBlog />
           </Suspense>
         </RecentBlogComponent>
-        <AdvBanner>
-          <AdComponent />
-        </AdvBanner>
+        <Suspense fallback={renderLoader()}>
+          <AdvBanner>
+            <AdComponent />
+          </AdvBanner>
+        </Suspense>
         <MerchBanner>
           <Anchor href="https://www.hellotux.com/projectsakura" target="blank">
             <PCImg autoPlay loop muted playsinline src={MerchPCBanner} alt="pc-banner" />
