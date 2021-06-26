@@ -50,7 +50,7 @@ export const Right = styled.div`
     }   
     background-color:#121217;
 `;
-export const TwitterComponent = styled.div`
+export const TwitterComponentContainer = styled.div`
     @media (max-width: 900px) {
         display: none;
     }

@@ -1,4 +1,6 @@
 import React from "react";
+import { IconContext } from "react-icons";
+import { FaGithub, FaTelegram, FaTwitter } from "react-icons/fa";
 import {
   FooterBody, FooterChild, Image, Anchor, TagLine,
 } from "./Styles";
@@ -13,13 +15,19 @@ const Footer = () => (
         <TagLine>Project Sakura is a fully free and Opensource Custom ROM built around LineageOS.</TagLine>
         <br />
         <Anchor href="https://telegram.me/ProjectSakura" target="_blank" rel="noopener noreferrer">
-          <i className="fa fa-telegram fa-2x" />
+          <IconContext.Provider value={{ size: "2em" }}>
+            <FaTelegram />
+          </IconContext.Provider>
         </Anchor>
         <Anchor href="https://twitter.com/ProjectSakura_" target="_blank" rel="noopener noreferrer">
-          <i className="fa fa-twitter fa-2x" />
+          <IconContext.Provider value={{ size: "2em" }}>
+            <FaTwitter />
+          </IconContext.Provider>
         </Anchor>
         <Anchor href="https://github.com/ProjectSakura" target="_blank" rel="noopener noreferrer">
-          <i className="fa fa-github fa-2x" />
+          <IconContext.Provider value={{ size: "2em" }}>
+            <FaGithub />
+          </IconContext.Provider>
         </Anchor>
       </FooterChild>
       <FooterChild>
