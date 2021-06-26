@@ -62,7 +62,7 @@ export const MerchBanner = styled.div`
     text-align: center;
     background-color: #3C3555;
 `;
-export const PCImg = styled.img`
+export const PCImg = styled.video`
    @media(min-width: 900px) {
         max-width: 100%;
         max-height: 30vh;

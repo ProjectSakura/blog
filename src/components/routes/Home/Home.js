@@ -20,7 +20,7 @@ import Footer from "../../Footer/Footer";
 //card data
 import cardData from "../../data/cardData";
 //merch
-import MerchPCBanner from "../../../images/merch/desktop.GIF";
+import MerchPCBanner from "../../../images/merch/merch.webm";
 //adv
 import AdComponent from "../../AdComponent/AdComponent";
 //lazy components
@@ -68,7 +68,9 @@ function Home() {
           <AdComponent />
         </AdvBanner>
         <MerchBanner>
-          <Anchor href="https://www.hellotux.com/projectsakura" target="blank"><PCImg src={MerchPCBanner} alt="pc-banner" /></Anchor>
+          <Anchor href="https://www.hellotux.com/projectsakura" target="blank">
+            <PCImg autoPlay loop muted playsinline src={MerchPCBanner} alt="pc-banner" />
+          </Anchor>
         </MerchBanner>
         <Suspense fallback={renderLoader()}>
           <OtherBlogComponent>
