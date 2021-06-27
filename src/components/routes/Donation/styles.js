@@ -105,3 +105,30 @@ export const Hr = styled.hr`
 export const Btn = styled(Button)`
 
 `;
+export const MerchBanner = styled.div`
+     @media(min-width: 900px) {
+      margin: auto 10vh;
+    }
+    @media(max-width: 900px) {
+      margin: auto 2vh;
+    }
+    text-align: center;
+    background-color: #3C3555;
+    
+    border-radius: 5px;
+`;
+export const PCImg = styled.video`
+    @media(min-width: 900px) {
+        max-width: 100%;
+        max-height: 30vh;
+    }
+    @media(max-width: 900px) {
+        max-width: 100%; 
+        max-height: max-content;   
+    }
+    border-radius: 5px;
+`;
+export const SponsorImage = styled.img`
+    max-width: fit-content;
+    height: auto;
+`;
