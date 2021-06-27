@@ -1,6 +1,7 @@
 import Kofi from "../../images/donation/kofi.png";
 import Paypal from "../../images/donation/paypal.jpg";
 import Donator from "../../images/avatar/avatar.png";
+import Github from "../../images/donation/github.png";
 
 export const donator = [
   {
@@ -22,12 +23,18 @@ export const donator = [
 export const method = [
   {
     id: 4,
+    name: "Github",
+    img: Github,
+    url: "https://github.com/sponsors/ProjectSakura",
+  },
+  {
+    id: 5,
     name: "Ko-fi",
     img: Kofi,
     url: "https://ko-fi.com/lordshen",
   },
   {
-    id: 3,
+    id: 6,
     name: "Paypal",
     img: Paypal,
     url: "https://paypal.me/PriyanshuPandey?locale.x=en_GB",

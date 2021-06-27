@@ -1,10 +1,12 @@
 /* eslint-disable */
 import {
-    Body, BodyInner, Child, Heading, Parent, Image, Hr, Anchor
+    Body, BodyInner, Child, Heading, Parent, Image, Hr, Anchor, MerchBanner, PCImg,
 } from "./styles";
 import { donator, method } from "../../data/donator";
 import Footer from "../../Footer/Footer";
 import Navbar from "../../Navbar/Navbar";
+//merch
+import MerchPCBanner from "../../../images/merch/merch.webm";
 
 function Donation() {
 
@@ -48,7 +50,12 @@ function Donation() {
                     {renderCards(method, "method")}
                 </Parent>
             </BodyInner>
-            <Hr />
+            <MerchBanner>
+                <a href="https://www.hellotux.com/projectsakura" target="blank">
+                    <PCImg autoPlay loop muted playsinline src={MerchPCBanner} alt="pc-banner" />
+                </a>
+            </MerchBanner>
+            {/* <Hr /> */}
             <BodyInner>
                 <Heading>Top Donators</Heading>
                 <Parent>
