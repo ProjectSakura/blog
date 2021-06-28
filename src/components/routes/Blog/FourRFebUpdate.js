@@ -1,3 +1,4 @@
+import { lazy, Suspense } from "react";
 import { Container } from "semantic-ui-react";
 import {
   AuthorHead,
@@ -11,11 +12,14 @@ import {
   UnorderedList,
   Anchor,
   Date,
+  LoaderDiv,
 } from "./styles";
 import AdComponent from "../../AdComponent/AdComponent";
 import Footer from "../../Footer/Footer";
-import DisqusComment from "../../DisqusComment/DisqusComments";
 import Navbar from "../../Navbar/Navbar";
+
+const DisqusComment = lazy(() => import("../../DisqusComment/DisqusComments"));
+const renderLoader = () => <LoaderDiv active inline="centered" size="big">Loading</LoaderDiv>;
 
 function FourRFebUpdate() {
   return (
@@ -62,7 +66,9 @@ function FourRFebUpdate() {
             One more ad lol.
           </Description>
           <AdComponent />
-          <DisqusComment />
+          <Suspense fallback={renderLoader()}>
+            <DisqusComment />
+          </Suspense>
         </BodyInner>
         <AuthorSec>
           <AuthorHead>About Author</AuthorHead>

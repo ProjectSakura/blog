@@ -1,11 +1,14 @@
+import { lazy, Suspense } from "react";
 import { Container } from "semantic-ui-react";
 import {
-  AuthorHead, AuthorSec, AuthorSubHead, Body, BodyInner, Description, Heading, ListItem, UnorderedList, Date,
+  AuthorHead, AuthorSec, AuthorSubHead, Body, BodyInner, Description, Heading, ListItem, UnorderedList, Date, LoaderDiv,
 } from "./styles";
 import AdComponent from "../../AdComponent/AdComponent";
-import DisqusComment from "../../DisqusComment/DisqusComments";
 import Footer from "../../Footer/Footer";
 import Navbar from "../../Navbar/Navbar";
+
+const DisqusComment = lazy(() => import("../../DisqusComment/DisqusComments"));
+const renderLoader = () => <LoaderDiv active inline="centered" size="big">Loading</LoaderDiv>;
 
 function May2020Update() {
   return (
@@ -36,7 +39,9 @@ function May2020Update() {
           <Description>So this is all for the release. I really hope you guys will enjoy it and You can comment down to request any new feature for the next release. </Description>
           <Description>Until then, Stay home stay safe.</Description>
           <AdComponent />
-          <DisqusComment />
+          <Suspense fallback={renderLoader()}>
+            <DisqusComment />
+          </Suspense>
         </BodyInner>
         <AuthorSec>
           <AuthorHead>About Author</AuthorHead>

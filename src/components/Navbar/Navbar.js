@@ -4,7 +4,7 @@ import {
   NavMenu, NavMenuItem, Image, DropDown, DropDownItem, DropDownMenu, DropDownLink,
 } from "./styles";
 // Logo
-import Logo from "../../images/logo.png";
+import Logo from "../../images/logo.webp";
 
 function Navbar() {
   const home = "https://projectsakura.github.io/";

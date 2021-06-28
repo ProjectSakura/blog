@@ -4,7 +4,7 @@ import {
   SideDiv, Image, LinkDiv, Anchor, ImgDiv, Span, NavLink, SponsorImage, SponsorImgDiv,
 } from "./styles";
 // Logo
-import Logo from "../../images/logo.png";
+import Logo from "../../images/logo.webp";
 
 function Sidebar() {
   return (

@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Loader } from "semantic-ui-react";
 
 export const Body = styled.div`
     @media(min-width: 768px) {
@@ -140,4 +141,6 @@ export const Code = styled.div`
 `;
 export const CenterDiv = styled.div`
   text-align: center;
+`;
+export const LoaderDiv = styled(Loader)`
 `;

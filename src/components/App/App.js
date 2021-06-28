@@ -1,9 +1,7 @@
 import { lazy, Suspense } from "react";
 import { Route, HashRouter as Router, Switch } from "react-router-dom";
-//Loader
-import { BiLoaderCircle } from "react-icons/bi";
 // styles
-import { Body } from "./styles";
+import { Body, LoaderDiv } from "./styles";
 // routes
 const Home = lazy(() => import("../routes/Home/Home"));
 //blogs route
@@ -30,7 +28,7 @@ const AugustUpdate2020 = lazy(() => import("../routes/Blog/AugustUpdate2020"));
 const July2020Update = lazy(() => import("../routes/Blog/July2020Update"));
 const Donation = lazy(() => import("../routes/Donation/Donation"));
 
-const renderLoader = () => <p><center><BiLoaderCircle /></center></p>;
+const renderLoader = () => <LoaderDiv active inline="centered" size="big">Loading</LoaderDiv>;
 
 function App() {
   return (

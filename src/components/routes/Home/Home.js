@@ -9,10 +9,8 @@ import Pagination from "../../Pagination/Pagination";
 import Sidebar from "../../Sidebar/Sidebar";
 //?Styles
 import {
-  Container, Left, Mid, OtherBlogComponent, RecentBlogComponent, Right, TwitterComponentContainer, SidebarComponent, FooterDiv, NavBarDiv, AdvBanner, MerchBanner, PCImg, MobImg, Anchor
+  Container, Left, Mid, OtherBlogComponent, RecentBlogComponent, Right, TwitterComponentContainer, SidebarComponent, FooterDiv, NavBarDiv, AdvBanner, MerchBanner, PCImg, Anchor, LoaderDiv,
 } from "./Style";
-//Loader Icon
-import { BiLoaderCircle } from "react-icons/bi";
 //navbar
 import Navbar from "../../Navbar/Navbar";
 //footer
@@ -29,7 +27,7 @@ const Posts = lazy(() => import("../../Posts/Posts"));
 const TwitterComponent = lazy(() => import("../../TwitterComponent/TwitterComponent"));
 const AdComponent = lazy(() => import("../../AdComponent/AdComponent"));
 
-const renderLoader = () => <p><center><BiLoaderCircle /></center></p>;
+const renderLoader = () => <LoaderDiv active inline="centered" size="big">Loading</LoaderDiv>;
 
 function Home() {
   //?--------Pagination--------
@@ -77,7 +75,7 @@ function Home() {
         </MerchBanner>
         <Suspense fallback={renderLoader()}>
           <OtherBlogComponent>
-              <Posts cardData={currentPosts} loading={loading} />
+            <Posts cardData={currentPosts} loading={loading} />
           </OtherBlogComponent>
         </Suspense>
         <Pagination postsPerPage={postsPerPage} totalPosts={posts.length} paginate={paginate} />
@@ -85,7 +83,7 @@ function Home() {
       <Right>
         <TwitterComponentContainer>
           <Suspense fallback={renderLoader()}>
-            <TwitterComponent/>
+            <TwitterComponent />
           </Suspense>
         </TwitterComponentContainer>
       </Right>

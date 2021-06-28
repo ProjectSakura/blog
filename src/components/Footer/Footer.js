@@ -4,8 +4,8 @@ import { FaGithub, FaTelegram, FaTwitter } from "react-icons/fa";
 import {
   FooterBody, FooterChild, Image, Anchor, TagLine,
 } from "./Styles";
-import Logo from "./sakura_footer.svg";
-import Sponsor from "../../images/sponsor.png";
+import Logo from "./sakura_footer.webp";
+import Sponsor from "../../images/sponsor.webp";
 
 const Footer = () => (
   <>

@@ -6,7 +6,7 @@ import {
   Body, Image, ImgDiv, ContentDiv, Heading, SubHeading, Btn, LeftSection, RightSection, Description,
 } from "./styles";
 //image
-import bannerImg from "../../images/blogs/recent.png";
+import bannerImg from "../../images/blogs/recent.webp";
 
 function RecentCard() {
   return (
