@@ -5,6 +5,7 @@ import {
 import { donator, method } from "../../data/donator";
 import Footer from "../../Footer/Footer";
 import Navbar from "../../Navbar/Navbar";
+import LazyLoad from 'react-lazyload';
 //merch
 import MerchPCBanner from "../../../images/merch/merch.webm";
 
@@ -15,8 +16,9 @@ function Donation() {
         if (section === "method") {
             cards = arr.map((data) => (
                 <Child key={data.id}>
-                    <Image src={data.img} />
-
+                    <LazyLoad once>
+                        <Image src={data.img} />
+                    </LazyLoad>
                     <Heading>
                         <Anchor href={data.url}>
                             Donate via {data.name}

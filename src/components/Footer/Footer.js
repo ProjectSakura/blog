@@ -1,8 +1,9 @@
 import React from "react";
 import { IconContext } from "react-icons";
 import { FaGithub, FaTelegram, FaTwitter } from "react-icons/fa";
+import LazyLoad from "react-lazyload";
 import {
-  FooterBody, FooterChild, Image, Anchor, TagLine,
+  FooterBody, FooterChild, Image, Anchor, TagLine, FooterImage, SponsorTag,
 } from "./Styles";
 import Logo from "./sakura_footer.webp";
 import Sponsor from "../../images/sponsor.webp";
@@ -11,7 +12,9 @@ const Footer = () => (
   <>
     <FooterBody>
       <FooterChild>
-        <Image src={Logo} />
+        <LazyLoad once>
+          <Image src={Logo} />
+        </LazyLoad>
         <TagLine>Project Sakura is a fully free and Opensource Custom ROM built around LineageOS.</TagLine>
         <br />
         <Anchor href="https://telegram.me/ProjectSakura" target="_blank" rel="noopener noreferrer">
@@ -31,8 +34,10 @@ const Footer = () => (
         </Anchor>
       </FooterChild>
       <FooterChild>
-        <h3>Sponsored By</h3>
-        <Image src={Sponsor} />
+        <SponsorTag>Sponsored By</SponsorTag>
+        <LazyLoad once>
+          <FooterImage src={Sponsor} />
+        </LazyLoad>
       </FooterChild>
     </FooterBody>
   </>
