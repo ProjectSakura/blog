@@ -1,7 +1,7 @@
 import moment from "moment";
 import { CgProfile as Profile } from "react-icons/cg";
 import { AiOutlineClockCircle as Time } from "react-icons/ai";
-import LazyLoad from "react-lazyload";
+// import LazyLoad from "react-lazyload";
 import data from "../data/cardData";
 import {
   Body, Image, ImgDiv, ContentDiv, Heading, SubHeading, Btn, LeftSection, RightSection, Description,
@@ -12,11 +12,11 @@ import bannerImg from "../../images/blogs/recent.webp";
 function RecentCard() {
   return (
     <Body>
-      <LazyLoad once>
-        <ImgDiv>
-          <Image src={bannerImg} alt="banner-img" />
-        </ImgDiv>
-      </LazyLoad>
+      {/* <LazyLoad height={200} once> */}
+      <ImgDiv>
+        <Image src={bannerImg} alt="banner-img" />
+      </ImgDiv>
+      {/* </LazyLoad> */}
       <ContentDiv>
         <Heading>{data[0].title}</Heading>
         <SubHeading>
