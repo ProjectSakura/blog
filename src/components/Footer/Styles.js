@@ -16,8 +16,24 @@ export const FooterChild = styled.div`
     padding: 2vh;
 `;
 export const Image = styled.img`
-    max-height: 80%;
-    max-width: 100%;
+    @media(min-width: 850px){
+        height: auto;
+        width: 25vh;
+    }
+    @media(max-width: 850px){
+        height: auto;
+        width: 10vh;
+    }
+`;
+export const FooterImage = styled.img`
+    @media(min-width: 850px){
+        height: auto;
+        width: 25vh;
+    }
+    @media(max-width: 850px){
+        height: auto;
+        width: 10vh;
+    }
 `;
 export const Anchor = styled.a`
     @media(min-width: 850px){
@@ -37,4 +53,9 @@ export const TagLine = styled.p`
     word-wrap: break-word;
     font-size: 1.2em;
     width: 50vh;
+`;
+export const SponsorTag = styled.h3`
+    @media(max-width: 850px){
+        font-size: 0.8em;
+    }
 `;

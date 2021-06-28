@@ -114,7 +114,6 @@ function June2021Update() {
           </Description>
         </AuthorSec>
       </Container>
-      <AdComponent />
       <Footer />
     </Body>
   );

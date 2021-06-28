@@ -1,7 +1,7 @@
-import Kofi from "../../images/donation/kofi.png";
-import Paypal from "../../images/donation/paypal.jpg";
-import Donator from "../../images/avatar/avatar.png";
-import Github from "../../images/donation/github.png";
+import Kofi from "../../images/donation/kofi.webp";
+import Paypal from "../../images/donation/paypal.webp";
+import Donator from "../../images/avatar/avatar.webp";
+import Github from "../../images/donation/github.webp";
 
 export const donator = [
   {

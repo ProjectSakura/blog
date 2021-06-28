@@ -2,6 +2,7 @@ import styled from "styled-components";
 import { Button } from "semantic-ui-react";
 
 export const Body = styled.div`
+    color: white;
     background-color: #121217;
     height: 100%;
 `;
