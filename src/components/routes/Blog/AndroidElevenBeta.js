@@ -1,3 +1,4 @@
+import { lazy, Suspense } from "react";
 import { Container } from "semantic-ui-react";
 import {
   AuthorHead,
@@ -11,11 +12,14 @@ import {
   UnorderedList,
   Anchor,
   Date,
+  LoaderDiv,
 } from "./styles";
 import AdComponent from "../../AdComponent/AdComponent";
-import DisqusComment from "../../DisqusComment/DisqusComments";
 import Footer from "../../Footer/Footer";
 import Navbar from "../../Navbar/Navbar";
+
+const DisqusComment = lazy(() => import("../../DisqusComment/DisqusComments"));
+const renderLoader = () => <LoaderDiv active inline="centered" size="big">Loading</LoaderDiv>;
 
 function AndroidElevenBeta() {
   return (
@@ -82,7 +86,9 @@ function AndroidElevenBeta() {
             <br />
           </Description>
           <AdComponent />
-          <DisqusComment />
+          <Suspense fallback={renderLoader()}>
+            <DisqusComment />
+          </Suspense>
         </BodyInner>
         <AuthorSec>
           <AuthorHead>About Author</AuthorHead>

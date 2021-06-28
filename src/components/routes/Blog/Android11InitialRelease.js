@@ -1,11 +1,14 @@
+import { lazy, Suspense } from "react";
 import { Container } from "semantic-ui-react";
 import {
-  AuthorHead, AuthorSec, AuthorSubHead, Body, BodyInner, Description, Heading, ListItem, UnorderedList, Anchor, Date,
+  AuthorHead, AuthorSec, AuthorSubHead, Body, BodyInner, Description, Heading, ListItem, UnorderedList, Anchor, Date, LoaderDiv,
 } from "./styles";
 import AdComponent from "../../AdComponent/AdComponent";
 import Footer from "../../Footer/Footer";
 import Navbar from "../../Navbar/Navbar";
-import DisqusComment from "../../DisqusComment/DisqusComments";
+
+const DisqusComment = lazy(() => import("../../DisqusComment/DisqusComments"));
+const renderLoader = () => <LoaderDiv active inline="centered" size="big">Loading</LoaderDiv>;
 
 function Android11InitialRelease() {
   return (
@@ -68,11 +71,10 @@ function Android11InitialRelease() {
           </Description>
           <Description>One more ad lol.</Description>
           <AdComponent />
-
-          <DisqusComment />
-
+          <Suspense fallback={renderLoader()}>
+            <DisqusComment />
+          </Suspense>
         </BodyInner>
-
         <AuthorSec>
           <AuthorHead>About Author</AuthorHead>
           <AuthorSubHead>LordShenron</AuthorSubHead>

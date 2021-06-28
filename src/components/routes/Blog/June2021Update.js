@@ -1,3 +1,4 @@
+import { lazy, Suspense } from "react";
 import { Container } from "semantic-ui-react";
 import {
   AuthorHead,
@@ -13,13 +14,16 @@ import {
   UnorderedList,
   Anchor,
   Date,
+  LoaderDiv,
 } from "./styles";
 import AdComponent from "../../AdComponent/AdComponent";
-import DisqusComment from "../../DisqusComment/DisqusComments";
 import Footer from "../../Footer/Footer";
 import Navbar from "../../Navbar/Navbar";
 //image
-import June2021UpdateIMG from "../../../images/blogs/June2021UpdateIMG.png";
+import June2021UpdateIMG from "../../../images/blogs/June2021UpdateIMG.webp";
+
+const DisqusComment = lazy(() => import("../../DisqusComment/DisqusComments"));
+const renderLoader = () => <LoaderDiv active inline="centered" size="big">Loading</LoaderDiv>;
 
 function June2021Update() {
   return (
@@ -98,7 +102,9 @@ function June2021Update() {
             <br />
           </Description>
           <AdComponent />
-          <DisqusComment />
+          <Suspense fallback={renderLoader()}>
+            <DisqusComment />
+          </Suspense>
         </BodyInner>
         <AuthorSec>
           <AuthorHead>About Author</AuthorHead>

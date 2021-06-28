@@ -1,11 +1,14 @@
+import { lazy, Suspense } from "react";
 import { Container } from "semantic-ui-react";
 import {
-  AuthorHead, AuthorSec, AuthorSubHead, Body, BodyInner, Description, Heading, ListItem, UnorderedList, Anchor, Date, Code,
+  AuthorHead, AuthorSec, AuthorSubHead, Body, BodyInner, Description, Heading, ListItem, UnorderedList, Anchor, Date, Code, LoaderDiv,
 } from "./styles";
 import AdComponent from "../../AdComponent/AdComponent";
 import Footer from "../../Footer/Footer";
-import DisqusComment from "../../DisqusComment/DisqusComments";
 import Navbar from "../../Navbar/Navbar";
+
+const DisqusComment = lazy(() => import("../../DisqusComment/DisqusComments"));
+const renderLoader = () => <LoaderDiv active inline="centered" size="big">Loading</LoaderDiv>;
 
 function Android11SecondUpdateMarch() {
   return (
@@ -55,7 +58,9 @@ function Android11SecondUpdateMarch() {
             <Anchor href="https://twitter.com/ProjectSakura_">@ProjectSakura_</Anchor> coz we keep posting fun stuff on it ;)
           </Description>
           <AdComponent />
-          <DisqusComment />
+          <Suspense fallback={renderLoader()}>
+            <DisqusComment />
+          </Suspense>
         </BodyInner>
 
         <AuthorSec>

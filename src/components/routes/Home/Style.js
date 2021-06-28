@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Loader } from "semantic-ui-react";
 
 export const Container = styled.div`
     @media (min-width: 900px) {
@@ -33,6 +34,7 @@ export const Mid = styled.div`
         height: 100vh;
         
     }
+    color: white;
     margin: auto;
     overflow-y: scroll;
     padding: 2vh;
@@ -48,6 +50,7 @@ export const Right = styled.div`
         height: 100vh;
         /* padding: 2vh; */ 
     }   
+    color: white;
     background-color:#121217;
 `;
 export const TwitterComponentContainer = styled.div`
@@ -116,4 +119,6 @@ export const AdvBanner = styled.div`
     /* @media (max-width: 900px) {
         display: none;
     } */
+`;
+export const LoaderDiv = styled(Loader)`
 `;

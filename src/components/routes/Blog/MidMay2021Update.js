@@ -1,3 +1,4 @@
+import { lazy, Suspense } from "react";
 import { Container } from "semantic-ui-react";
 import {
   AuthorHead,
@@ -13,18 +14,16 @@ import {
   UnorderedList,
   Anchor,
   Date,
-  SponsorPCImg,
-  SponsorMobImg,
+  LoaderDiv,
 } from "./styles";
 import AdComponent from "../../AdComponent/AdComponent";
-import DisqusComment from "../../DisqusComment/DisqusComments";
 import Footer from "../../Footer/Footer";
 import Navbar from "../../Navbar/Navbar";
-//sponsors images
-import MobileImg from "../../../images/ninjas/mobilead.png";
-import PCImg from "../../../images/ninjas/pcad.png";
 //image
-import MidMay2021UpdateIMG from "../../../images/blogs/MidMay2021UpdateIMG.png";
+import MidMay2021UpdateIMG from "../../../images/blogs/MidMay2021UpdateIMG.webp";
+
+const DisqusComment = lazy(() => import("../../DisqusComment/DisqusComments"));
+const renderLoader = () => <LoaderDiv active inline="centered" size="big">Loading</LoaderDiv>;
 
 function MidMay2021Update() {
   return (
@@ -48,9 +47,6 @@ function MidMay2021Update() {
             Oh an ad. what? Seeing it even after adblock? Cry now.
             <br />
             <AdComponent />
-            <Anchor href="https://www.codingninjas.com/courses/online-android-Development-kotlin?utm_source=projectsakura&utm_medium=referral&utm_campaign=android-development" />
-            <SponsorPCImg src={PCImg} alt="pc-img" />
-            <SponsorMobImg src={MobileImg} alt="mob-img" />
             <br />
             <br />
             So, what do we have this time? Here goes the changelog..
@@ -80,7 +76,9 @@ function MidMay2021Update() {
             <br />
           </Description>
           <AdComponent />
-          <DisqusComment />
+          <Suspense fallback={renderLoader()}>
+            <DisqusComment />
+          </Suspense>
         </BodyInner>
         <AuthorSec>
           <AuthorHead>About Author</AuthorHead>
