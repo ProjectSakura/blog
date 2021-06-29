@@ -1,7 +1,9 @@
-import { lazy, Suspense } from "react";
+import {
+  lazy, Suspense, useEffect, useState,
+} from "react";
 import { Container } from "semantic-ui-react";
 import {
-  AuthorHead, AuthorSec, AuthorSubHead, Body, BodyInner, Description, Heading, Image, ImgDiv, ListItem, SubHeading, UnorderedList, Anchor, Date, LoaderDiv,
+  AuthorHead, AuthorSec, AuthorSubHead, Body, BodyInner, Description, Heading, ImageTag, ImgDiv, ListItem, SubHeading, UnorderedList, Anchor, Date, LoaderDiv,
 } from "./styles";
 import AdComponent from "../../AdComponent/AdComponent";
 import Footer from "../../Footer/Footer";
@@ -13,6 +15,15 @@ const DisqusComment = lazy(() => import("../../DisqusComment/DisqusComments"));
 const renderLoader = () => <LoaderDiv active inline="centered" size="big">Loading</LoaderDiv>;
 
 function April2021Update() {
+  const [imageSrc, setImageSrc] = useState([]);
+  useEffect(() => {
+    //preloading image
+    const img = new Image();
+    img.onload = () => {
+      setImageSrc(April2021UpdateIMG);
+    };
+    img.src = April2021UpdateIMG;
+  }, []);
   return (
     <Body>
       <Navbar />
@@ -21,7 +32,7 @@ function April2021Update() {
           <Date>12 April 2021</Date>
           <Heading>April security update of ProjectSakura is here!</Heading>
           <ImgDiv>
-            <Image src={April2021UpdateIMG} />
+            <ImageTag src={imageSrc} alt="banner" />
           </ImgDiv>
           <SubHeading />
           <Description>
@@ -36,7 +47,9 @@ function April2021Update() {
             <br />
             See a smol cute ad first.
             <br />
-            <AdComponent />
+            <Suspense fallback={renderLoader()}>
+              <AdComponent />
+            </Suspense>
             <br />
             Okay good, so what we have new in this release..
           </Description>
@@ -102,7 +115,9 @@ function April2021Update() {
             <br />
             One more ad lol.
           </Description>
-          <AdComponent />
+          <Suspense fallback={renderLoader()}>
+            <AdComponent />
+          </Suspense>
           <Suspense fallback={renderLoader()}>
             <DisqusComment />
           </Suspense>
@@ -115,7 +130,6 @@ function April2021Update() {
             with some college work.
           </Description>
         </AuthorSec>
-        <AdComponent />
       </Container>
       <Footer />
     </Body>

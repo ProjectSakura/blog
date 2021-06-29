@@ -43,7 +43,9 @@ function September2020Update() {
             Oh and if you like our work, please consider buying me a coffee because it helps a lot.
             <Anchor href="https://ko-fi.com/lordshen">Buy me a coffee.</Anchor>
           </Description>
-          <AdComponent />
+          <Suspense fallback={renderLoader()}>
+            <AdComponent />
+          </Suspense>
           <Suspense fallback={renderLoader()}>
             <DisqusComment />
           </Suspense>

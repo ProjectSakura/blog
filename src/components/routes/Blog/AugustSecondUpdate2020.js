@@ -1,4 +1,6 @@
-import { lazy, Suspense } from "react";
+import {
+  lazy, Suspense, useEffect, useState,
+} from "react";
 import { Container } from "semantic-ui-react";
 import {
   AuthorHead,
@@ -8,7 +10,7 @@ import {
   BodyInner,
   Description,
   Heading,
-  Image,
+  ImageTag,
   ImgDiv,
   ListItem,
   UnorderedList,
@@ -26,6 +28,15 @@ const DisqusComment = lazy(() => import("../../DisqusComment/DisqusComments"));
 const renderLoader = () => <LoaderDiv active inline="centered" size="big">Loading</LoaderDiv>;
 
 function AugustSecondUpdate2020() {
+  const [imageSrc, setImageSrc] = useState([]);
+  useEffect(() => {
+    //preloading image
+    const img = new Image();
+    img.onload = () => {
+      setImageSrc(AugustSecondUpdate2020IMG);
+    };
+    img.src = AugustSecondUpdate2020IMG;
+  }, []);
   return (
     <Body>
       <Navbar />
@@ -38,7 +49,7 @@ function AugustSecondUpdate2020() {
             Whats better than a warm cup of coffee? Yes! Project Sakura update.
           </Heading>
           <ImgDiv>
-            <Image src={AugustSecondUpdate2020IMG} />
+            <ImageTag src={imageSrc} alt="image" />
           </ImgDiv>
           <Description>
             So If you were following us on twitter you may would have noticed that we changed somethings, fixed somethings and broken somethings. Well, thats just how we work.
@@ -68,7 +79,9 @@ function AugustSecondUpdate2020() {
             <Anchor href="https://twitter.com/ProjectSakura_"> @ProjectSakura_</Anchor>,coz we keep posting fun stuff on it ;)
             <br />
           </Description>
-          <AdComponent />
+          <Suspense fallback={renderLoader()}>
+            <AdComponent />
+          </Suspense>
           <Suspense fallback={renderLoader()}>
             <DisqusComment />
           </Suspense>

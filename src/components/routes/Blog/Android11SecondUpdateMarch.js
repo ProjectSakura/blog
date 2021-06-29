@@ -23,7 +23,9 @@ function Android11SecondUpdateMarch() {
             very small follow up with few important features. I will not be wasting much time and get straight to the major changes that were made for this release.
           </Description>
           <Description>See an ad first :P</Description>
-          <AdComponent />
+          <Suspense fallback={renderLoader()}>
+            <AdComponent />
+          </Suspense>
           <Description>Okay good, so what we have new in this release..</Description>
           <UnorderedList>
             <ListItem>Bubbles are fixed, we were constantly spammed for this one. </ListItem>
@@ -57,7 +59,9 @@ function Android11SecondUpdateMarch() {
             Well, this was it for this update and if you find any bugs do report it to us with logcat coz Logcat or gtfo. As always do follow us on twitter{" "}
             <Anchor href="https://twitter.com/ProjectSakura_">@ProjectSakura_</Anchor> coz we keep posting fun stuff on it ;)
           </Description>
-          <AdComponent />
+          <Suspense fallback={renderLoader()}>
+            <AdComponent />
+          </Suspense>
           <Suspense fallback={renderLoader()}>
             <DisqusComment />
           </Suspense>

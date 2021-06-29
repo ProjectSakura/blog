@@ -35,7 +35,9 @@ function Maintainership() {
           <CenterDiv>
             <Anchor href="https://docs.google.com/forms/d/e/1FAIpQLSfKFUSyohdGKQFLEZCxsxCemlcXdKUMPCsShi0TXGJu7ihceg/viewform"> Apply for Maintainership</Anchor>
           </CenterDiv>
-          <AdComponent />
+          <Suspense fallback={renderLoader()}>
+            <AdComponent />
+          </Suspense>
           <Suspense fallback={renderLoader()}>
             <DisqusComment />
           </Suspense>

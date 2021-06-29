@@ -38,7 +38,9 @@ function May2020Update() {
 
           <Description>So this is all for the release. I really hope you guys will enjoy it and You can comment down to request any new feature for the next release. </Description>
           <Description>Until then, Stay home stay safe.</Description>
-          <AdComponent />
+          <Suspense fallback={renderLoader()}>
+            <AdComponent />
+          </Suspense>
           <Suspense fallback={renderLoader()}>
             <DisqusComment />
           </Suspense>

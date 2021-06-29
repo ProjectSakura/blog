@@ -14,7 +14,7 @@ export const SponsorImgDiv = styled.div`
     display: flex;
     align-items: flex-end;
 `;
-export const Image = styled.img`
+export const ImageTag = styled.img`
     border-radius: 2em;
     margin: auto;
     width: 7vh;

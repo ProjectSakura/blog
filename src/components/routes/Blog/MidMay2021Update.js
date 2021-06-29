@@ -1,4 +1,6 @@
-import { lazy, Suspense } from "react";
+import {
+  lazy, Suspense, useEffect, useState,
+} from "react";
 import { Container } from "semantic-ui-react";
 import {
   AuthorHead,
@@ -8,7 +10,7 @@ import {
   BodyInner,
   Description,
   Heading,
-  Image,
+  ImageTag,
   ImgDiv,
   ListItem,
   UnorderedList,
@@ -26,6 +28,15 @@ const DisqusComment = lazy(() => import("../../DisqusComment/DisqusComments"));
 const renderLoader = () => <LoaderDiv active inline="centered" size="big">Loading</LoaderDiv>;
 
 function MidMay2021Update() {
+  const [imageSrc, setImageSrc] = useState([]);
+  useEffect(() => {
+    //preloading image
+    const img = new Image();
+    img.onload = () => {
+      setImageSrc(MidMay2021UpdateIMG);
+    };
+    img.src = MidMay2021UpdateIMG;
+  }, []);
   return (
     <Body>
       <Navbar />
@@ -38,7 +49,7 @@ function MidMay2021Update() {
             Mid May Happiness from Project Sakura
           </Heading>
           <ImgDiv>
-            <Image src={MidMay2021UpdateIMG} />
+            <ImageTag src={imageSrc} alt="banner" />
           </ImgDiv>
           <Description>
             Heyo! we are back with some fixes and a fresh batch of bugs so you guys can keep crying about it. But before we begin, you can see in banner that sakura chan is also wearing a mask. So, If you are somebody reading this blog from India then please wear a mask all the time and wash hands properly to stay safe from Mucormycosis and COVID-19. Now, let's get started with another update..
@@ -46,7 +57,9 @@ function MidMay2021Update() {
             <br />
             Oh an ad. what? Seeing it even after adblock? Cry now.
             <br />
-            <AdComponent />
+            <Suspense fallback={renderLoader()}>
+              <AdComponent />
+            </Suspense>
             <br />
             <br />
             So, what do we have this time? Here goes the changelog..
@@ -75,7 +88,9 @@ function MidMay2021Update() {
             One more ad lol.
             <br />
           </Description>
-          <AdComponent />
+          <Suspense fallback={renderLoader()}>
+            <AdComponent />
+          </Suspense>
           <Suspense fallback={renderLoader()}>
             <DisqusComment />
           </Suspense>

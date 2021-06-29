@@ -68,7 +68,9 @@ function OurSponsor() {
               <b>Bleeding Edge Hardware: </b>They are not dependent on old technology and stay updated with the current technology
             </ListItem>
           </UnorderedList>
-          <AdComponent />
+          <Suspense fallback={renderLoader()}>
+            <AdComponent />
+          </Suspense>
           <Suspense fallback={renderLoader()}>
             <DisqusComment />
           </Suspense>

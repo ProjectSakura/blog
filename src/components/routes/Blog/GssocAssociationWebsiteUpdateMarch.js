@@ -1,7 +1,10 @@
-import { lazy, Suspense } from "react";
+import {
+  useEffect, useState, lazy, Suspense,
+} from "react";
+
 import { Container } from "semantic-ui-react";
 import {
-  AuthorHead, AuthorSec, AuthorSubHead, Body, BodyInner, Description, Heading, Image, ImgDiv, ListItem, UnorderedList, Anchor, Date, LoaderDiv,
+  AuthorHead, AuthorSec, AuthorSubHead, Body, BodyInner, Description, Heading, ImageTag, ImgDiv, ListItem, UnorderedList, Anchor, Date, LoaderDiv,
 } from "./styles";
 import AdComponent from "../../AdComponent/AdComponent";
 import Footer from "../../Footer/Footer";
@@ -13,6 +16,15 @@ const DisqusComment = lazy(() => import("../../DisqusComment/DisqusComments"));
 const renderLoader = () => <LoaderDiv active inline="centered" size="big">Loading</LoaderDiv>;
 
 function GssocAssociationWebsiteUpdateMarch() {
+  const [imageSrc, setImageSrc] = useState([]);
+  useEffect(() => {
+    //preloading image
+    const img = new Image();
+    img.onload = () => {
+      setImageSrc(GSSOC2021UpdateIMG);
+    };
+    img.src = GSSOC2021UpdateIMG;
+  }, []);
   return (
     <Body>
       <Navbar />
@@ -25,7 +37,7 @@ function GssocAssociationWebsiteUpdateMarch() {
             selected as GSSOC'21 and many of the contributors all around the world are coming and working on our website.
           </Description>
           <ImgDiv>
-            <Image src={GSSOC2021UpdateIMG} />
+            <ImageTag src={imageSrc} alt="gssoc" />
           </ImgDiv>
           <Description>
             All have the same goal in mind to make user experience and user interface better, We are planning to create some new things which I am sure ,you gonna like it, For Now I want
@@ -48,7 +60,9 @@ function GssocAssociationWebsiteUpdateMarch() {
             <Anchor href="https://t.me/C0un13rT3rr0r1st">@C0un13rT3rr0r1st</Anchor>) . As always do follow us on twitter{" "}
             <Anchor href="https://twitter.com/ProjectSakura_">@ProjectSakura_</Anchor> coz we keep posting fun stuff on it ;)
           </Description>
-          <AdComponent />
+          <Suspense fallback={renderLoader()}>
+            <AdComponent />
+          </Suspense>
           <Suspense fallback={renderLoader()}>
             <DisqusComment />
           </Suspense>

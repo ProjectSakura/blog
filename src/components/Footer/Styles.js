@@ -10,7 +10,7 @@ export const FooterBody = styled.footer`
     }
     display: flex;
     background-color: #1c1c24;
-
+    color:white;
 `;
 export const FooterChild = styled.div`
     padding: 2vh;
