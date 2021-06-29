@@ -64,6 +64,7 @@ export const TwitterComponentContainer = styled.div`
 export const MerchBanner = styled.div`
     text-align: center;
     background-color: #3C3555;
+    margin-top: 1vh;
 `;
 export const PCImg = styled.video`
    @media(min-width: 900px) {
@@ -87,11 +88,7 @@ export const Anchor = styled.a`
     text-decoration:none;
 `;
 export const RecentBlogComponent = styled.div`
-    height: 30%;
-    border-radius:10px;
-    background-color: #0E0E0F;
-    margin-bottom: 2vh;
-    filter: drop-shadow(0 0 0.25rem #3AC0FF);
+    margin-bottom: 1vh;
 `;
 export const SidebarComponent = styled.div`
     @media (max-width: 900px) {

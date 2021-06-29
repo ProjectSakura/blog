@@ -1,3 +1,4 @@
+/* eslint-disable */
 import { useEffect, useState } from "react";
 import moment from "moment";
 import { CgProfile as Profile } from "react-icons/cg";
