@@ -1,4 +1,6 @@
-import { lazy, Suspense } from "react";
+import {
+  lazy, Suspense, useEffect, useState,
+} from "react";
 import { Container } from "semantic-ui-react";
 import {
   AuthorHead,
@@ -8,7 +10,7 @@ import {
   BodyInner,
   Description,
   Heading,
-  Image,
+  ImageTag,
   ImgDiv,
   ListItem,
   UnorderedList,
@@ -26,6 +28,15 @@ const DisqusComment = lazy(() => import("../../DisqusComment/DisqusComments"));
 const renderLoader = () => <LoaderDiv active inline="centered" size="big">Loading</LoaderDiv>;
 
 function FourAndroidUpdate() {
+  const [imageSrc, setImageSrc] = useState([]);
+  useEffect(() => {
+    //preloading image
+    const img = new Image();
+    img.onload = () => {
+      setImageSrc(FourAndroidUpdateIMG);
+    };
+    img.src = FourAndroidUpdateIMG;
+  }, []);
   return (
     <Body>
       <Navbar />
@@ -38,13 +49,15 @@ function FourAndroidUpdate() {
             4.R of Project Sakura is here!
           </Heading>
           <ImgDiv>
-            <Image src={FourAndroidUpdateIMG} />
+            <ImageTag src={imageSrc} alt="banner" />
           </ImgDiv>
           <Description>
             A curvy, powerful and cool looking update of Project Sakura is here. With many yes, no and bootloops we are here. We have completely rebased to Lineage 18.1 for this release and trust me it was not easy. This one is not a BETA, its a buggy STABLE update so no more asking "Is this beta ser hehe? Is this build stable to use?" Well i secretly use blog posts to smash you users. This update will also start rolling from today or prolly tomorrow and almost all of the supported devices will get it by new year (No i didn't bothered asking maintainers before giving this ETA).
             <br />
             Now see an ad. Man we really ain't earning shit from it so plox turn off that adblocker ;_;
-            <AdComponent />
+            <Suspense fallback={renderLoader()}>
+              <AdComponent />
+            </Suspense>
             <br />
             So what new stuff we have this time?
           </Description>
@@ -72,9 +85,13 @@ function FourAndroidUpdate() {
             <br />
             One more ad lol.
             <br />
-            <AdComponent />
+            <Suspense fallback={renderLoader()}>
+              <AdComponent />
+            </Suspense>
           </Description>
-          <AdComponent />
+          <Suspense fallback={renderLoader()}>
+            <AdComponent />
+          </Suspense>
           <Suspense fallback={renderLoader()}>
             <DisqusComment />
           </Suspense>
@@ -86,7 +103,6 @@ function FourAndroidUpdate() {
             LordShenron is the lead developer of the project. He is also an IT Engg Student and he loves anime and Japanese pop music. When he is not online he is mostly sleeping or busy with some college work.
           </Description>
         </AuthorSec>
-        <AdComponent />
       </Container>
       <Footer />
     </Body>

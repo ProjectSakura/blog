@@ -1,16 +1,24 @@
-// styles
-// import { Menu } from "semantic-ui-react";
+import { useEffect, useState } from "react";
 import {
-  SideDiv, Image, LinkDiv, Anchor, ImgDiv, Span, NavLink, SponsorImage, SponsorImgDiv,
+  SideDiv, ImageTag, LinkDiv, Anchor, ImgDiv, Span, NavLink, SponsorImage, SponsorImgDiv,
 } from "./styles";
 // Logo
 import Logo from "../../images/logo.webp";
 
 function Sidebar() {
+  const [imageSrc, setImageSrc] = useState([]);
+  useEffect(() => {
+    //preloading image
+    const img = new Image();
+    img.onload = () => {
+      setImageSrc(Logo);
+    };
+    img.src = Logo;
+  }, []);
   return (
     <SideDiv>
       <ImgDiv>
-        <Image src={Logo} alt="logo" />
+        <ImageTag src={imageSrc} alt="logo" />
         <Span> Project Sakura </Span>
       </ImgDiv>
       <LinkDiv>

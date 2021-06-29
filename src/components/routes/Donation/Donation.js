@@ -5,20 +5,16 @@ import {
 import { donator, method } from "../../data/donator";
 import Footer from "../../Footer/Footer";
 import Navbar from "../../Navbar/Navbar";
-import LazyLoad from 'react-lazyload';
 //merch
 import MerchPCBanner from "../../../images/merch/merch.webm";
 
 function Donation() {
-
     const renderCards = (arr, section) => {
         let cards;
         if (section === "method") {
             cards = arr.map((data) => (
                 <Child key={data.id}>
-                    <LazyLoad once>
-                        <Image src={data.img} />
-                    </LazyLoad>
+                    <Image src={data.img} />
                     <Heading>
                         <Anchor href={data.url}>
                             Donate via {data.name}

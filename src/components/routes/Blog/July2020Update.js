@@ -101,7 +101,9 @@ function AugustSecondUpdate2020() {
             <ListItem>Meizu 16TH and 16T, Maintained by thedauke.</ListItem>
             <ListItem>Realme 1, Maintained by CyberJalagam.</ListItem>
           </UnorderedList>
-          <AdComponent />
+          <Suspense fallback={renderLoader()}>
+            <AdComponent />
+          </Suspense>
           <Suspense fallback={renderLoader()}>
             <DisqusComment />
           </Suspense>

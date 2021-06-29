@@ -74,7 +74,7 @@ export const ImgDiv = styled.p`
   text-align:center;
 `;
 
-export const Image = styled.img` 
+export const ImageTag = styled.img` 
   width: 100%;
   height: auto;
 `;
@@ -143,4 +143,5 @@ export const CenterDiv = styled.div`
   text-align: center;
 `;
 export const LoaderDiv = styled(Loader)`
+  margin-top: 30vh !important;
 `;

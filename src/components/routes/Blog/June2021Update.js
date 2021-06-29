@@ -1,4 +1,6 @@
-import { lazy, Suspense } from "react";
+import {
+  lazy, Suspense, useEffect, useState,
+} from "react";
 import { Container } from "semantic-ui-react";
 import {
   AuthorHead,
@@ -8,7 +10,7 @@ import {
   BodyInner,
   Description,
   Heading,
-  Image,
+  ImageTag,
   ImgDiv,
   ListItem,
   UnorderedList,
@@ -26,6 +28,15 @@ const DisqusComment = lazy(() => import("../../DisqusComment/DisqusComments"));
 const renderLoader = () => <LoaderDiv active inline="centered" size="big">Loading</LoaderDiv>;
 
 function June2021Update() {
+  const [imageSrc, setImageSrc] = useState([]);
+  useEffect(() => {
+    //preloading image
+    const img = new Image();
+    img.onload = () => {
+      setImageSrc(June2021UpdateIMG);
+    };
+    img.src = June2021UpdateIMG;
+  }, []);
   return (
     <Body>
       <Navbar />
@@ -38,7 +49,7 @@ function June2021Update() {
             The best thing this summer is Project Sakura 5.1
           </Heading>
           <ImgDiv>
-            <Image src={June2021UpdateIMG} alt="display" />
+            <ImageTag src={imageSrc} alt="display" />
           </ImgDiv>
           <Description>
             Far beyond the mountains and the sea there was a vast land with nothing but a beautiful green grass but there was a weird looking table there and a computer on it
@@ -50,7 +61,9 @@ function June2021Update() {
             <br />
             <br />
             But before we start, see an ad.
-            <AdComponent />
+            <Suspense fallback={renderLoader()}>
+              <AdComponent />
+            </Suspense>
             <br />
             So, what do we have for 5.1 release? Here goes the changelog..
           </Description>
@@ -101,7 +114,9 @@ function June2021Update() {
             Before you go.. one more small tiny ad. We also don't like them but sadly we have no choice.
             <br />
           </Description>
-          <AdComponent />
+          <Suspense fallback={renderLoader()}>
+            <AdComponent />
+          </Suspense>
           <Suspense fallback={renderLoader()}>
             <DisqusComment />
           </Suspense>

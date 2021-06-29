@@ -41,7 +41,9 @@ function AndroidBetaThree() {
             <br />
             Now see an ad.
             <br />
-            <AdComponent />
+            <Suspense fallback={renderLoader()}>
+              <AdComponent />
+            </Suspense>
             <br />
             Okay good, so what we have new in this release..
             <br />
@@ -79,7 +81,9 @@ function AndroidBetaThree() {
             One more ad lol.
             <br />
           </Description>
-          <AdComponent />
+          <Suspense fallback={renderLoader()}>
+            <AdComponent />
+          </Suspense>
           <Suspense fallback={renderLoader()}>
             <DisqusComment />
           </Suspense>
@@ -91,7 +95,6 @@ function AndroidBetaThree() {
             LordShenron is the lead developer of the project. He is also an IT Engg Student and he loves anime and Japanese pop music. When he is not online he is mostly sleeping or busy with some college work.
           </Description>
         </AuthorSec>
-        <AdComponent />
       </Container>
       <Footer />
     </Body>

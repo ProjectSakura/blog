@@ -11,7 +11,7 @@ export const ImgDiv = styled.div`
   flex: 1;
 `;
 
-export const Image = styled.img` 
+export const ImageTag = styled.img` 
     @media(min-width: 850px) {
         max-width: 100%;
     }

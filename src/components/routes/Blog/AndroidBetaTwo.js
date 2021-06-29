@@ -41,7 +41,9 @@ function AndroidBetaTwo() {
             <br />
             Now see an ad.
             <br />
-            <AdComponent />
+            <Suspense fallback={renderLoader()}>
+              <AdComponent />
+            </Suspense>
             <br />
             Okay good, so what we have new in this release..
             <br />
@@ -82,7 +84,9 @@ function AndroidBetaTwo() {
             One more ad lol.
             <br />
           </Description>
-          <AdComponent />
+          <Suspense fallback={renderLoader()}>
+            <AdComponent />
+          </Suspense>
           <Suspense fallback={renderLoader()}>
             <DisqusComment />
           </Suspense>

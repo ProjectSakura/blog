@@ -48,7 +48,9 @@ function AugustUpdate2020() {
             <br />
             So first up whats new!
           </Description>
-          <googleAd />
+          <Suspense fallback={renderLoader()}>
+            <AdComponent />
+          </Suspense>
           <UnorderedList>
             <ListItem>Probably the biggest change you will see is the addition of Oneplus Launcher.</ListItem>
             <br />
@@ -91,7 +93,9 @@ function AugustUpdate2020() {
             <br />
             <ListItem>And Motorola G7 (River), Maintained by Vitor.</ListItem>
           </UnorderedList>
-          <AdComponent />
+          <Suspense fallback={renderLoader()}>
+            <AdComponent />
+          </Suspense>
           <Suspense fallback={renderLoader()}>
             <DisqusComment />
           </Suspense><DisqusComment />
