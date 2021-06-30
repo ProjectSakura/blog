@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { Loader } from "semantic-ui-react";
+import BgImg from "../../../images/blogs/recent.webp";
 
 export const Container = styled.div`
     @media (min-width: 900px) {
@@ -119,4 +120,19 @@ export const AdvBanner = styled.div`
     } */
 `;
 export const LoaderDiv = styled(Loader)`
+`;
+export const MobImgDiv = styled.div`
+    @media (min-width: 900px) {
+        display: none;
+    }
+    @media (max-width: 900px) {
+        overflow: hidden; 
+        height: 0; 
+        padding-top: calc(900 / 1600 * 100%); 
+        background: url(${BgImg});
+        background-size: cover;
+        background-position: center;
+        border-radius:10px;
+        border: 2px solid #3AC0FF;
+    }
 `;

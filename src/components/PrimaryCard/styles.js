@@ -3,6 +3,11 @@ import { Link } from "react-router-dom";
 import BgImg from "../../images/blogs/recent.webp";
 
 export const Body = styled.div`
+    @media(max-width: 900px) {
+      display: none;
+        /* max-width: 100%; 
+        max-height: max-content;    */
+    }
     display: flex;
     height: 100%; 
     border-radius:10px;
@@ -22,8 +27,9 @@ export const ImageTag = styled.img`
         display: none;
     }
     @media(max-width: 900px) {
-        max-width: 100%; 
-        max-height: max-content;   
+      display: none;
+        /* max-width: 100%; 
+        max-height: max-content;    */
     }
     border-radius: 5px;
 `;

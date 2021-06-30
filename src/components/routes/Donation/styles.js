@@ -40,7 +40,7 @@ export const Child = styled.div`
     flex: 1;
     filter: drop-shadow(0 0 0.25rem #3AC0FF);
 `;
-export const Image = styled.img`
+export const Img = styled.img`
   border-radius: 50px;
   height: 12vh;
   width: 12vh;

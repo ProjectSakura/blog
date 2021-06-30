@@ -9,7 +9,7 @@ import Pagination from "../../Pagination/Pagination";
 import Sidebar from "../../Sidebar/Sidebar";
 //?Styles
 import {
-  Container, Left, Mid, OtherBlogComponent, RecentBlogComponent, Right, TwitterComponentContainer, SidebarComponent, FooterDiv, NavBarDiv, AdvBanner, MerchBanner, PCImg, Anchor, LoaderDiv,
+  Container, Left, Mid, OtherBlogComponent, RecentBlogComponent, Right, TwitterComponentContainer, SidebarComponent, FooterDiv, NavBarDiv, AdvBanner, MerchBanner, PCImg, Anchor, LoaderDiv, MobImgDiv,
 } from "./Style";
 //navbar
 import Navbar from "../../Navbar/Navbar";
@@ -60,6 +60,7 @@ function Home() {
       <Mid>
         <RecentBlogComponent>
           <Suspense fallback={renderLoader()}>
+            <MobImgDiv><p>hello</p></MobImgDiv>
             <RecentBlog />
           </Suspense>
         </RecentBlogComponent>
