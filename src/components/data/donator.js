@@ -23,15 +23,15 @@ export const donator = [
 export const method = [
   {
     id: 0,
-    name: "Github",
-    img: Github,
-    url: "https://github.com/sponsors/ProjectSakura",
-  },
-  {
-    id: 1,
     name: "Ko-fi",
     img: Kofi,
     url: "https://ko-fi.com/lordshen",
+  },
+  {
+    id: 1,
+    name: "Github",
+    img: Github,
+    url: "https://github.com/sponsors/ProjectSakura",
   },
   {
     id: 2,
