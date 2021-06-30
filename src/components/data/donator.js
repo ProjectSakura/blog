@@ -5,7 +5,7 @@ import Github from "../../images/donation/github.webp";
 
 export const donator = [
   {
-    id: 2,
+    id: 0,
     name: "MissingNerd",
     img: Donator,
   },
@@ -15,26 +15,26 @@ export const donator = [
     img: Donator,
   },
   {
-    id: 0,
+    id: 2,
     name: "Mircea Nicolau",
     img: Donator,
   },
 ];
 export const method = [
   {
-    id: 4,
+    id: 0,
     name: "Github",
     img: Github,
     url: "https://github.com/sponsors/ProjectSakura",
   },
   {
-    id: 5,
+    id: 1,
     name: "Ko-fi",
     img: Kofi,
     url: "https://ko-fi.com/lordshen",
   },
   {
-    id: 6,
+    id: 2,
     name: "Paypal",
     img: Paypal,
     url: "https://paypal.me/PriyanshuPandey?locale.x=en_GB",
