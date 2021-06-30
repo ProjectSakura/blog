@@ -15,7 +15,7 @@ export const FooterBody = styled.footer`
 export const FooterChild = styled.div`
     padding: 2vh;
 `;
-export const Image = styled.img`
+export const Img = styled.img`
     @media(min-width: 850px){
         height: auto;
         width: 25vh;
