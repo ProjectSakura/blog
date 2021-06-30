@@ -37,7 +37,7 @@ function RecentCard() {
         <Description>
           {data[0].desc}
         </Description>
-        <Btn className="signin ui inverted blue button mini" to={data[0].url}>
+        <Btn className="signin ui inverted blue button tiny" to={data[0].url}>
           Read More
         </Btn>
       </ContentDiv>

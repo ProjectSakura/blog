@@ -25,7 +25,6 @@ export const ImageTag = styled.img`
         max-width: 100%; 
         max-height: max-content;   
     }
-    
     border-radius: 5px;
 `;
 export const ContentDiv = styled.div` 
@@ -58,7 +57,7 @@ export const SubHeading = styled.div`
   @media(min-width: 900px) {
     margin-bottom:5vh;
     margin-top: 1vh;
-    font-size:1.1em;
+    font-size:1.2em;
   }
   display:block;
 `;
@@ -74,7 +73,7 @@ export const RightSection = styled.div`
 export const Description = styled.p`
   @media(min-width: 900px) {
     margin: 2vh auto;
-    font-size: 1em;
+    font-size: 1.3em;
   }
   @media(max-width: 900px) {
     padding-top: 3vh;
