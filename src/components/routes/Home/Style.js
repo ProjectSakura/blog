@@ -9,6 +9,7 @@ export const Container = styled.div`
     @media (max-width: 900px) {
         height: 100%;
     }
+    font-display:swap;
     /* background-color: #121217; */
 `;
 export const Left = styled.div`
