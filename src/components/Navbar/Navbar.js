@@ -17,7 +17,7 @@ function Navbar() {
   return (
     <NavMenu secondary>
       <Menu.Menu>
-        <Image src={Logo} />
+        <Image src={Logo} alt="logo" />
       </Menu.Menu>
       <Menu.Menu position="right">
         <NavMenuItem href={home} name="Home" />

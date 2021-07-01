@@ -17,22 +17,30 @@ export const FooterChild = styled.div`
 `;
 export const Img = styled.img`
     @media(min-width: 850px){
-        height: auto;
-        width: 25vh;
+        /* height: auto;
+        width: 25vh; */
+        width: 160px;
+        height: 70px;
     }
     @media(max-width: 850px){
-        height: auto;
-        width: 10vh;
+        /* height: auto;
+        width: 10vh; */
+        width: 120px;
+        height: 60px;
     }
 `;
 export const FooterImage = styled.img`
     @media(min-width: 850px){
-        height: auto;
-        width: 25vh;
+        /* height: auto;
+        width: 25vh; */
+        width: 160px;
+        height: 60px;
     }
     @media(max-width: 850px){
-        height: auto;
-        width: 10vh;
+        /* height: auto;
+        width: 10vh; */
+        width: 120px;
+        height: 45px;
     }
 `;
 export const Anchor = styled.a`
@@ -51,11 +59,11 @@ export const TagLine = styled.p`
         display: none;
     }
     word-wrap: break-word;
-    font-size: 1.2em;
+    font-size: 1.1em;
     width: 50vh;
 `;
 export const SponsorTag = styled.h3`
     @media(max-width: 850px){
-        font-size: 0.8em;
+        font-size: 0.9em;
     }
 `;

@@ -27,7 +27,7 @@ const Footer = () => {
     <>
       <FooterBody>
         <FooterChild>
-          <Img src={LogoSrc} />
+          <Img src={LogoSrc} alt="logo" />
           <TagLine>Project Sakura is a fully free and Opensource Custom ROM built around LineageOS.</TagLine>
           <br />
           <Anchor href="https://telegram.me/ProjectSakura" target="blank" rel="noopener noreferrer">
@@ -48,7 +48,7 @@ const Footer = () => {
         </FooterChild>
         <FooterChild>
           <SponsorTag>Sponsored By</SponsorTag>
-          <FooterImage src={SponsorSrc} />
+          <FooterImage src={SponsorSrc} alt="sponsor" />
         </FooterChild>
       </FooterBody>
     </>
