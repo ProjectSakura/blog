@@ -2,6 +2,14 @@ import React from "react";
 
 export default class AdComponent extends React.Component {
   componentDidMount() {
+    window.addEventListener("load", this.handleLoad);
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener("load", this.handleLoad);
+  }
+
+  handleLoad = () => {
     (window.adsbygoogle = window.adsbygoogle || []).push({});
   }
 
