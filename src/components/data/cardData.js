@@ -1,7 +1,7 @@
 //? INSERT THE LATEST POST ON TOP WITH UPDATED ID
 const data = [
   {
-    id: 20,
+    id: 21,
     url: "/merch-update",
     title: "Official Project Sakura Embroidered Tshirts and sweatshirts.",
     author: "LordShenron",
