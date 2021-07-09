@@ -6,16 +6,21 @@ import Github from "../../images/donation/github.webp";
 export const donator = [
   {
     id: 0,
-    name: "MissingNerd",
+    name: "Michal Bartošek",
     img: Donator,
   },
   {
     id: 1,
-    name: "Evan Krimpen",
+    name: "MissingNerd",
     img: Donator,
   },
   {
     id: 2,
+    name: "Evan Krimpen",
+    img: Donator,
+  },
+  {
+    id: 3,
     name: "Mircea Nicolau",
     img: Donator,
   },
