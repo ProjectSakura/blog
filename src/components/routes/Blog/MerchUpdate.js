@@ -1,5 +1,5 @@
 import {
-  lazy, Suspense, useEffect, useState,
+  useEffect, useState,
 } from "react";
 import { Container } from "semantic-ui-react";
 import {
@@ -12,18 +12,14 @@ import {
   Heading,
   ImageTag,
   ImgDiv,
-  Anchor,
   Date,
-  LoaderDiv,
 } from "./styles";
-import AdComponent from "../../AdComponent/AdComponent";
 import Footer from "../../Footer/Footer";
 import Navbar from "../../Navbar/Navbar";
 //image
 import MerchIMG from "../../../images/blogs/merch.webp";
 
-const DisqusComment = lazy(() => import("../../DisqusComment/DisqusComments"));
-const renderLoader = () => <LoaderDiv active inline="centered" size="big">Loading</LoaderDiv>;
+import DisqusComment from "../../DisqusComment/DisqusComments";
 
 function MerchUpdate() {
   const [imageSrc, setImageSrc] = useState([]);
@@ -53,11 +49,6 @@ function MerchUpdate() {
             Hope you all are in great health and staying home.We are back with a great anouncement *drum rolls*
             <br />
             <br />
-            But before we start, see an ad.
-            <Suspense fallback={renderLoader()}>
-              <AdComponent />
-            </Suspense>
-            <br />
             We recently partnered with Open-source clothing specialist Hellotux to create embroidered Project Sakura shirts abd sweatshirts.
           </Description>
           <Description>
@@ -68,24 +59,8 @@ function MerchUpdate() {
           </Description>
           <Description>
             <strong>Go get yourself a Project Sakura premium embroidered t-shirt, polo shirt or sweatshirt and enjoy the freedom! Tastier than an apple.</strong>
-            <br />
-            <br />
-            <Anchor href="https://projectsakura.xyz/donation"> ProjectSakura | Donations. </Anchor> Also I would like to thank MissingNerd and Evan Krimpen for the donations so far.
-            <br />
-            <br />
-            As always do follow us on twitter at
-            <Anchor href="https://twitter.com/ProjectSakura_"> @ProjectSakura_</Anchor>, we recently crossed 200 followers there.
-            <br />
-            <br />
-            One more ad lol.
-            <br />
           </Description>
-          <Suspense fallback={renderLoader()}>
-            <AdComponent />
-          </Suspense>
-          <Suspense fallback={renderLoader()}>
-            <DisqusComment />
-          </Suspense>
+          <DisqusComment />
         </BodyInner>
         <AuthorSec>
           <AuthorHead>About Author</AuthorHead>
