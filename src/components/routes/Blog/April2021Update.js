@@ -1,5 +1,5 @@
 import {
-  lazy, Suspense, useEffect, useState,
+  Suspense, useEffect, useState,
 } from "react";
 import { Container } from "semantic-ui-react";
 import {
@@ -11,7 +11,8 @@ import Navbar from "../../Navbar/Navbar";
 //image
 import April2021UpdateIMG from "../../../images/blogs/April2021UpdateIMG.webp";
 
-const DisqusComment = lazy(() => import("../../DisqusComment/DisqusComments"));
+import DisqusComment from "../../DisqusComment/DisqusComments";
+
 const renderLoader = () => <LoaderDiv active inline="centered" size="big">Loading</LoaderDiv>;
 
 function April2021Update() {
@@ -118,9 +119,7 @@ function April2021Update() {
           <Suspense fallback={renderLoader()}>
             <AdComponent />
           </Suspense>
-          <Suspense fallback={renderLoader()}>
-            <DisqusComment />
-          </Suspense>
+          <DisqusComment />
         </BodyInner>
         <AuthorSec>
           <AuthorHead>About Author</AuthorHead>
