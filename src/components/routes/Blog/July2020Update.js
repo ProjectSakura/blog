@@ -1,4 +1,4 @@
-import { lazy, Suspense } from "react";
+// import { lazy, Suspense } from "react";
 import { Container } from "semantic-ui-react";
 import {
   AuthorHead,
@@ -12,14 +12,15 @@ import {
   UnorderedList,
   Date,
   Anchor,
-  LoaderDiv,
+  // LoaderDiv,
 } from "./styles";
 import AdComponent from "../../AdComponent/AdComponent";
 import Footer from "../../Footer/Footer";
 import Navbar from "../../Navbar/Navbar";
+import DisqusComment from "../../DisqusComment/DisqusComments";
 
-const DisqusComment = lazy(() => import("../../DisqusComment/DisqusComments"));
-const renderLoader = () => <LoaderDiv active inline="centered" size="big">Loading</LoaderDiv>;
+// const DisqusComment = lazy(() => import("../../DisqusComment/DisqusComments"));
+// const renderLoader = () => <LoaderDiv active inline="centered" size="big">Loading</LoaderDiv>;
 
 function AugustSecondUpdate2020() {
   return (
@@ -101,12 +102,12 @@ function AugustSecondUpdate2020() {
             <ListItem>Meizu 16TH and 16T, Maintained by thedauke.</ListItem>
             <ListItem>Realme 1, Maintained by CyberJalagam.</ListItem>
           </UnorderedList>
-          <Suspense fallback={renderLoader()}>
-            <AdComponent />
-          </Suspense>
-          <Suspense fallback={renderLoader()}>
-            <DisqusComment />
-          </Suspense>
+          {/* <Suspense fallback={renderLoader()}> */}
+          <AdComponent />
+          {/* </Suspense> */}
+          {/* <Suspense fallback={renderLoader()}> */}
+          <DisqusComment />
+          {/* </Suspense> */}
         </BodyInner>
         <AuthorSec>
           <AuthorHead>About Author</AuthorHead>

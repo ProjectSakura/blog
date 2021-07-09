@@ -1,5 +1,5 @@
 import {
-  lazy, Suspense, useEffect, useState,
+  useEffect, useState,
 } from "react";
 import { Container } from "semantic-ui-react";
 import {
@@ -16,16 +16,17 @@ import {
   UnorderedList,
   Anchor,
   Date,
-  LoaderDiv,
+  // LoaderDiv,
 } from "./styles";
 import AdComponent from "../../AdComponent/AdComponent";
 import Footer from "../../Footer/Footer";
 import Navbar from "../../Navbar/Navbar";
+import DisqusComment from "../../DisqusComment/DisqusComments";
 //image
 import MidMay2021UpdateIMG from "../../../images/blogs/MidMay2021UpdateIMG.webp";
 
-const DisqusComment = lazy(() => import("../../DisqusComment/DisqusComments"));
-const renderLoader = () => <LoaderDiv active inline="centered" size="big">Loading</LoaderDiv>;
+// const DisqusComment = lazy(() => import("../../DisqusComment/DisqusComments"));
+// const renderLoader = () => <LoaderDiv active inline="centered" size="big">Loading</LoaderDiv>;
 
 function MidMay2021Update() {
   const [imageSrc, setImageSrc] = useState([]);
@@ -57,9 +58,9 @@ function MidMay2021Update() {
             <br />
             Oh an ad. what? Seeing it even after adblock? Cry now.
             <br />
-            <Suspense fallback={renderLoader()}>
-              <AdComponent />
-            </Suspense>
+            {/* <Suspense fallback={renderLoader()}> */}
+            <AdComponent />
+            {/* </Suspense> */}
             <br />
             <br />
             So, what do we have this time? Here goes the changelog..
@@ -88,12 +89,12 @@ function MidMay2021Update() {
             One more ad lol.
             <br />
           </Description>
-          <Suspense fallback={renderLoader()}>
-            <AdComponent />
-          </Suspense>
-          <Suspense fallback={renderLoader()}>
-            <DisqusComment />
-          </Suspense>
+          {/* <Suspense fallback={renderLoader()}> */}
+          <AdComponent />
+          {/* </Suspense> */}
+          {/* <Suspense fallback={renderLoader()}> */}
+          <DisqusComment />
+          {/* </Suspense> */}
         </BodyInner>
         <AuthorSec>
           <AuthorHead>About Author</AuthorHead>

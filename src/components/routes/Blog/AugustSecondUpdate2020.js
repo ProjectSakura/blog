@@ -1,5 +1,5 @@
 import {
-  Suspense, useEffect, useState,
+  useEffect, useState,
 } from "react";
 import { Container } from "semantic-ui-react";
 import {
@@ -16,7 +16,7 @@ import {
   UnorderedList,
   Anchor,
   Date,
-  LoaderDiv,
+  // LoaderDiv,
 } from "./styles";
 import AdComponent from "../../AdComponent/AdComponent";
 import Footer from "../../Footer/Footer";
@@ -26,7 +26,7 @@ import AugustSecondUpdate2020IMG from "../../../images/blogs/AugustSecondUpdate2
 
 import DisqusComment from "../../DisqusComment/DisqusComments";
 
-const renderLoader = () => <LoaderDiv active inline="centered" size="big">Loading</LoaderDiv>;
+// const renderLoader = () => <LoaderDiv active inline="centered" size="big">Loading</LoaderDiv>;
 
 function AugustSecondUpdate2020() {
   const [imageSrc, setImageSrc] = useState([]);
@@ -80,9 +80,9 @@ function AugustSecondUpdate2020() {
             <Anchor href="https://twitter.com/ProjectSakura_"> @ProjectSakura_</Anchor>,coz we keep posting fun stuff on it ;)
             <br />
           </Description>
-          <Suspense fallback={renderLoader()}>
-            <AdComponent />
-          </Suspense>
+          {/* <Suspense fallback={renderLoader()}> */}
+          <AdComponent />
+          {/* </Suspense> */}
           <DisqusComment />
         </BodyInner>
         <AuthorSec>

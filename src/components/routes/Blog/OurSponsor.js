@@ -1,14 +1,14 @@
-import { lazy, Suspense } from "react";
+// import { lazy, Suspense } from "react";
 import { Container } from "semantic-ui-react";
 import {
-  AuthorHead, AuthorSec, AuthorSubHead, Body, BodyInner, Description, Heading, ListItem, UnorderedList, Anchor, Date, LoaderDiv,
+  AuthorHead, AuthorSec, AuthorSubHead, Body, BodyInner, Description, Heading, ListItem, UnorderedList, Anchor, Date,
 } from "./styles";
 import AdComponent from "../../AdComponent/AdComponent";
 import Footer from "../../Footer/Footer";
 import Navbar from "../../Navbar/Navbar";
-
-const DisqusComment = lazy(() => import("../../DisqusComment/DisqusComments"));
-const renderLoader = () => <LoaderDiv active inline="centered" size="big">Loading</LoaderDiv>;
+import DisqusComment from "../../DisqusComment/DisqusComments";
+// const DisqusComment = lazy(() => import("../../DisqusComment/DisqusComments"));
+// const renderLoader = () => <LoaderDiv active inline="centered" size="big">Loading</LoaderDiv>;
 
 function OurSponsor() {
   return (
@@ -68,12 +68,12 @@ function OurSponsor() {
               <b>Bleeding Edge Hardware: </b>They are not dependent on old technology and stay updated with the current technology
             </ListItem>
           </UnorderedList>
-          <Suspense fallback={renderLoader()}>
-            <AdComponent />
-          </Suspense>
-          <Suspense fallback={renderLoader()}>
-            <DisqusComment />
-          </Suspense>
+          {/* <Suspense fallback={renderLoader()}> */}
+          <AdComponent />
+          {/* </Suspense> */}
+          {/* <Suspense fallback={renderLoader()}> */}
+          <DisqusComment />
+          {/* </Suspense> */}
         </BodyInner>
         <AuthorSec>
           <AuthorHead>About Author</AuthorHead>
