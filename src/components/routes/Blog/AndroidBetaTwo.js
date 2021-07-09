@@ -1,4 +1,4 @@
-// import { Suspense } from "react";
+import { lazy, Suspense } from "react";
 import { Container } from "semantic-ui-react";
 //Style-Component
 import {
@@ -13,15 +13,15 @@ import {
   UnorderedList,
   Anchor,
   Date,
-  // LoaderDiv,
+  LoaderDiv,
 } from "./styles";
-import AdComponent from "../../AdComponent/AdComponent";
+// import AdComponent from "../../AdComponent/AdComponent";
 import Footer from "../../Footer/Footer";
 import Navbar from "../../Navbar/Navbar";
-
 import DisqusComment from "../../DisqusComment/DisqusComments";
 
-// const renderLoader = () => <LoaderDiv active inline="centered" size="big">Loading</LoaderDiv>;
+const AdComponent = lazy(() => import("../../AdComponent/AdComponent"));
+const renderLoader = () => <LoaderDiv active inline="centered" size="big">Loading</LoaderDiv>;
 
 function AndroidBetaTwo() {
   return (
@@ -42,9 +42,9 @@ function AndroidBetaTwo() {
             <br />
             Now see an ad.
             <br />
-            {/* <Suspense fallback={renderLoader()}> */}
-            <AdComponent />
-            {/* </Suspense> */}
+            <Suspense fallback={renderLoader()}>
+              <AdComponent />
+            </Suspense>
             <br />
             Okay good, so what we have new in this release..
             <br />
@@ -85,9 +85,9 @@ function AndroidBetaTwo() {
             One more ad lol.
             <br />
           </Description>
-          {/* <Suspense fallback={renderLoader()}> */}
-          <AdComponent />
-          {/* </Suspense> */}
+          <Suspense fallback={renderLoader()}>
+            <AdComponent />
+          </Suspense>
           <DisqusComment />
         </BodyInner>
         <AuthorSec>

@@ -1,12 +1,12 @@
 import {
-  useEffect, useState,
+  lazy, Suspense, useEffect, useState,
 } from "react";
 
 import { Container } from "semantic-ui-react";
 import {
-  AuthorHead, AuthorSec, AuthorSubHead, Body, BodyInner, Description, Heading, ImageTag, ImgDiv, ListItem, UnorderedList, Anchor, Date,
+  AuthorHead, AuthorSec, AuthorSubHead, Body, BodyInner, Description, Heading, ImageTag, ImgDiv, ListItem, UnorderedList, Anchor, Date, LoaderDiv,
 } from "./styles";
-import AdComponent from "../../AdComponent/AdComponent";
+// import AdComponent from "../../AdComponent/AdComponent";
 import Footer from "../../Footer/Footer";
 import Navbar from "../../Navbar/Navbar";
 import DisqusComment from "../../DisqusComment/DisqusComments";
@@ -14,7 +14,8 @@ import DisqusComment from "../../DisqusComment/DisqusComments";
 import GSSOC2021UpdateIMG from "../../../images/blogs/GSSOC2021UpdateIMG.webp";
 
 // const DisqusComment = lazy(() => import("../../DisqusComment/DisqusComments"));
-// const renderLoader = () => <LoaderDiv active inline="centered" size="big">Loading</LoaderDiv>;
+const AdComponent = lazy(() => import("../../AdComponent/AdComponent"));
+const renderLoader = () => <LoaderDiv active inline="centered" size="big">Loading</LoaderDiv>;
 
 function GssocAssociationWebsiteUpdateMarch() {
   const [imageSrc, setImageSrc] = useState([]);
@@ -61,9 +62,9 @@ function GssocAssociationWebsiteUpdateMarch() {
             <Anchor href="https://t.me/C0un13rT3rr0r1st">@C0un13rT3rr0r1st</Anchor>) . As always do follow us on twitter{" "}
             <Anchor href="https://twitter.com/ProjectSakura_">@ProjectSakura_</Anchor> coz we keep posting fun stuff on it ;)
           </Description>
-          {/* <Suspense fallback={renderLoader()}> */}
-          <AdComponent />
-          {/* </Suspense> */}
+          <Suspense fallback={renderLoader()}>
+            <AdComponent />
+          </Suspense>
           {/* <Suspense fallback={renderLoader()}> */}
           <DisqusComment />
           {/* </Suspense> */}

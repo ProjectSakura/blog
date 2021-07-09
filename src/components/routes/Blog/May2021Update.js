@@ -1,5 +1,5 @@
 import {
-  useEffect, useState,
+  lazy, Suspense, useEffect, useState,
 } from "react";
 import { Container } from "semantic-ui-react";
 import {
@@ -17,9 +17,9 @@ import {
   UnorderedList,
   Anchor,
   Date,
-  // LoaderDiv,
+  LoaderDiv,
 } from "./styles";
-import AdComponent from "../../AdComponent/AdComponent";
+// import AdComponent from "../../AdComponent/AdComponent";
 import Footer from "../../Footer/Footer";
 import Navbar from "../../Navbar/Navbar";
 import DisqusComment from "../../DisqusComment/DisqusComments";
@@ -27,7 +27,8 @@ import DisqusComment from "../../DisqusComment/DisqusComments";
 import May2021UpdateIMG from "../../../images/blogs/May2021UpdateIMG.webp";
 
 // const DisqusComment = lazy(() => import("../../DisqusComment/DisqusComments"));
-// const renderLoader = () => <LoaderDiv active inline="centered" size="big">Loading</LoaderDiv>;
+const AdComponent = lazy(() => import("../../AdComponent/AdComponent"));
+const renderLoader = () => <LoaderDiv active inline="centered" size="big">Loading</LoaderDiv>;
 
 function May2021Update() {
   const [imageSrc, setImageSrc] = useState([]);
@@ -61,9 +62,9 @@ function May2021Update() {
             It's quite pressurizing psychologically. But even then we are doing what we love and bringing another update of ProjectSakura. So, Let's take <i>"ProjectSakura to the mooooooooon"</i>.
             <br />
             Before we start see an ad.
-            {/* <Suspense fallback={renderLoader()}> */}
-            <AdComponent />
-            {/* </Suspense> */}
+            <Suspense fallback={renderLoader()}>
+              <AdComponent />
+            </Suspense>
             <br />
             So, what is new in this monthly update? Here goes the changelog
           </Description>
@@ -106,9 +107,9 @@ function May2021Update() {
             One more ad lol.
             <br />
           </Description>
-          {/* <Suspense fallback={renderLoader()}> */}
-          <AdComponent />
-          {/* </Suspense> */}
+          <Suspense fallback={renderLoader()}>
+            <AdComponent />
+          </Suspense>
           {/* <Suspense fallback={renderLoader()}> */}
           <DisqusComment />
           {/* </Suspense> */}

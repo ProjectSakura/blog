@@ -1,14 +1,15 @@
-// import { lazy, Suspense } from "react";
+import { lazy, Suspense } from "react";
 import { Container } from "semantic-ui-react";
 import {
-  AuthorHead, AuthorSec, AuthorSubHead, Body, BodyInner, Description, Heading, ListItem, UnorderedList, Anchor, Date, CenterDiv,
+  AuthorHead, AuthorSec, AuthorSubHead, Body, BodyInner, Description, Heading, ListItem, UnorderedList, Anchor, Date, CenterDiv, LoaderDiv,
 } from "./styles";
-import AdComponent from "../../AdComponent/AdComponent";
+// import AdComponent from "../../AdComponent/AdComponent";
 import Footer from "../../Footer/Footer";
 import Navbar from "../../Navbar/Navbar";
 import DisqusComment from "../../DisqusComment/DisqusComments";
 // const DisqusComment = lazy(() => import("../../DisqusComment/DisqusComments"));
-// const renderLoader = () => <LoaderDiv active inline="centered" size="big">Loading</LoaderDiv>;
+const AdComponent = lazy(() => import("../../AdComponent/AdComponent"));
+const renderLoader = () => <LoaderDiv active inline="centered" size="big">Loading</LoaderDiv>;
 
 function Maintainership() {
   return (
@@ -35,9 +36,9 @@ function Maintainership() {
           <CenterDiv>
             <Anchor href="https://docs.google.com/forms/d/e/1FAIpQLSfKFUSyohdGKQFLEZCxsxCemlcXdKUMPCsShi0TXGJu7ihceg/viewform"> Apply for Maintainership</Anchor>
           </CenterDiv>
-          {/* <Suspense fallback={renderLoader()}> */}
-          <AdComponent />
-          {/* </Suspense> */}
+          <Suspense fallback={renderLoader()}>
+            <AdComponent />
+          </Suspense>
           {/* <Suspense fallback={renderLoader()}> */}
           <DisqusComment />
           {/* </Suspense> */}
