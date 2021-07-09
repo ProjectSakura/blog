@@ -27,6 +27,7 @@ const AugustSecondUpdate2020 = lazy(() => import("../routes/Blog/AugustSecondUpd
 const AugustUpdate2020 = lazy(() => import("../routes/Blog/AugustUpdate2020"));
 const July2020Update = lazy(() => import("../routes/Blog/July2020Update"));
 const Donation = lazy(() => import("../routes/Donation/Donation"));
+const MerchUpdate = lazy(() => import("../routes/Blog/MerchUpdate"));
 
 const renderLoader = () => <LoaderDiv active inline="centered" size="big">Loading</LoaderDiv>;
 
@@ -37,6 +38,7 @@ function App() {
         <Suspense fallback={renderLoader()}>
           <Switch>
             <Route path="/" exact component={Home} />
+            <Route path="/merch-update" exact component={MerchUpdate} />
             <Route path="/5.1-June-2021-update" exact component={June2021Update} />
             <Route path="/5.R-May-2021-update" exact component={MidMay2021Update} />
             <Route path="/5.R-mid-may-2021-update" exact component={May2021Update} />

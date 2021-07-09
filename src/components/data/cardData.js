@@ -2,6 +2,15 @@
 const data = [
   {
     id: 20,
+    url: "/merch-update",
+    title: "Official Project Sakura Embroidered Tshirts and sweatshirts.",
+    author: "LordShenron",
+    date: new Date(Date.parse("2021-07-09")),
+    desc: "Whats new in the latest release of Project Sakura? Check out..",
+
+  },
+  {
+    id: 20,
     url: "/5.1-june-2021-update",
     title: "Project Sakura 5.1 is the best thing this summer",
     author: "LordShenron",
