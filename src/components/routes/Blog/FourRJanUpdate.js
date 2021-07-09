@@ -1,4 +1,4 @@
-import { lazy, Suspense } from "react";
+// import { lazy, Suspense } from "react";
 import { Container } from "semantic-ui-react";
 import {
   AuthorHead,
@@ -12,14 +12,14 @@ import {
   UnorderedList,
   Anchor,
   Date,
-  LoaderDiv,
+  // LoaderDiv,
 } from "./styles";
 import AdComponent from "../../AdComponent/AdComponent";
 import Footer from "../../Footer/Footer";
 import Navbar from "../../Navbar/Navbar";
-
-const DisqusComment = lazy(() => import("../../DisqusComment/DisqusComments"));
-const renderLoader = () => <LoaderDiv active inline="centered" size="big">Loading</LoaderDiv>;
+import DisqusComment from "../../DisqusComment/DisqusComments";
+// const DisqusComment = lazy(() => import("../../DisqusComment/DisqusComments"));
+// const renderLoader = () => <LoaderDiv active inline="centered" size="big">Loading</LoaderDiv>;
 
 function FourRJanUpdate() {
   return (
@@ -37,9 +37,9 @@ function FourRJanUpdate() {
             With every month passing we are moving closer towards the spring we want (atleast in my country). So, with a very deep line that I took a whole week to think up ; I am writing the blog post for february just like I do every month. This month is very very fucking busy for me.. but guess what? we are one day early with the update than we were last month. Though there are no big overhaul just some small tweaks and changes.
             <br />
             Now see an ad.
-            <Suspense fallback={renderLoader()}>
-              <AdComponent />
-            </Suspense>
+            {/* <Suspense fallback={renderLoader()}> */}
+            <AdComponent />
+            {/* </Suspense> */}
             <br />
             Wondering what's new we have this month?
           </Description>
@@ -64,12 +64,12 @@ function FourRJanUpdate() {
             <br />
             One more ad lol.
           </Description>
-          <Suspense fallback={renderLoader()}>
-            <AdComponent />
-          </Suspense>
-          <Suspense fallback={renderLoader()}>
-            <DisqusComment />
-          </Suspense>
+          {/* <Suspense fallback={renderLoader()}> */}
+          <AdComponent />
+          {/* </Suspense> */}
+          {/* <Suspense fallback={renderLoader()}> */}
+          <DisqusComment />
+          {/* </Suspense> */}
         </BodyInner>
         <AuthorSec>
           <AuthorHead>About Author</AuthorHead>

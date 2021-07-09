@@ -1,9 +1,9 @@
 import {
-  Suspense, useEffect, useState,
+  useEffect, useState,
 } from "react";
 import { Container } from "semantic-ui-react";
 import {
-  AuthorHead, AuthorSec, AuthorSubHead, Body, BodyInner, Description, Heading, ImageTag, ImgDiv, ListItem, SubHeading, UnorderedList, Anchor, Date, LoaderDiv,
+  AuthorHead, AuthorSec, AuthorSubHead, Body, BodyInner, Description, Heading, ImageTag, ImgDiv, ListItem, SubHeading, UnorderedList, Anchor, Date,
 } from "./styles";
 import AdComponent from "../../AdComponent/AdComponent";
 import Footer from "../../Footer/Footer";
@@ -13,7 +13,7 @@ import April2021UpdateIMG from "../../../images/blogs/April2021UpdateIMG.webp";
 
 import DisqusComment from "../../DisqusComment/DisqusComments";
 
-const renderLoader = () => <LoaderDiv active inline="centered" size="big">Loading</LoaderDiv>;
+// const renderLoader = () => <LoaderDiv active inline="centered" size="big">Loading</LoaderDiv>;
 
 function April2021Update() {
   const [imageSrc, setImageSrc] = useState([]);
@@ -48,9 +48,9 @@ function April2021Update() {
             <br />
             See a smol cute ad first.
             <br />
-            <Suspense fallback={renderLoader()}>
-              <AdComponent />
-            </Suspense>
+            {/* <Suspense fallback={renderLoader()}> */}
+            <AdComponent />
+            {/* </Suspense> */}
             <br />
             Okay good, so what we have new in this release..
           </Description>
@@ -116,9 +116,9 @@ function April2021Update() {
             <br />
             One more ad lol.
           </Description>
-          <Suspense fallback={renderLoader()}>
-            <AdComponent />
-          </Suspense>
+          {/* <Suspense fallback={renderLoader()}> */}
+          <AdComponent />
+          {/* </Suspense> */}
           <DisqusComment />
         </BodyInner>
         <AuthorSec>

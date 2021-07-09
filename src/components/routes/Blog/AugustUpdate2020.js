@@ -1,4 +1,4 @@
-import { Suspense } from "react";
+// import { Suspense } from "react";
 import { Container } from "semantic-ui-react";
 import {
   AuthorHead,
@@ -12,7 +12,7 @@ import {
   UnorderedList,
   Anchor,
   Date,
-  LoaderDiv,
+  // LoaderDiv,
 } from "./styles";
 
 import AdComponent from "../../AdComponent/AdComponent";
@@ -21,7 +21,7 @@ import Navbar from "../../Navbar/Navbar";
 
 import DisqusComment from "../../DisqusComment/DisqusComments";
 
-const renderLoader = () => <LoaderDiv active inline="centered" size="big">Loading</LoaderDiv>;
+// const renderLoader = () => <LoaderDiv active inline="centered" size="big">Loading</LoaderDiv>;
 
 function AugustUpdate2020() {
   return (
@@ -49,9 +49,9 @@ function AugustUpdate2020() {
             <br />
             So first up whats new!
           </Description>
-          <Suspense fallback={renderLoader()}>
-            <AdComponent />
-          </Suspense>
+          {/* <Suspense fallback={renderLoader()}> */}
+          <AdComponent />
+          {/* </Suspense> */}
           <UnorderedList>
             <ListItem>Probably the biggest change you will see is the addition of Oneplus Launcher.</ListItem>
             <br />
@@ -94,9 +94,9 @@ function AugustUpdate2020() {
             <br />
             <ListItem>And Motorola G7 (River), Maintained by Vitor.</ListItem>
           </UnorderedList>
-          <Suspense fallback={renderLoader()}>
-            <AdComponent />
-          </Suspense>
+          {/* <Suspense fallback={renderLoader()}> */}
+          <AdComponent />
+          {/* </Suspense> */}
           <DisqusComment />
         </BodyInner>
         <AuthorSec>
