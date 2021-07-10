@@ -8,6 +8,7 @@ import Footer from "../../Footer/Footer";
 import Navbar from "../../Navbar/Navbar";
 import DisqusComment from "../../DisqusComment/DisqusComments";
 // const DisqusComment = lazy(() => import("../../DisqusComment/DisqusComments"));
+
 const AdComponent = lazy(() => import("../../AdComponent/AdComponent"));
 const renderLoader = () => <LoaderDiv active inline="centered" size="big">Loading</LoaderDiv>;
 
