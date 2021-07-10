@@ -1,4 +1,4 @@
-// import { Suspense } from "react";
+import { lazy, Suspense } from "react";
 import { Container } from "semantic-ui-react";
 import {
   AuthorHead,
@@ -12,15 +12,15 @@ import {
   UnorderedList,
   Anchor,
   Date,
-  // LoaderDiv,
+  LoaderDiv,
 } from "./styles";
-import AdComponent from "../../AdComponent/AdComponent";
+// import AdComponent from "../../AdComponent/AdComponent";
 import Footer from "../../Footer/Footer";
 import Navbar from "../../Navbar/Navbar";
-
 import DisqusComment from "../../DisqusComment/DisqusComments";
 
-// const renderLoader = () => <LoaderDiv active inline="centered" size="big">Loading</LoaderDiv>;
+const AdComponent = lazy(() => import("../../AdComponent/AdComponent"));
+const renderLoader = () => <LoaderDiv active inline="centered" size="big">Loading</LoaderDiv>;
 
 function AndroidElevenBeta() {
   return (
@@ -86,9 +86,9 @@ function AndroidElevenBeta() {
             One more ad lol.
             <br />
           </Description>
-          {/* <Suspense fallback={renderLoader()}> */}
-          <AdComponent />
-          {/* </Suspense> */}
+          <Suspense fallback={renderLoader()}>
+            <AdComponent />
+          </Suspense>
           <DisqusComment />
         </BodyInner>
         <AuthorSec>
@@ -98,7 +98,9 @@ function AndroidElevenBeta() {
             LordShenron is the lead developer of the project. He is also an IT Engg Student and he loves anime and Japanese pop music. When he is not online he is mostly sleeping or busy with some college work.
           </Description>
         </AuthorSec>
-        <AdComponent />
+        <Suspense fallback={renderLoader()}>
+          <AdComponent />
+        </Suspense>
       </Container>
       <Footer />
     </Body>

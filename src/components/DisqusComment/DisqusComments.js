@@ -13,7 +13,7 @@ const DisqusComments = () => {
 
       const d = document
       const s = d.createElement('script')
-      s.src = 'https:' + '//' + "direwolf-tech" + '.disqus.com/embed.js'
+      s.src = 'https:' + '//' + "direwolf-tech" + '.disqus.com'
       s.id = DISQUS_SCRIPT
       s.async = true
       s.setAttribute('data-timestamp', +new Date())
@@ -26,6 +26,7 @@ const DisqusComments = () => {
       })
     }
   }, [])
+  // s.src = 'https:' + '//' + "direwolf-tech" + '.disqus.com/embed.js'
   return <div id="disqus_thread"></div>
 };
 export default DisqusComments;

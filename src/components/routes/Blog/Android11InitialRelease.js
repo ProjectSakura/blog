@@ -1,15 +1,16 @@
-// import { Suspense } from "react";
+import { lazy, Suspense } from "react";
 import { Container } from "semantic-ui-react";
 import {
-  AuthorHead, AuthorSec, AuthorSubHead, Body, BodyInner, Description, Heading, ListItem, UnorderedList, Anchor, Date,
+  AuthorHead, AuthorSec, AuthorSubHead, Body, BodyInner, Description, Heading, ListItem, UnorderedList, Anchor, Date, LoaderDiv,
 } from "./styles";
-import AdComponent from "../../AdComponent/AdComponent";
+// import AdComponent from "../../AdComponent/AdComponent";
 import Footer from "../../Footer/Footer";
 import Navbar from "../../Navbar/Navbar";
 
 import DisqusComment from "../../DisqusComment/DisqusComments";
 
-// const renderLoader = () => <LoaderDiv active inline="centered" size="big">Loading</LoaderDiv>;
+const AdComponent = lazy(() => import("../../AdComponent/AdComponent"));
+const renderLoader = () => <LoaderDiv active inline="centered" size="big">Loading</LoaderDiv>;
 
 function Android11InitialRelease() {
   return (
@@ -25,9 +26,9 @@ function Android11InitialRelease() {
             freeze, that means no more new feature requests will be taken and no more new features will be added anymore. So, please don't ask us to add anymore weird ass features.
           </Description>
           <Description>Now see an ad.</Description>
-          {/* <Suspense fallback={renderLoader()}> */}
-          <AdComponent />
-          {/* </Suspense> */}
+          <Suspense fallback={renderLoader()}>
+            <AdComponent />
+          </Suspense>
           <Description>So, What took us so long for this update? Here goes the changelog.</Description>
           <UnorderedList>
             <ListItem>March Security Patch. </ListItem>
@@ -73,9 +74,9 @@ function Android11InitialRelease() {
             <Anchor href="https://twitter.com/ProjectSakura_">@ProjectSakura_</Anchor> coz we keep posting fun stuff on it ;)
           </Description>
           <Description>One more ad lol.</Description>
-          {/* <Suspense fallback={renderLoader()}> */}
-          <AdComponent />
-          {/* </Suspense> */}
+          <Suspense fallback={renderLoader()}>
+            <AdComponent />
+          </Suspense>
           <DisqusComment />
         </BodyInner>
         <AuthorSec>
@@ -86,7 +87,9 @@ function Android11InitialRelease() {
             with some college work.
           </Description>
         </AuthorSec>
-        <AdComponent />
+        <Suspense fallback={renderLoader()}>
+          <AdComponent />
+        </Suspense>
       </Container>
       <Footer />
     </Body>

@@ -1,5 +1,5 @@
 import {
-  useEffect, useState,
+  lazy, Suspense, useEffect, useState,
 } from "react";
 import { Container } from "semantic-ui-react";
 import {
@@ -16,16 +16,17 @@ import {
   UnorderedList,
   Anchor,
   Date,
-  // LoaderDiv,
+  LoaderDiv,
 } from "./styles";
-import AdComponent from "../../AdComponent/AdComponent";
+// import AdComponent from "../../AdComponent/AdComponent";
 import Footer from "../../Footer/Footer";
 import Navbar from "../../Navbar/Navbar";
 //image
 import June2021UpdateIMG from "../../../images/blogs/June2021UpdateIMG.webp";
 import DisqusComment from "../../DisqusComment/DisqusComments";
 // const DisqusComment = lazy(() => import("../../DisqusComment/DisqusComments"));
-// const renderLoader = () => <LoaderDiv active inline="centered" size="big">Loading</LoaderDiv>;
+const AdComponent = lazy(() => import("../../AdComponent/AdComponent"));
+const renderLoader = () => <LoaderDiv active inline="centered" size="big">Loading</LoaderDiv>;
 
 function June2021Update() {
   const [imageSrc, setImageSrc] = useState([]);
@@ -61,9 +62,9 @@ function June2021Update() {
             <br />
             <br />
             But before we start, see an ad.
-            {/* <Suspense fallback={renderLoader()}> */}
-            <AdComponent />
-            {/* </Suspense> */}
+            <Suspense fallback={renderLoader()}>
+              <AdComponent />
+            </Suspense>
             <br />
             So, what do we have for 5.1 release? Here goes the changelog..
           </Description>
@@ -114,9 +115,9 @@ function June2021Update() {
             Before you go.. one more small tiny ad. We also don't like them but sadly we have no choice.
             <br />
           </Description>
-          {/* <Suspense fallback={renderLoader()}> */}
-          <AdComponent />
-          {/* </Suspense> */}
+          <Suspense fallback={renderLoader()}>
+            <AdComponent />
+          </Suspense>
           {/* <Suspense fallback={renderLoader()}> */}
           <DisqusComment />
           {/* </Suspense> */}
