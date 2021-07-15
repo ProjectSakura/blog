@@ -23,7 +23,8 @@ import Footer from "../../Footer/Footer";
 import Navbar from "../../Navbar/Navbar";
 //image
 import FourAndroidUpdateIMG from "../../../images/blogs/FourAndroidUpdateIMG.webp";
-import DisqusComment from "../../DisqusComment/DisqusComments";
+import Comments from "../../Comments/Comments";
+// import DisqusComment from "../../DisqusComment/DisqusComments";
 // const DisqusComment = lazy(() => import("../../DisqusComment/DisqusComments"));
 
 const AdComponent = lazy(() => import("../../AdComponent/AdComponent"));
@@ -38,6 +39,7 @@ function FourAndroidUpdate() {
       setImageSrc(FourAndroidUpdateIMG);
     };
     img.src = FourAndroidUpdateIMG;
+    document.title = "Project Sakura | Four Android Update";
   }, []);
   return (
     <Body>
@@ -94,8 +96,9 @@ function FourAndroidUpdate() {
           <Suspense fallback={renderLoader()}>
             <AdComponent />
           </Suspense>
+          <Comments />
           {/* <Suspense fallback={renderLoader()}> */}
-          <DisqusComment />
+          {/* <DisqusComment /> */}
           {/* </Suspense> */}
         </BodyInner>
         <AuthorSec>

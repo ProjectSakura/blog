@@ -1,4 +1,4 @@
-import { lazy, Suspense } from "react";
+import { lazy, Suspense, useEffect } from "react";
 import { Container } from "semantic-ui-react";
 //Style-Component
 import {
@@ -18,12 +18,16 @@ import {
 // import AdComponent from "../../AdComponent/AdComponent";
 import Footer from "../../Footer/Footer";
 import Navbar from "../../Navbar/Navbar";
-import DisqusComment from "../../DisqusComment/DisqusComments";
+import Comments from "../../Comments/Comments";
+// import DisqusComment from "../../DisqusComment/DisqusComments";
 
 const AdComponent = lazy(() => import("../../AdComponent/AdComponent"));
 const renderLoader = () => <LoaderDiv active inline="centered" size="big">Loading</LoaderDiv>;
 
 function AndroidBetaTwo() {
+  useEffect(() => {
+    document.title = "Project Sakura | Android Beta Two";
+  }, []);
   return (
     <Body>
       <Navbar />
@@ -88,7 +92,8 @@ function AndroidBetaTwo() {
           <Suspense fallback={renderLoader()}>
             <AdComponent />
           </Suspense>
-          <DisqusComment />
+          <Comments />
+          {/* <DisqusComment /> */}
         </BodyInner>
         <AuthorSec>
           <AuthorHead>About Author</AuthorHead>
