@@ -2,7 +2,7 @@ import {
   lazy, Suspense, useEffect, useState,
 } from "react";
 import { Container } from "semantic-ui-react";
-import { DiscussionEmbed } from "disqus-react";
+// import { DiscussionEmbed } from "disqus-react";
 import {
   AuthorHead,
   AuthorSec,
@@ -24,16 +24,16 @@ import Footer from "../../Footer/Footer";
 import Navbar from "../../Navbar/Navbar";
 //image
 import July2021UpdateIMG from "../../../images/blogs/July2021UpdateIMG.webp";
-// import Comments from "../../Comments/Comments";
+import Comments from "../../Comments/Comments";
 // const DisqusComment = lazy(() => import("../../DisqusComment/DisqusComments"));
 const AdComponent = lazy(() => import("../../AdComponent/AdComponent"));
 const renderLoader = () => <LoaderDiv active inline="centered" size="big">Loading</LoaderDiv>;
 
 function July2021Update() {
   //! IMP SECTION FOR COMMENTS
-  const url = "https:" + "//" + "direwolf-tech" + ".disqus.com/embed.js";
-  const identifier = "July2021Update";
-  const title = "Project Sakura | July 2021 Update";
+  // const url = "https:" + "//" + "direwolf-tech" + ".disqus.com/embed.js";
+  // const identifier = "July2021Update";
+  // const title = "Project Sakura | July 2021 Update";
   //!
   useEffect(() => {
     document.title = "Project Sakura | July 2021 Update";
@@ -46,7 +46,7 @@ function July2021Update() {
       setImageSrc(July2021UpdateIMG);
     };
     img.src = July2021UpdateIMG;
-    document.title = "Project Sakura | July 2021 Update";
+    // document.title = "Project Sakura | July 2021 Update";
   }, []);
   return (
     <Body>
@@ -128,12 +128,12 @@ function July2021Update() {
           <Suspense fallback={renderLoader()}>
             <AdComponent />
           </Suspense>
-          <DiscussionEmbed
+          {/* <DiscussionEmbed
             shortname="direwolf-tech"
             config={{ url, identifier, title }}
-          />
+          /> */}
           {/* <Suspense fallback={renderLoader()}> */}
-          {/* <Comments /> */}
+          <Comments />
           {/* </Suspense> */}
         </BodyInner>
         <AuthorSec>

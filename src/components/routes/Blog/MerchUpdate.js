@@ -25,8 +25,8 @@ import MerchIMG from "../../../images/blogs/merch.webp";
 function MerchUpdate() {
   const [imageSrc, setImageSrc] = useState([]);
   //! IMP SECTION FOR COMMENTS
-  const url = "https:" + "//" + "direwolf-tech" + ".disqus.com/embed.js";
-  const identifier = "MerchUpdate";
+  const url = "https://projectsakura.xyz/blog/#/merch-update";
+  const identifier = 1;
   const title = "Project Sakura | Official Merches";
   //!
   useEffect(() => {
@@ -37,7 +37,7 @@ function MerchUpdate() {
     };
     img.src = MerchIMG;
     //? title of the blog
-    // document.title = "Project Sakura | Official Merches";
+    document.title = "Project Sakura | Official Merches";
   }, []);
   return (
     <Body>
