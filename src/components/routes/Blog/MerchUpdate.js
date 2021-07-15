@@ -3,7 +3,6 @@ import {
   useEffect, useState,
 } from "react";
 import { Container } from "semantic-ui-react";
-import { Helmet } from 'react-helmet';
 import {
   AuthorHead,
   AuthorSec,
@@ -32,12 +31,11 @@ function MerchUpdate() {
       setImageSrc(MerchIMG);
     };
     img.src = MerchIMG;
+    //? title of the blog
+    document.title = "Project Sakura | Official Merches"
   }, []);
   return (
-    <Body>
-      <Helmet>
-        <title>Project Sakura | Official Merches</title>
-      </Helmet>    
+    <Body>   
       <Navbar />
       <Container>
         <BodyInner>

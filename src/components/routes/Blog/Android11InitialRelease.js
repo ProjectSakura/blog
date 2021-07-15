@@ -1,4 +1,4 @@
-import { lazy, Suspense } from "react";
+import { lazy, Suspense, useEffect } from "react";
 import { Container } from "semantic-ui-react";
 import {
   AuthorHead, AuthorSec, AuthorSubHead, Body, BodyInner, Description, Heading, ListItem, UnorderedList, Anchor, Date, LoaderDiv,
@@ -7,12 +7,17 @@ import {
 import Footer from "../../Footer/Footer";
 import Navbar from "../../Navbar/Navbar";
 
-import DisqusComment from "../../DisqusComment/DisqusComments";
+// import DisqusComment from "../../DisqusComment/DisqusComments";
+
+import Comments from "../../Comments/Comments";
 
 const AdComponent = lazy(() => import("../../AdComponent/AdComponent"));
 const renderLoader = () => <LoaderDiv active inline="centered" size="big">Loading</LoaderDiv>;
 
 function Android11InitialRelease() {
+  useEffect(() => {
+    document.title = "Project Sakura | Android11 Initial Release";
+  }, []);
   return (
     <Body>
       <Navbar />
@@ -77,7 +82,8 @@ function Android11InitialRelease() {
           <Suspense fallback={renderLoader()}>
             <AdComponent />
           </Suspense>
-          <DisqusComment />
+          {/* <DisqusComment /> */}
+          <Comments />
         </BodyInner>
         <AuthorSec>
           <AuthorHead>About Author</AuthorHead>
