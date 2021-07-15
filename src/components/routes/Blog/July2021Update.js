@@ -1,9 +1,7 @@
-/* eslint-disable */
 import {
   lazy, Suspense, useEffect, useState,
 } from "react";
 import { Container } from "semantic-ui-react";
-import { Helmet } from "react-helmet";
 import {
   AuthorHead,
   AuthorSec,
@@ -25,12 +23,15 @@ import Footer from "../../Footer/Footer";
 import Navbar from "../../Navbar/Navbar";
 //image
 import July2021UpdateIMG from "../../../images/blogs/July2021UpdateIMG.webp";
- import Comments from "../../Comments/Comments";
- // const DisqusComment = lazy(() => import("../../DisqusComment/DisqusComments"));
+import Comments from "../../Comments/Comments";
+// const DisqusComment = lazy(() => import("../../DisqusComment/DisqusComments"));
 const AdComponent = lazy(() => import("../../AdComponent/AdComponent"));
 const renderLoader = () => <LoaderDiv active inline="centered" size="big">Loading</LoaderDiv>;
 
 function July2021Update() {
+  useEffect(() => {
+    document.title = "Project Sakura | July 2021 Update";
+  }, []);
   const [imageSrc, setImageSrc] = useState([]);
   useEffect(() => {
     //preloading image
@@ -42,9 +43,6 @@ function July2021Update() {
   }, []);
   return (
     <Body>
-      <Helmet>
-        <title>Project Sakura July 2021 Update</title>
-      </Helmet>    
       <Navbar />
       <Container>
         <BodyInner>
@@ -58,25 +56,25 @@ function July2021Update() {
             <ImageTag src={imageSrc} alt="display" />
           </ImgDiv>
           <Description>
-          It is monsoon season in Northern India and Its raning almost everyday in my city too. This is far from the spring that I enjoy but I don't hate 
-          rainy season too. It atleast smell very nice when the soil is wet. But there is no peace as this is the final year of my engineering course and 
-          I have to prepare for getting a job too. I cannot keep doing this forever because I too have bills to pay. Well I will keep pondering about the direction that I should take. 
+            It is monsoon season in Northern India and Its raining almost everyday in my city too. This is far from the spring that I enjoy but I don't hate
+            rainy season too. It atleast smell very nice when the soil is wet. But there is no peace as this is the final year of my engineering course and
+            I have to prepare for getting a job too. I cannot keep doing this forever because I too have bills to pay. Well I will keep pondering about the direction that I should take.
             <br />
             <br />
-          So now without wasting anymore time let's get into the changelog. But before we start, see an ad.
-          <Suspense fallback={renderLoader()}>            
-           <AdComponent />
-           </Suspense>
+            So now without wasting anymore time let's get into the changelog. But before we start, see an ad.
+            <Suspense fallback={renderLoader()}>
+              <AdComponent />
+            </Suspense>
             <br />
             Here goes the changelog for July update..
           </Description>
           <UnorderedList>
             <ListItem>July Security Patch android-11.0.0_r39</ListItem>
             <br />
-            <ListItem>Android 12 like switches are added and it look very sleek. 
+            <ListItem>Android 12 like switches are added and it look very sleek.
             </ListItem>
             <br />
-            <ListItem>We also have added Aandroid 12 like lockscreen clock by Project 404.</ListItem>
+            <ListItem>We have also added Android 12 like lockscreen clock by Project 404.</ListItem>
             <br />
             <ListItem>The vertical padding between QS tiles have been decreased to save space. </ListItem>
             <br />
@@ -90,29 +88,29 @@ function July2021Update() {
             <ListItem>You will now be able to rank all the sourceforge mirrors and set the fastest mirror in the Updater app.</ListItem>
             <br />
             <ListItem>Dogbin is dead so we have switched to Hastebin for uploading logs when there is a crash in the ROM. You can send us the log URL while reporting issues.</ListItem>
-			<br />
-			<ListItem>Developers can now invert the IMS slots to show correct dynamic VoLTE and VoWifi icon. </ListItem>
-			<br />
-			<ListItem>We are not spoofing pixel XL(Marlin) for Google Photos, which means you will get unlimited standard photos storage.</ListItem>
-			<br />
-			<ListItem>We have reduced the QS header images storage size by 8% while keeping the same great quality.</ListItem>
-			<br />
-			<ListItem>We will be shipping all the wallpapers we used so far with the ROM. So, you don't need to ask us for giving wallpaper links xD.</ListItem>
-			<br />
-			<ListItem>And few more changes that you can know by seeing the sources.</ListItem>
+            <br />
+            <ListItem>Developers can now invert the IMS slots to show correct dynamic VoLTE and VoWifi icon. </ListItem>
+            <br />
+            <ListItem>We are now spoofing pixel XL(Marlin) for Google Photos, which means you will get unlimited standard photos storage.</ListItem>
+            <br />
+            <ListItem>We have reduced the QS header images size by 8% while keeping the same great quality.</ListItem>
+            <br />
+            <ListItem>We will be shipping all the wallpapers we used so far with the ROM. So, you don't need to ask us for giving wallpaper links xD.</ListItem>
+            <br />
+            <ListItem>And few more changes that you can know by seeing the sources.</ListItem>
           </UnorderedList>
           <Description>
             We have made some changes to the website too as you can see by the comment section below. We have started testing out utterances which is an opensource comment management
-            that uses GitHub issues. This is much better and more privacy oriented than disqus but you will need a GitHub id to interact with us now. You gain something and you lose 
-            something it is. 
+            that uses GitHub issues. This is much better and more privacy oriented than disqus but you will need a GitHub id to interact with us now. You gain something and you lose
+            something it is.
             <br />
             <br />
             We have one more small announcement to make regarding our Official merchandises that we made in partnership with Open Source Clothing specialist, Hellotux.
             You can read more about it in our detailed blog posts by clicking on the this <Anchor href="https://projectsakura.xyz/blog/#/merch-update">LINK.</Anchor>
             <br />
             <br />
-            And if you like how hard we work every month to bring you absolutely free software then please consider donating at <Anchor href="https://projectsakura.xyz/blog/#/donation"> Project Sakura | Donations, </Anchor> 
-            You can also get your name in the top donators section. 
+            And if you like how hard we work every month to bring you absolutely free software then please consider donating at <Anchor href="https://projectsakura.xyz/blog/#/donation"> Project Sakura | Donations, </Anchor>
+            You can also get your name in the top donators section.
             As always do follow us on twitter at
             <Anchor href="https://twitter.com/ProjectSakura_"> @ProjectSakura_</Anchor>, we are racing to 500 followers and we post a lot of fun stuff there.
             <br />
