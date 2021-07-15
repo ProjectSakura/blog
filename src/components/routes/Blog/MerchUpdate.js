@@ -1,7 +1,9 @@
+/* eslint-disable */
 import {
   useEffect, useState,
 } from "react";
 import { Container } from "semantic-ui-react";
+import { Helmet } from 'react-helmet';
 import {
   AuthorHead,
   AuthorSec,
@@ -19,7 +21,7 @@ import Navbar from "../../Navbar/Navbar";
 //image
 import MerchIMG from "../../../images/blogs/merch.webp";
 
-import DisqusComment from "../../DisqusComment/DisqusComments";
+import Comments from "../../Comments/Comments";
 
 function MerchUpdate() {
   const [imageSrc, setImageSrc] = useState([]);
@@ -33,6 +35,9 @@ function MerchUpdate() {
   }, []);
   return (
     <Body>
+      <Helmet>
+        <title>Project Sakura | Official Merches</title>
+      </Helmet>    
       <Navbar />
       <Container>
         <BodyInner>
@@ -60,7 +65,7 @@ function MerchUpdate() {
           <Description>
             <strong>Go get yourself a Project Sakura premium embroidered t-shirt, polo shirt or sweatshirt and enjoy the freedom! Tastier than an apple.</strong>
           </Description>
-          <DisqusComment />
+          <Comments />
         </BodyInner>
         <AuthorSec>
           <AuthorHead>About Author</AuthorHead>

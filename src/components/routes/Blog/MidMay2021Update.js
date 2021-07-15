@@ -2,6 +2,7 @@ import {
   lazy, Suspense, useEffect, useState,
 } from "react";
 import { Container } from "semantic-ui-react";
+import { Helmet } from "react-helmet";
 import {
   AuthorHead,
   AuthorSec,
@@ -41,6 +42,9 @@ function MidMay2021Update() {
   }, []);
   return (
     <Body>
+      <Helmet>
+        <title>Mid May happiness with Project Sakura</title>
+      </Helmet>
       <Navbar />
       <Container>
         <BodyInner>

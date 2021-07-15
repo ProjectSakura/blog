@@ -2,6 +2,7 @@ import {
   lazy, Suspense, useEffect, useState,
 } from "react";
 import { Container } from "semantic-ui-react";
+import { Helmet } from "react-helmet";
 import {
   AuthorHead,
   AuthorSec,
@@ -42,6 +43,9 @@ function May2021Update() {
   }, []);
   return (
     <Body>
+      <Helmet>
+        <title>Blur, Transparency, Stability and much more with May update of ProjectSakura</title>
+      </Helmet>
       <Navbar />
       <Container>
         <BodyInner>
