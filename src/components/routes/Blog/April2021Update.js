@@ -10,7 +10,8 @@ import Footer from "../../Footer/Footer";
 import Navbar from "../../Navbar/Navbar";
 //image
 import April2021UpdateIMG from "../../../images/blogs/April2021UpdateIMG.webp";
-import DisqusComment from "../../DisqusComment/DisqusComments";
+// import DisqusComment from "../../DisqusComment/DisqusComments";
+import Comments from "../../Comments/Comments";
 
 const AdComponent = lazy(() => import("../../AdComponent/AdComponent"));
 const renderLoader = () => <LoaderDiv active inline="centered" size="big">Loading</LoaderDiv>;
@@ -24,6 +25,7 @@ function April2021Update() {
       setImageSrc(April2021UpdateIMG);
     };
     img.src = April2021UpdateIMG;
+    document.title = "Project Sakura | April 2021 Update";
   }, []);
   return (
     <Body>
@@ -119,7 +121,8 @@ function April2021Update() {
           <Suspense fallback={renderLoader()}>
             <AdComponent />
           </Suspense>
-          <DisqusComment />
+          <Comments />
+          {/* <DisqusComment /> */}
         </BodyInner>
         <AuthorSec>
           <AuthorHead>About Author</AuthorHead>

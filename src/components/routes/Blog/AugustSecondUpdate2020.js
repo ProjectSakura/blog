@@ -23,7 +23,8 @@ import Footer from "../../Footer/Footer";
 import Navbar from "../../Navbar/Navbar";
 //image
 import AugustSecondUpdate2020IMG from "../../../images/blogs/AugustSecondUpdate2020IMG.webp";
-import DisqusComment from "../../DisqusComment/DisqusComments";
+import Comments from "../../Comments/Comments";
+// import DisqusComment from "../../DisqusComment/DisqusComments";
 
 const AdComponent = lazy(() => import("../../AdComponent/AdComponent"));
 const renderLoader = () => <LoaderDiv active inline="centered" size="big">Loading</LoaderDiv>;
@@ -37,6 +38,7 @@ function AugustSecondUpdate2020() {
       setImageSrc(AugustSecondUpdate2020IMG);
     };
     img.src = AugustSecondUpdate2020IMG;
+    document.title = "Project Sakura | August Second Update 2020";
   }, []);
   return (
     <Body>
@@ -83,7 +85,8 @@ function AugustSecondUpdate2020() {
           <Suspense fallback={renderLoader()}>
             <AdComponent />
           </Suspense>
-          <DisqusComment />
+          <Comments />
+          {/* <DisqusComment /> */}
         </BodyInner>
         <AuthorSec>
           <AuthorHead>About Author</AuthorHead>
