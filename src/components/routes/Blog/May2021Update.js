@@ -2,7 +2,6 @@ import {
   lazy, Suspense, useEffect, useState,
 } from "react";
 import { Container } from "semantic-ui-react";
-import { Helmet } from "react-helmet";
 import {
   AuthorHead,
   AuthorSec,
@@ -23,7 +22,8 @@ import {
 // import AdComponent from "../../AdComponent/AdComponent";
 import Footer from "../../Footer/Footer";
 import Navbar from "../../Navbar/Navbar";
-import DisqusComment from "../../DisqusComment/DisqusComments";
+import Comments from "../../Comments/Comments";
+// import DisqusComment from "../../DisqusComment/DisqusComments";
 //image
 import May2021UpdateIMG from "../../../images/blogs/May2021UpdateIMG.webp";
 
@@ -40,12 +40,13 @@ function May2021Update() {
       setImageSrc(May2021UpdateIMG);
     };
     img.src = May2021UpdateIMG;
+    document.title = "Project Sakura | May 2021 Update";
   }, []);
   return (
     <Body>
-      <Helmet>
+      {/* <Helmet>
         <title>Blur, Transparency, Stability and much more with May update of ProjectSakura</title>
-      </Helmet>
+      </Helmet> */}
       <Navbar />
       <Container>
         <BodyInner>
@@ -114,8 +115,9 @@ function May2021Update() {
           <Suspense fallback={renderLoader()}>
             <AdComponent />
           </Suspense>
+          <Comments />
           {/* <Suspense fallback={renderLoader()}> */}
-          <DisqusComment />
+          {/* <DisqusComment /> */}
           {/* </Suspense> */}
         </BodyInner>
         <AuthorSec>
