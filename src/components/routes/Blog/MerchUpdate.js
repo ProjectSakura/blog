@@ -1,8 +1,8 @@
-/* eslint-disable */
 import {
   useEffect, useState,
 } from "react";
 import { Container } from "semantic-ui-react";
+import { DiscussionEmbed } from "disqus-react";
 import {
   AuthorHead,
   AuthorSec,
@@ -20,10 +20,15 @@ import Navbar from "../../Navbar/Navbar";
 //image
 import MerchIMG from "../../../images/blogs/merch.webp";
 
-import Comments from "../../Comments/Comments";
+// import Comments from "../../Comments/Comments";
 
 function MerchUpdate() {
   const [imageSrc, setImageSrc] = useState([]);
+  //! IMP SECTION FOR COMMENTS
+  const url = "https:" + "//" + "direwolf-tech" + ".disqus.com/embed.js";
+  const identifier = "MerchUpdate";
+  const title = "Project Sakura | Official Merches";
+  //!
   useEffect(() => {
     //preloading image
     const img = new Image();
@@ -32,10 +37,10 @@ function MerchUpdate() {
     };
     img.src = MerchIMG;
     //? title of the blog
-    document.title = "Project Sakura | Official Merches"
+    // document.title = "Project Sakura | Official Merches";
   }, []);
   return (
-    <Body>   
+    <Body>
       <Navbar />
       <Container>
         <BodyInner>
@@ -56,17 +61,21 @@ function MerchUpdate() {
           </Description>
           <Description>
             <h3>So what is HelloTux?</h3>
-            Hellotux is a European family run business and they have been making Tshirts for Ubuntu, CentOS, Fedora, Debian and many other big names in the Open Source space. And we are very proud to announce that they are making Tshirts for Project Sakura now. 
+            Hellotux is a European family run business and they have been making Tshirts for Ubuntu, CentOS, Fedora, Debian and many other big names in the Open Source space. And we are very proud to announce that they are making Tshirts for Project Sakura now.
             They embroider every Project Sakura tshirt individually with care and love using their programmable embroidery machine, and use only free softwares for all of their operations.
             <br />
-            It is a first of it's kind initiative in the Android development community and wearing these Tshirts you can support Project Sakura. 
+            It is a first of it's kind initiative in the Android development community and wearing these Tshirts you can support Project Sakura.
             <br />
             For every purchase you make we get $4 in donation which help us grow and sustain so we keep making Project Sakura for you all.
           </Description>
           <Description>
             <strong>Go get yourself a Project Sakura premium embroidered t-shirt, polo shirt or sweatshirt and enjoy the freedom! Tastier than an apple.</strong>
           </Description>
-          <Comments />
+          {/* <Comments /> */}
+          <DiscussionEmbed
+            shortname="direwolf-tech"
+            config={{ url, identifier, title }}
+          />
         </BodyInner>
         <AuthorSec>
           <AuthorHead>About Author</AuthorHead>
