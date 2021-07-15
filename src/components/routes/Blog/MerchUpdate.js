@@ -25,8 +25,8 @@ import MerchIMG from "../../../images/blogs/merch.webp";
 function MerchUpdate() {
   const [imageSrc, setImageSrc] = useState([]);
   //! IMP SECTION FOR COMMENTS
-  const url = "https://projectsakura.xyz/blog/#/merch-update";
-  const identifier = 1;
+  const url = "https://direwolf-tech.disqus.com/merch-update";
+  const identifier = "Official Merches";
   const title = "Project Sakura | Official Merches";
   //!
   useEffect(() => {

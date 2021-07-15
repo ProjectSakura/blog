@@ -35,8 +35,8 @@ const renderLoader = () => <LoaderDiv active inline="centered" size="big">Loadin
 function May2021Update() {
   const [imageSrc, setImageSrc] = useState([]);
   //! IMP SECTION FOR COMMENTS
-  const url = "https://projectsakura.xyz/blog/#/5.R-mid-may-2021-update";
-  const identifier = 3;
+  const url = "https://direwolf-tech.disqus.com/5.R-mid-may-2021-update";
+  const identifier = "May 2021 Update";
   const title = "Project Sakura | May 2021 Update";
   //!
   useEffect(() => {
