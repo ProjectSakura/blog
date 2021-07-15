@@ -37,6 +37,7 @@ function June2021Update() {
       setImageSrc(June2021UpdateIMG);
     };
     img.src = June2021UpdateIMG;
+    document.title = "Project Sakura | June 2021 Update";
   }, []);
   return (
     <Body>

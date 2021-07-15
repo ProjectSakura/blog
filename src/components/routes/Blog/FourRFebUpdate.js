@@ -1,4 +1,4 @@
-import { lazy, Suspense } from "react";
+import { lazy, Suspense, useEffect } from "react";
 import { Container } from "semantic-ui-react";
 import {
   AuthorHead,
@@ -23,6 +23,9 @@ const AdComponent = lazy(() => import("../../AdComponent/AdComponent"));
 const renderLoader = () => <LoaderDiv active inline="centered" size="big">Loading</LoaderDiv>;
 
 function FourRFebUpdate() {
+  useEffect(() => {
+    document.title = "Project Sakura | Four R Feb Update";
+  }, []);
   return (
     <Body>
       <Navbar />
