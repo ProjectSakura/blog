@@ -56,9 +56,12 @@ function MerchUpdate() {
           </Description>
           <Description>
             <h3>So what is HelloTux?</h3>
-            Hellotux is a European family run business and they have been making Tshirts for Ubuntu, CentOS, Fedora, Debian and many other big names in the Open Source space. And we arw very proud to announce that they are making Tshirts for Project Sakura now. They embroider every Project Sakura tshirt individually with care and love using their programmable embroidery machine, and use only free softwares for all of their operations.
+            Hellotux is a European family run business and they have been making Tshirts for Ubuntu, CentOS, Fedora, Debian and many other big names in the Open Source space. And we are very proud to announce that they are making Tshirts for Project Sakura now. 
+            They embroider every Project Sakura tshirt individually with care and love using their programmable embroidery machine, and use only free softwares for all of their operations.
             <br />
-            It is a first of it's kind initiative in the Android development community and wearing these Tshirts you can support Project Sakura. For every purchase you make we get $4 in donation which help us grow and sustain so we making Project Sakura for you all.
+            It is a first of it's kind initiative in the Android development community and wearing these Tshirts you can support Project Sakura. 
+            <br />
+            For every purchase you make we get $4 in donation which help us grow and sustain so we keep making Project Sakura for you all.
           </Description>
           <Description>
             <strong>Go get yourself a Project Sakura premium embroidered t-shirt, polo shirt or sweatshirt and enjoy the freedom! Tastier than an apple.</strong>
