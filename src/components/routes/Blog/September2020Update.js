@@ -1,17 +1,20 @@
 import { lazy, Suspense, useEffect } from "react";
 import { Container } from "semantic-ui-react";
+import { DiscussionEmbed } from "disqus-react";
 import {
   AuthorHead, AuthorSec, AuthorSubHead, Body, BodyInner, Description, Heading, ListItem, UnorderedList, Anchor, Date, LoaderDiv,
 } from "./styles";
-// import AdComponent from "../../AdComponent/AdComponent";
 import Footer from "../../Footer/Footer";
 import Navbar from "../../Navbar/Navbar";
-import DisqusComment from "../../DisqusComment/DisqusComments";
-// const DisqusComment = lazy(() => import("../../DisqusComment/DisqusComments"));
+
 const AdComponent = lazy(() => import("../../AdComponent/AdComponent"));
 const renderLoader = () => <LoaderDiv active inline="centered" size="big">Loading</LoaderDiv>;
 
 function September2020Update() {
+  //! IMP SECTION FOR COMMENTS
+  const url = "https://direwolf-tech.disqus.com/september-2020-update";
+  const identifier = "September Update";
+  const title = "Project Sakura | September Update";
   useEffect(() => {
     document.title = "Project Sakura | September Update";
   }, []);
@@ -50,9 +53,10 @@ function September2020Update() {
           <Suspense fallback={renderLoader()}>
             <AdComponent />
           </Suspense>
-          {/* <Suspense fallback={renderLoader()}> */}
-          <DisqusComment />
-          {/* </Suspense> */}
+          <DiscussionEmbed
+            shortname="direwolf-tech"
+            config={{ url, identifier, title }}
+          />
         </BodyInner>
 
         <AuthorSec>

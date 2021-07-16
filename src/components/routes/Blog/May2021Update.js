@@ -125,10 +125,6 @@ function May2021Update() {
             shortname="direwolf-tech"
             config={{ url, identifier, title }}
           />
-          {/* <Comments /> */}
-          {/* <Suspense fallback={renderLoader()}> */}
-          {/* <DisqusComment /> */}
-          {/* </Suspense> */}
         </BodyInner>
         <AuthorSec>
           <AuthorHead>About Author</AuthorHead>

@@ -1,18 +1,20 @@
 import { lazy, Suspense, useEffect } from "react";
 import { Container } from "semantic-ui-react";
+import { DiscussionEmbed } from "disqus-react";
 import {
   AuthorHead, AuthorSec, AuthorSubHead, Body, BodyInner, Description, Heading, ListItem, UnorderedList, Anchor, Date, Code, LoaderDiv,
 } from "./styles";
 // import AdComponent from "../../AdComponent/AdComponent";
 import Footer from "../../Footer/Footer";
 import Navbar from "../../Navbar/Navbar";
-import Comments from "../../Comments/Comments";
-// import DisqusComment from "../../DisqusComment/DisqusComments";
 
 const AdComponent = lazy(() => import("../../AdComponent/AdComponent"));
 const renderLoader = () => <LoaderDiv active inline="centered" size="big">Loading</LoaderDiv>;
 
 function Android11SecondUpdateMarch() {
+  const url = "https://direwolf-tech.disqus.com/5.R-android-11-second-update-march";
+  const identifier = "Android11 Second Update March";
+  const title = "Project Sakura | Android11 Second Update March";
   useEffect(() => {
     document.title = "Project Sakura | Android11 Second Update March";
   }, []);
@@ -21,7 +23,7 @@ function Android11SecondUpdateMarch() {
       <Navbar />
       <Container>
         <BodyInner>
-          <Date>19 March 2021</Date>
+          <Date>08 March 2021</Date>
           <Heading>Newer Faceunlock, FOD icons, animations and effects.</Heading>
           <Description>
             We are back with another update and moar bugs and that will cause moar wailings from you poor users. Well, just like always started with a really poor joke. This update is a
@@ -67,9 +69,10 @@ function Android11SecondUpdateMarch() {
           <Suspense fallback={renderLoader()}>
             <AdComponent />
           </Suspense>
-          <Comments />
-          {/* <DisqusComment /> */}
-
+          <DiscussionEmbed
+            shortname="direwolf-tech"
+            config={{ url, identifier, title }}
+          />
         </BodyInner>
 
         <AuthorSec>

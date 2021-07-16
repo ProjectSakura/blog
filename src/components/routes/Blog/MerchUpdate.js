@@ -20,8 +20,6 @@ import Navbar from "../../Navbar/Navbar";
 //image
 import MerchIMG from "../../../images/blogs/merch.webp";
 
-// import Comments from "../../Comments/Comments";
-
 function MerchUpdate() {
   const [imageSrc, setImageSrc] = useState([]);
   //! IMP SECTION FOR COMMENTS
