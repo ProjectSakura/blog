@@ -2,6 +2,7 @@ import {
   lazy, Suspense, useEffect, useState,
 } from "react";
 import { Container } from "semantic-ui-react";
+import { DiscussionEmbed } from "disqus-react";
 import {
   AuthorHead,
   AuthorSec,
@@ -22,7 +23,7 @@ import {
 // import AdComponent from "../../AdComponent/AdComponent";
 import Footer from "../../Footer/Footer";
 import Navbar from "../../Navbar/Navbar";
-import Comments from "../../Comments/Comments";
+// import Comments from "../../Comments/Comments";
 // import DisqusComment from "../../DisqusComment/DisqusComments";
 //image
 import May2021UpdateIMG from "../../../images/blogs/May2021UpdateIMG.webp";
@@ -33,6 +34,11 @@ const renderLoader = () => <LoaderDiv active inline="centered" size="big">Loadin
 
 function May2021Update() {
   const [imageSrc, setImageSrc] = useState([]);
+  //! IMP SECTION FOR COMMENTS
+  const url = "https://direwolf-tech.disqus.com/5.R-mid-may-2021-update";
+  const identifier = "May 2021 Update";
+  const title = "Project Sakura | May 2021 Update";
+  //!
   useEffect(() => {
     //preloading image
     const img = new Image();
@@ -115,7 +121,11 @@ function May2021Update() {
           <Suspense fallback={renderLoader()}>
             <AdComponent />
           </Suspense>
-          <Comments />
+          <DiscussionEmbed
+            shortname="direwolf-tech"
+            config={{ url, identifier, title }}
+          />
+          {/* <Comments /> */}
           {/* <Suspense fallback={renderLoader()}> */}
           {/* <DisqusComment /> */}
           {/* </Suspense> */}

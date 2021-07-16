@@ -1,4 +1,4 @@
-import { lazy, Suspense } from "react";
+import { lazy, Suspense, useEffect } from "react";
 import { Container } from "semantic-ui-react";
 import {
   AuthorHead, AuthorSec, AuthorSubHead, Body, BodyInner, Description, Heading, ListItem, UnorderedList, Anchor, Date, CenterDiv, LoaderDiv,
@@ -13,6 +13,9 @@ const AdComponent = lazy(() => import("../../AdComponent/AdComponent"));
 const renderLoader = () => <LoaderDiv active inline="centered" size="big">Loading</LoaderDiv>;
 
 function Maintainership() {
+  useEffect(() => {
+    document.title = "Project Sakura | Maintainership";
+  }, []);
   return (
     <Body>
       <Navbar />

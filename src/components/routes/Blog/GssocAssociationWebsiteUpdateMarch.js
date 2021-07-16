@@ -26,6 +26,7 @@ function GssocAssociationWebsiteUpdateMarch() {
       setImageSrc(GSSOC2021UpdateIMG);
     };
     img.src = GSSOC2021UpdateIMG;
+    document.title = "Project Sakura | Gssoc Association Update";
   }, []);
   return (
     <Body>
