@@ -1,24 +1,26 @@
 import {
   lazy, Suspense, useEffect, useState,
 } from "react";
-
 import { Container } from "semantic-ui-react";
+import { DiscussionEmbed } from "disqus-react";
 import {
   AuthorHead, AuthorSec, AuthorSubHead, Body, BodyInner, Description, Heading, ImageTag, ImgDiv, ListItem, UnorderedList, Anchor, Date, LoaderDiv,
 } from "./styles";
 // import AdComponent from "../../AdComponent/AdComponent";
 import Footer from "../../Footer/Footer";
 import Navbar from "../../Navbar/Navbar";
-import DisqusComment from "../../DisqusComment/DisqusComments";
 //image
 import GSSOC2021UpdateIMG from "../../../images/blogs/GSSOC2021UpdateIMG.webp";
 
-// const DisqusComment = lazy(() => import("../../DisqusComment/DisqusComments"));
 const AdComponent = lazy(() => import("../../AdComponent/AdComponent"));
 const renderLoader = () => <LoaderDiv active inline="centered" size="big">Loading</LoaderDiv>;
 
 function GssocAssociationWebsiteUpdateMarch() {
   const [imageSrc, setImageSrc] = useState([]);
+  //! IMP SECTION FOR COMMENTS
+  const url = "https://direwolf-tech.disqus.com/gssoc-association-website-update-march";
+  const identifier = "Gssoc Association Update";
+  const title = "Project Sakura | Gssoc Association Update";
   useEffect(() => {
     //preloading image
     const img = new Image();
@@ -66,9 +68,10 @@ function GssocAssociationWebsiteUpdateMarch() {
           <Suspense fallback={renderLoader()}>
             <AdComponent />
           </Suspense>
-          {/* <Suspense fallback={renderLoader()}> */}
-          <DisqusComment />
-          {/* </Suspense> */}
+          <DiscussionEmbed
+            shortname="direwolf-tech"
+            config={{ url, identifier, title }}
+          />
         </BodyInner>
 
         <AuthorSec>

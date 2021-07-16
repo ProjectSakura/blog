@@ -2,6 +2,7 @@ import {
   lazy, Suspense, useEffect, useState,
 } from "react";
 import { Container } from "semantic-ui-react";
+import { DiscussionEmbed } from "disqus-react";
 import {
   AuthorHead,
   AuthorSec,
@@ -23,7 +24,6 @@ import Footer from "../../Footer/Footer";
 import Navbar from "../../Navbar/Navbar";
 //image
 import AugustSecondUpdate2020IMG from "../../../images/blogs/AugustSecondUpdate2020IMG.webp";
-import Comments from "../../Comments/Comments";
 // import DisqusComment from "../../DisqusComment/DisqusComments";
 
 const AdComponent = lazy(() => import("../../AdComponent/AdComponent"));
@@ -31,6 +31,10 @@ const renderLoader = () => <LoaderDiv active inline="centered" size="big">Loadin
 
 function AugustSecondUpdate2020() {
   const [imageSrc, setImageSrc] = useState([]);
+  //! IMP SECTION FOR COMMENTS
+  const url = "https://direwolf-tech.disqus.com/second-update-of-august-2020";
+  const identifier = "August Second Update 2020";
+  const title = "Project Sakura | August Second Update 2020";
   useEffect(() => {
     //preloading image
     const img = new Image();
@@ -85,8 +89,10 @@ function AugustSecondUpdate2020() {
           <Suspense fallback={renderLoader()}>
             <AdComponent />
           </Suspense>
-          <Comments />
-          {/* <DisqusComment /> */}
+          <DiscussionEmbed
+            shortname="direwolf-tech"
+            config={{ url, identifier, title }}
+          />
         </BodyInner>
         <AuthorSec>
           <AuthorHead>About Author</AuthorHead>

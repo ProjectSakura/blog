@@ -2,6 +2,7 @@ import {
   lazy, Suspense, useEffect, useState,
 } from "react";
 import { Container } from "semantic-ui-react";
+import { DiscussionEmbed } from "disqus-react";
 import {
   AuthorHead,
   AuthorSec,
@@ -23,15 +24,16 @@ import Footer from "../../Footer/Footer";
 import Navbar from "../../Navbar/Navbar";
 //image
 import FourAndroidUpdateIMG from "../../../images/blogs/FourAndroidUpdateIMG.webp";
-import Comments from "../../Comments/Comments";
-// import DisqusComment from "../../DisqusComment/DisqusComments";
-// const DisqusComment = lazy(() => import("../../DisqusComment/DisqusComments"));
 
 const AdComponent = lazy(() => import("../../AdComponent/AdComponent"));
 const renderLoader = () => <LoaderDiv active inline="centered" size="big">Loading</LoaderDiv>;
 
 function FourAndroidUpdate() {
   const [imageSrc, setImageSrc] = useState([]);
+  //! IMP SECTION FOR COMMENTS
+  const url = "https://direwolf-tech.disqus.com/4.R-android-11-update";
+  const identifier = "Four Android Update";
+  const title = "Project Sakura | Four Android Update";
   useEffect(() => {
     //preloading image
     const img = new Image();
@@ -96,10 +98,10 @@ function FourAndroidUpdate() {
           <Suspense fallback={renderLoader()}>
             <AdComponent />
           </Suspense>
-          <Comments />
-          {/* <Suspense fallback={renderLoader()}> */}
-          {/* <DisqusComment /> */}
-          {/* </Suspense> */}
+          <DiscussionEmbed
+            shortname="direwolf-tech"
+            config={{ url, identifier, title }}
+          />
         </BodyInner>
         <AuthorSec>
           <AuthorHead>About Author</AuthorHead>

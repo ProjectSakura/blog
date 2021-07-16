@@ -24,8 +24,7 @@ import Footer from "../../Footer/Footer";
 import Navbar from "../../Navbar/Navbar";
 //image
 import June2021UpdateIMG from "../../../images/blogs/June2021UpdateIMG.webp";
-// import DisqusComment from "../../DisqusComment/DisqusComments";
-// const DisqusComment = lazy(() => import("../../DisqusComment/DisqusComments"));
+
 const AdComponent = lazy(() => import("../../AdComponent/AdComponent"));
 const renderLoader = () => <LoaderDiv active inline="centered" size="big">Loading</LoaderDiv>;
 

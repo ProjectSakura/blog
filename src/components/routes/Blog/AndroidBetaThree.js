@@ -1,5 +1,6 @@
 import { lazy, Suspense, useEffect } from "react";
 import { Container } from "semantic-ui-react";
+import { DiscussionEmbed } from "disqus-react";
 //Style-Component
 import {
   AuthorHead,
@@ -18,13 +19,14 @@ import {
 // import AdComponent from "../../AdComponent/AdComponent";
 import Footer from "../../Footer/Footer";
 import Navbar from "../../Navbar/Navbar";
-import Comments from "../../Comments/Comments";
-// import DisqusComment from "../../DisqusComment/DisqusComments";
 
 const AdComponent = lazy(() => import("../../AdComponent/AdComponent"));
 const renderLoader = () => <LoaderDiv active inline="centered" size="big">Loading</LoaderDiv>;
 
 function AndroidBetaThree() {
+  const url = "https://direwolf-tech.disqus.com/3.R-android-11-beta-3";
+  const identifier = "Android Beta Three";
+  const title = "Project Sakura | Android Beta Three";
   useEffect(() => {
     document.title = "Project Sakura | Android Beta Three";
   }, []);
@@ -89,8 +91,10 @@ function AndroidBetaThree() {
           <Suspense fallback={renderLoader()}>
             <AdComponent />
           </Suspense>
-          <Comments />
-          {/* <DisqusComment /> */}
+          <DiscussionEmbed
+            shortname="direwolf-tech"
+            config={{ url, identifier, title }}
+          />
         </BodyInner>
         <AuthorSec>
           <AuthorHead>About Author</AuthorHead>
