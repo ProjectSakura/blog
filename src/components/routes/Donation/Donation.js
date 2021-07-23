@@ -9,7 +9,7 @@ import Navbar from "../../Navbar/Navbar";
 import MerchPCBanner from "../../../images/merch/merch.webm";
 
 function Donation() {
-  const [MethodSrc, setMethodSrc] = useState([]);
+  // const [MethodSrc, setMethodSrc] = useState([]);
   const [DonatorSrc, setDonatorSrc] = useState([]);
   //?PRELOAD IMAGE SECTION
   useEffect(() => {
@@ -20,20 +20,21 @@ function Donation() {
     };
     img0.src = donator[0].img;
     //? methods img section
-    method.forEach((data) => {
-      const img1 = new Image();
-      img1.onload = () => {
-        setMethodSrc((arr) => [...arr, data.img]);
-      };
-      img1.src = data.img;
-    });
+    // method.forEach((data) => {
+    //   const img1 = new Image();
+    //   img1.onload = () => {
+    //     setMethodSrc((arr) => [...arr, data.img]);
+    //   };
+    //   img1.src = data.img;
+    // });
   }, []);
   const renderCards = (arr, section) => {
     let cards;
     if (section === "method") {
       cards = arr.map((data) => (
         <Child key={data.id}>
-          <Img src={MethodSrc[data.id]} />
+          {/* <Img src={MethodSrc[data.id]} /> */}
+          <Img src={data.img} />
           <Heading>
             <Anchor href={data.url}>
               Donate via {data.name}
