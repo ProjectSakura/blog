@@ -1,6 +1,15 @@
 //? INSERT THE LATEST POST ON TOP WITH UPDATED ID
 const data = [
   {
+    id: 23,
+    url: "/5.2-Project-Sakura-Update",
+    title: "Faster, Better, More stable!",
+    author: "LordShenron",
+    date: new Date(Date.parse("2021-07-31")),
+    desc: "Whats new in the latest release of Project Sakura? Check out..",
+
+  },
+  {
     id: 22,
     url: "/5.1-july-2021-update",
     title: "A sweet small July update.",
