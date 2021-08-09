@@ -23,7 +23,7 @@ import {
 import Footer from "../../Footer/Footer";
 import Navbar from "../../Navbar/Navbar";
 //image
-import August2021UpdateIMG from "../../../images/blogs/August2021UpdateIMG.PNG";
+import August2021UpdateIMG from "../../../images/blogs/August2021UpdateIMG.webp";
 // const DisqusComment = lazy(() => import("../../DisqusComment/DisqusComments"));
 const AdComponent = lazy(() => import("../../AdComponent/AdComponent"));
 const renderLoader = () => <LoaderDiv active inline="centered" size="big">Loading</LoaderDiv>;

@@ -23,7 +23,7 @@ import {
 import Footer from "../../Footer/Footer";
 import Navbar from "../../Navbar/Navbar";
 //image
-import Sakura5point2UpdateIMG from "../../../images/blogs/Sakura5point2UpdateIMG.PNG";
+import Sakura5point2UpdateIMG from "../../../images/blogs/Sakura5point2UpdateIMG.webp";
 // const DisqusComment = lazy(() => import("../../DisqusComment/DisqusComments"));
 const AdComponent = lazy(() => import("../../AdComponent/AdComponent"));
 const renderLoader = () => <LoaderDiv active inline="centered" size="big">Loading</LoaderDiv>;
