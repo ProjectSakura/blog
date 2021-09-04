@@ -57,6 +57,7 @@ import MerchUpdate from "../routes/Blog/MerchUpdate";
 import July2021Update from "../routes/Blog/July2021Update";
 import Sakura5point2Update from "../routes/Blog/Sakura5point2Update";
 import August2021Update from "../routes/Blog/August2021Update";
+import September2021Update from "../routes/Blog/September2021Update";
 
 // const renderLoader = () => <LoaderDiv active inline="centered" size="big">Loading</LoaderDiv>;
 
@@ -67,6 +68,7 @@ function App() {
         {/* <Suspense fallback={renderLoader()}> */}
         <Switch>
           <Route path="/" exact component={Home} />
+          <Route path="/5.2-September-2021-Update" exact component={September2021Update} />
           <Route path="/5.2-August-2021-Update" exact component={August2021Update} />
           <Route path="/5.2-Project-Sakura-Update" exact component={Sakura5point2Update} />
           <Route path="/5.1-july-2021-update" exact component={July2021Update} />
